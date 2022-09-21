@@ -1,3 +1,7 @@
 "SICOMP":
   url: https://www.siam.org/publications/journals/siam-journal-on-computing-sicomp
   color: "#00369f"
+
+"DCG":
+  url: https://www.springer.com/journal/454
+  color: "#00369f"
