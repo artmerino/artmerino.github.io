@@ -41,7 +41,7 @@ repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-s
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -79,7 +79,7 @@ quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
-work_url: # work page URL
+work_url: https://www3.math.tu-berlin.de/coga/team/merino/ # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 dblp_url: https://dblp.uni-trier.de/pid/239/8813.html # your DBLP profile url
@@ -94,6 +94,7 @@ facebook_id: # your facebook id
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: 
+Shoot me an email!
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
