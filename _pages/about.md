@@ -23,4 +23,4 @@ Before that, I did a masters degree on applied math at [Universidad de Chile](ht
 
 **Research Interests:** Broadly speaking, I am interested in algorithmic design and discrete mathematics.
 Lately, I've been focused on the design of [*generation algorithms*](https://en.wikipedia.org/wiki/Enumeration_algorithm); that is, algorithms which ouput all solutions to a computational problem, instead of only one. 
-More specifically, I've been interested in generation algorithms that perform *local* operations (aka [combinatorial Gray codes]()) and their interplay with combinatorics, discrete geometry, symmetry, and algebra.
+More specifically, I've been interested in generation algorithms that perform *local* operations (aka [*combinatorial Gray codes*](https://arxiv.org/abs/2202.01280)) and their interplay with combinatorics, discrete geometry, symmetry, and algebra.
