@@ -5,12 +5,13 @@
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
+          <span class="badge">NEW</span>
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
           {%- else -%}
+          <span class="badge">NEW</span>
           <img class="preview z-depth-1 rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
           {%- endif -%}
-        {%- endif -%}
-        {%- if entry.abbr -%}
+        {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
             {%- assign venue_style = nil -%}
             {%- if site.data.venues[entry.abbr].color != blank -%}
