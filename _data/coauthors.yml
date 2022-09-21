@@ -1,34 +1,27 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Mütze":
+  - firstname: ["Torsten"]
+    url: http://www.tmuetze.de
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Cardinal":
+  - firstname: ["Jean"]
+    url: https://jean.cardinal.web.ulb.be/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Williams":
+  - firstname: ["Aaron"]
+    url: https://sites.google.com/williams.edu/aaron
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Gregor":
+  - firstname: ["Petr"]
+    url: http://ktiml.mff.cuni.cz/~gregor/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Wiese":
+  - firstname: ["Andreas"]
+    url: https://discrete.ma.tum.de/people/professors/andreas-wiese.html
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Soto":
+  - firstname: ["José A.", "José"]
+    url: http://www.dim.uchile.cl/~jsoto/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Mička":
+  - firstname: ["Ondřej"]
+    url: https://ktiml.mff.cuni.cz/~micka/
