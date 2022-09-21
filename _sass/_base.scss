@@ -496,14 +496,10 @@ footer.sticky-bottom {
         height: 2rem;
         margin-bottom: 0.5rem;
         abbr {
-          position: absolute;
-          text-align: center;
-
           display: inline-block;
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
-          color: white;
           a {
             color: white;
             &:hover {

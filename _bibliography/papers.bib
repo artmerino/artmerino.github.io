@@ -9,58 +9,68 @@
 
 @string{TCS = {Theor. Comput. Sci.}}
 
+@string{JGT = {Journal of Graph Theory}}
+
 # Conference names
 
 @string{FUN = {International Conference on Fun with Algorithms}}
-@string{FUN2022 = {Proc. 11th } # FUN}
+@string{FUN2022 = {In Proc. 11th } # FUN}
 
 @string{ICALP = {International Colloquium on Automata, Languages and Programming}}
-@string{ICALP2019 = {Proc. 46th } # ICALP}
-@string{ICALP2020 = {Proc. 47th } # ICALP}
+@string{ICALP2019 = {In Proc. 46th } # ICALP}
+@string{ICALP2020 = {In Proc. 47th } # ICALP}
 
 @string{MFCS = {International Symposium on Mathematical Foundations of Computer Science}}
-@string{MFCS2022 = {Proc. 47th } # MFCS}
+@string{MFCS2022 = {In Proc. 47th } # MFCS}
 
 @string{SoCG = {International Symposium on Computational Geometry}}
-@string{SoCG2021 = {SoCG 2021 -- Proc. 37th } # SoCG}
+@string{SoCG2021 = {In Proc. 37th } # SoCG}
 
-@string{SODA2021 = {Proc. 32nd ACM-SIAM Symposium on Discrete Algorithms}}
-@string{SODA2022 = {Proc. 33rd ACM-SIAM Symposium on Discrete Algorithms}}
+@string{SODA2021 = {In Proc. 32nd} # SODA}
+@string{SODA2022 = {In Proc. 33rd} # SODA}
 
 @string{STACS = {International Symposium on Theoretical Aspects of Computer Science}}
-@string{STACS2022 = {Proc. 39th } # STACS}
+@string{STACS2022 = {In Proc. 39th } # STACS}
 
+
+One can put previews!
 
 @article{MerinoMuetze2022,
-    abbr={{DCG}},
-  	author = {Merino, Arturo and Mütze, Torsten},
-	title = {{Combinatorial generation via permutation languages. III. Rectangulations}},
-	journal = DCG,
-	year = {to appear},
-	arxiv = {2103.09333},
-	extended  = {Extended abstract appeared in Proc. of SoCG 2021},
-	preview={brownian-motion.gif},
-	abstract={Rectangulations.}
+  	author   = {Merino, Arturo and Mütze, Torsten},
+	title    = {{Combinatorial generation via permutation languages. III. Rectangulations}},
+	year     = {to appear},
+	extended = {Extended abstract appeared in Proc. of SoCG 2021},
+    abbr     = {{DCG}},
+	journal  = DCG,
+	preview  = {},
+	arxiv    = {2103.09333},
+	blog	 = {},
+	code	 = {},
+	slides	 = {},
+	combos   = {rect},
+	abstract = {A generic rectangulation is a partition of a rectangle into finitely many interior-disjoint rectangles, such that no four rectangles meet in a point. In this work we present a versatile algorithmic framework for exhaustively generating a large variety of different classes of generic rectangulations. Our algorithms work under very mild assumptions, and apply to a large number of rectangulation classes known from the literature, such as generic rectangulations, diagonal rectangulations, 1-sided/area-universal, block-aligned rectangulations, and their guillotine variants. They also apply to classes of rectangulations that are characterized by avoiding certain patterns, and in this work we initiate a systematic investigation of pattern avoidance in rectangulations. Our generation algorithms are efficient, in some cases even loopless or constant amortized time, i.e., each new rectangulation is generated in constant time in the worst case or on average, respectively. Moreover, the Gray codes we obtain are cyclic, and sometimes provably optimal, in the sense that they correspond to a Hamilton cycle on the skeleton of an underlying polytope. These results are obtained by encoding rectangulations as permutations, and by applying our recently developed permutation language framework.}
 }
 
 @inproceedings{CardinalMerinoMuetze2022,
-    abbr={{SODA}},
+	selected = {true},
 	author = {Cardinal, Jean and Merino, Arturo and Mütze, Torsten},
-	booktitle = SODA2022,
-	pages = {2128-2140},
-	doi = {10.1137/1.9781611977073.84},
 	title = {Efficient generation of elimination trees and graph associahedra},
-	year = {2022}
+    abbr={{SODA}},
+	booktitle = SODA2022,
+	year = {2022},
+	arxiv = {2106.16204},
+	combos = {},
+	doi = {10.1137/1.9781611977073.84},
 }
 
 @inproceedings{GregorMerinoMuetze2022,
     abbr={{STACS}},
   	author =	{Gregor, Petr and Merino, Arturo and Mütze, Torsten},
 	booktitle = STACS2022,
-	pages = {34:1--34:14},
 	doi = {10.4230/LIPIcs.STACS.2022.34},
 	title = {{Star Transposition Gray Codes for Multiset Permutations}},
-	year = {2022}
+	year = {2022},
+	selected = {true}
 }
 
 
@@ -68,9 +78,8 @@
     abbr={{MFCS}},
   	author =	{Gregor, Petr and Merino, Arturo and Mütze, Torsten},
 	booktitle = MFCS2022,
-	pages = {54:1--54:14},
 	doi = {10.4230/LIPIcs.MFCS.2022.54},
-	title = {{The Hamilton compression of highly symmetric graphs}},
+	title = {{The Hamilton Compression of Highly Symmetric Graphs}},
 	year = {2022}
 }
 
@@ -78,7 +87,6 @@
     abbr={{FUN}},
   	author =	{Merino, Arturo and Mütze, Torsten and Williams, Aaron},
 	booktitle = FUN2022,
-	pages = {22:1--22:28},
 	doi = {10.4230/LIPIcs.FUN.2022.22},
 	title =	{{All Your bases Are Belong to Us: Listing All Bases of a Matroid by Greedy Exchanges}},
 	year = {2022}
@@ -90,11 +98,9 @@
     title = {{On a Combinatorial Generation Problem of Knuth}},
     journal = SICOMP,
     year = {2022},
-    volume = {51},
-    number = {3},
-    pages = {379-423},
     doi = {10.1137/20M1377394},
-    extended  = {Extended abstract appeared in Proc. of SODA 2021}
+    extended  = {Extended abstract appeared in Proc. of SODA 2021},
+	selected = {true}
 }
 
 @inproceedings{MerinoMuetze2021,
@@ -130,7 +136,7 @@
 @inproceedings{MerinoSoto2019,
     abbr={{ICALP}},
     author =	{Arturo Merino and José A. Soto},
-	booktitle = {{Proc. 46th International Colloquium on Automata, Languages and Programming}},
+	booktitle = ICALP2019,
 	pages = {83:1--83:14},
 	doi = {10.4230/LIPIcs.ICALP.2019.83},
 	title = {{The Minimum Cost Query Problem on Matroids with Uncertainty Areas}},
