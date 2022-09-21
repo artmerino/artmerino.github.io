@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a fourth year math PhD student at TU Berlin, where I am advised by [Torsten Mütze](https://www.tmuetze.de) and take part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group. 
+I'm a fourth year math PhD student at TU Berlin, where I am advised by [Torsten Mütze](http://www.tmuetze.de) and take part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group. 
 Before that, I did a masters degree on applied math at [Universidad de Chile](https://www.uchile.cl/english) under the guidance of [José Soto](http://www.dim.uchile.cl/~jsoto/).
 
 **Research Interests:** Broadly speaking, I am interested in algorithmic design and discrete mathematics.
