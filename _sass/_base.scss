@@ -496,6 +496,11 @@ footer.sticky-bottom {
         height: 2rem;
         margin-bottom: 0.5rem;
         abbr {
+          position: absolute;
+          right:-20px;
+          top:10px;
+          text-align: center;
+
           display: inline-block;
           background-color: var(--global-theme-color);
           padding-left: 1rem;
