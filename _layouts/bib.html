@@ -133,6 +133,15 @@
             {{ periodical | strip }}
           </div>
         {%- endif %}
+
+        {% if entry.award %}
+        <div style="color: #FFC000;"><p class="periodical font-italic"><i class="fa fa-solid fa-star"></i> {{entry.award}}!</p></div>
+        {% endif %}
+        
+        {% if entry.extended %}
+        <div style="color: #00ff3c;"><p class="periodical font-italic"><i class="fa fa-solid fa-star"></i> {{entry.extended}}!</p></div>
+        {% endif %}
+
         
           <!-- Links/Buttons -->
           <div class="links">
