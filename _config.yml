@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Arturo Merino # the website title (if blank, full name will be used instead)
 first_name: Arturo
 middle_name:
 last_name: Merino
@@ -46,7 +46,7 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 800px
@@ -69,7 +69,7 @@ github_username: # your GitHub user name
 gitlab_username:  # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username: # your LinkedIn user name
-scholar_userid: -EnYzW0AAAA # your Google Scholar ID
+scholar_userid: -EnYzW0AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 orcid_id: 0000-0002-1728-6936 # your ORCID ID
 medium_username: # your Medium username
