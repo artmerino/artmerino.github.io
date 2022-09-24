@@ -132,15 +132,16 @@
           <div class="periodical">
             {{ periodical | strip }}
           </div>
+
+          {% if entry.award %}
+            <div class="periodical">⭐ {{entry.award}}!</div>
+          {% endif %}
+          
+          {% if entry.extended %}
+            <div class="periodical font-italic">{{entry.extended}}</div>
+          {% endif %}
         {%- endif %}
 
-        {% if entry.award %}
-        <p class="periodical">⭐ {{entry.award}}!</p>
-        {% endif %}
-        
-        {% if entry.extended %}
-        <div style="color:blue-color;"><p class="periodical font-italic">{{entry.extended}}</p></div>
-        {% endif %}
 
         
           <!-- Links/Buttons -->
