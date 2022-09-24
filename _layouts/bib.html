@@ -131,15 +131,13 @@
           {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
           <div class="periodical">
             {{ periodical | strip }}
+            {% if entry.award %}
+            ⭐ {{entry.award}}!
+            {% endif %}
+            {% if entry.extended %}
+              <em>{{entry.extended}}</em>
+            {% endif %}
           </div>
-
-          {% if entry.award %}
-            <div class="periodical">⭐ {{entry.award}}!</div>
-          {% endif %}
-          
-          {% if entry.extended %}
-            <div class="periodical font-italic">{{entry.extended}}</div>
-          {% endif %}
         {%- endif %}
 
 
