@@ -132,10 +132,10 @@
           <div class="periodical">
             {{ periodical | strip }}
             {% if entry.award %}
-            ⭐ {{entry.award}}!
+              <br>⭐ {{entry.award}}!
             {% endif %}
             {% if entry.extended %}
-              <em>{{entry.extended}}</em>
+              <br><em>{{entry.extended}}</em>
             {% endif %}
           </div>
         {%- endif %}
