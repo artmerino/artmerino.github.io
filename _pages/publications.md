@@ -1,6 +1,5 @@
 ---
-# layout: page
-layout: default
+layout: page
 permalink: /publications/
 title: publications
 description: publications in reversed chronological order.
