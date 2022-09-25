@@ -517,15 +517,18 @@ footer.sticky-bottom {
       }
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          text-decoration: none;
+          // border-bottom: 1px dashed var(--global-theme-color);
           &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
+              // border-bottom-style: solid;
+              text-decoration: underline;
+              color: var(--global-theme-color);
           }
         }
         > em {
-          border-bottom: 1px solid;
-          font-style: normal;
+          // border-bottom: 1px solid;
+          color: var(--global-theme-color);
+          font-style: bold;
         }
         > span.more-authors {
           color: var(--global-text-color-light);
