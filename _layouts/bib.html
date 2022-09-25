@@ -2,7 +2,7 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 {% if entry.preview %}preview abbr{% else %}abbr{% endif %}">
+        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
           {%- if entry.preview -%}
             <div style="position: absolute; display:inline-block;">
             {% if entry.preview contains '://' -%}
@@ -10,15 +10,17 @@
             {%- else -%}
               <img class="preview z-depth-1 rounded" style="position: relative;" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
             </div>
+            <div class="abbr" style="position:relative">
             {%- if site.data.venues[entry.abbr] -%}
               {%- assign venue_style = nil -%}
               {%- if site.data.venues[entry.abbr].color != blank -%}
                 {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'background-color:' -%}
               {%- endif -%}
-              <abbr class="badge" style="position: relative; {% if venue_style %}{{venue_style}}{% endif %}"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+              <abbr class="badge" style="{% if venue_style %}{{venue_style}}{% endif %}"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
             {%- else -%}
               <abbr class="badge">{{entry.abbr}}</abbr>
             {%- endif -%}
+            </div>
           {%- endif -%}
           {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
