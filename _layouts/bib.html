@@ -23,7 +23,7 @@
             </div>
           {%- endif -%}
           {%- elsif entry.abbr -%}
-          <div class="abbr" style="position:relative">
+          <div class="abbr">
           {%- if site.data.venues[entry.abbr] -%}
             {%- assign venue_style = nil -%}
             {%- if site.data.venues[entry.abbr].color != blank -%}
