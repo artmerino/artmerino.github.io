@@ -10,14 +10,14 @@
               {%- if site.data.venues[entry.abbr].color != blank -%}
                 {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'background-color:' -%}
               {%- endif -%}
-              <abbr class="badge" style="position: relative; top:2em; {% if venue_style %}{{venue_style}}{% endif %}"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+              <abbr class="badge" style="position: relative; {% if venue_style %}{{venue_style}}{% endif %}"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
             {%- else -%}
               <abbr class="badge">{{entry.abbr}}</abbr>
             {%- endif -%}
             {% if entry.preview contains '://' -%}
-              <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+              <img class="preview z-depth-1 rounded" style="position: relative; top:-2em" src="{{ entry.preview }}">
             {%- else -%}
-             <img class="preview z-depth-1 rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
+             <img class="preview z-depth-1 rounded" style="position: relative; top:-2em" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
             </div>
           {%- endif -%}
           {%- elsif entry.abbr -%}
