@@ -496,11 +496,6 @@ footer.sticky-bottom {
         min-width: 80px;
         // max-width: 200px;
       }
-      @media screen and (max-width: 200px) {
-        .preview {
-          display: none;
-        }
-      }
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
@@ -602,6 +597,19 @@ footer.sticky-bottom {
     }
   }
 }
+
+@media screen and (max-width: 200px) {
+  .publications {
+    ol.bibliography {
+      li {
+        .preview {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 
 // Rouge Color Customization
 figure.highlight {
