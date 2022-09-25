@@ -116,11 +116,7 @@ blockquote {
   }
 }
 
-@media (max-width: 200px) {
-  .preview { 
-    display: none; 
-  }
-}
+
 
 
 
@@ -498,7 +494,12 @@ footer.sticky-bottom {
       .preview {
         width: 100%;
         min-width: 80px;
-        max-width: 200px;
+        // max-width: 200px;
+      }
+      @media screen and (max-width: 200px) {
+        .preview {
+          display: none;
+        }
       }
       .abbr {
         height: 2rem;
