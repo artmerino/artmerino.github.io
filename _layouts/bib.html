@@ -5,6 +5,11 @@
         <div class="col-sm-2 {% if entry.preview %}preview abbr{% else %}abbr{% endif %}">
           {%- if entry.preview -%}
             <div style="position: absolute; display:inline-block;">
+            {% if entry.preview contains '://' -%}
+              <img class="preview z-depth-1 rounded" style="position: relative;" src="{{ entry.preview }}">
+            {%- else -%}
+              <img class="preview z-depth-1 rounded" style="position: relative;" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
+            </div>
             {%- if site.data.venues[entry.abbr] -%}
               {%- assign venue_style = nil -%}
               {%- if site.data.venues[entry.abbr].color != blank -%}
@@ -14,11 +19,6 @@
             {%- else -%}
               <abbr class="badge">{{entry.abbr}}</abbr>
             {%- endif -%}
-            {% if entry.preview contains '://' -%}
-              <img class="preview z-depth-1 rounded" style="position: relative; top:-2em" src="{{ entry.preview }}">
-            {%- else -%}
-             <img class="preview z-depth-1 rounded" style="position: relative; top:-2em" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
-            </div>
           {%- endif -%}
           {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
