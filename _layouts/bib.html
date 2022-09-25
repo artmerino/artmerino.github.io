@@ -2,8 +2,9 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 {% if entry.preview %}preview abbr{% else %}abbr{% endif %}" {% if entry.preview %}style="position:absolute"{% else %}abbr{% endif %}>
+        <div class="col-sm-2 {% if entry.preview %}preview abbr{% else %}abbr{% endif %}">
           {%- if entry.preview -%}
+            <div style="position: absolute;">
             {%- if site.data.venues[entry.abbr] -%}
               {%- assign venue_style = nil -%}
               {%- if site.data.venues[entry.abbr].color != blank -%}
@@ -17,6 +18,7 @@
               <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
             {%- else -%}
              <img class="preview z-depth-1 rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
+            </div>
           {%- endif -%}
           {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
