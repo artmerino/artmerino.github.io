@@ -2,9 +2,9 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+        <div class="col-sm-2">
           {%- if entry.preview -%}
-            <div style="position: absolute; display:inline-block;">
+            <div class="preview" style="position: absolute; display:inline-block;">
             {% if entry.preview contains '://' -%}
               <img class="preview z-depth-1 rounded" style="position: relative;" src="{{ entry.preview }}">
             {%- else -%}
