@@ -496,7 +496,7 @@ footer.sticky-bottom {
         min-width: 80px;
         max-width: 200px;
         overflow: hidden;
-        display: none;
+        // display: none;
       }
       .abbr {
         height: 2rem;
@@ -614,7 +614,9 @@ footer.sticky-bottom {
     ol.bibliography {
       li {
         .preview {
-          display: none !important;
+          img{
+            display: none !important;
+          }
         }
       }
     }
