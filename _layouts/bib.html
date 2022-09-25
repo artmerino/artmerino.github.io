@@ -4,13 +4,13 @@
       <div class="row">
         <div class="col-sm-2 {% if entry.preview %}preview abbr{% else %}abbr{% endif %}">
           {%- if entry.preview -%}
-            <div style="position: absolute;">
+            <div style="position: absolute; display:inline-block;">
             {%- if site.data.venues[entry.abbr] -%}
               {%- assign venue_style = nil -%}
               {%- if site.data.venues[entry.abbr].color != blank -%}
                 {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'background-color:' -%}
               {%- endif -%}
-              <abbr class="badge" style="position: relative; {% if venue_style %}{{venue_style}}{% endif %}"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+              <abbr class="badge" style="position: relative; right:-20px; top:10px; {% if venue_style %}{{venue_style}}{% endif %}"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
             {%- else -%}
               <abbr class="badge">{{entry.abbr}}</abbr>
             {%- endif -%}
