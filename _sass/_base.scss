@@ -614,7 +614,7 @@ footer.sticky-bottom {
     ol.bibliography {
       li {
         .preview {
-          display: none;
+          display: none !important;
         }
       }
     }
