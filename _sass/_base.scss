@@ -599,7 +599,16 @@ footer.sticky-bottom {
   }
 }
 
-@media screen and (max-width: 200px) {
+// @media (min-width: 576px) {
+//   .profile {
+//     width: 30%;
+//     .address {
+//       p { display: block; }
+//     }
+//   }
+// }
+
+@media (max-width: 200px) {
   .publications {
     ol.bibliography {
       li {
