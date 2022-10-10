@@ -2,32 +2,32 @@
 
 "SICOMP":
   url: https://www.siam.org/publications/journals/siam-journal-on-computing-sicomp
-  color: "#196ca3"
+  color: "#c32b72"
 
 "DCG":
   url: https://www.springer.com/journal/454
-  color: "#196ca3"
+  color: "#c32b72"
 
 "JGT":
   url: https://onlinelibrary.wiley.com/journal/10970118
-  color: "#196ca3"
+  color: "#c32b72"
 
 # Conferences
 
 "SODA":
-  color: "#c32b72"
+  color: "#196ca3"
 
 "ICALP":
-  color: "#c32b72"
+  color: "#196ca3"
 
 "STACS":
-  color: "#c32b72"
+  color: "#196ca3"
 
 "MFCS":
-  color: "#c32b72"
+  color: "#196ca3"
 
 "FUN":
-  color: "#c32b72"
+  color: "#196ca3"
 
 "SoCG":
-  color: "#c32b72"
+  color: "#196ca3"
