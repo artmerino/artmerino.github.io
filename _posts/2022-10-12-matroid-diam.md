@@ -1,10 +1,10 @@
 ---
 layout: post
-title: a post with math
-date: 2015-10-20 11:12:00-0400
-description: an example of a blog post with some math
-tags: formatting math
-categories: sample-posts
+title: Matroid diameter v/s shortest path
+date: 2022-12-10 11:12:00-0400
+description: 
+tags: matroids diameter shortest-path
+categories: post
 ---
 $\gdef\cI{\mathcal{I}}$
 
