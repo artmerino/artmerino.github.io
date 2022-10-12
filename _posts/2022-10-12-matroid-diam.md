@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Matroid diameter v/s shortest path
-date: 2022-12-10 11:12:00-0400
+date: 2022-10-12 11:12:00-0400
 description: 
 tags: matroids diameter shortest-path
 categories: post
