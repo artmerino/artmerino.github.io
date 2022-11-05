@@ -76,8 +76,7 @@ Secondly, we consider quotients of lattices of acyclic orientations of chordal g
 This also generalizes a recent algorithm for generating lattice congruences of the weak order on the symmetric group (SODA~2020).
 Our algorithms are derived from the Hartung-Hoang-M\"utze-Williams combinatorial generation framework, and they yield simple algorithms for computing Hamilton paths and cycles on large classes of polytopes, including chordal nestohedra and quotientopes.
 In particular, we derive an efficient implementation of the Savage-Squire-West construction. 
-Along the way, we give an overview of old and recent results about the polyhedral and order-theoretic aspects of acyclic orientations of graphs and hypergraphs.}
-},
+Along the way, we give an overview of old and recent results about the polyhedral and order-theoretic aspects of acyclic orientations of graphs and hypergraphs.}},
 }
 
 @article{GregorMerinoMuetze2022b,
@@ -97,8 +96,7 @@ To understand the problem in general, we introduce a parameter $\Delta(\boldsymb
 We show that if $\Delta(\boldsymbol{a}) < 0$, then a star transpos ition Gray code for $\boldsymbol{a}$-multiset permutations does not exist. 
 We also construct such Gray codes for the case $\Delta(\boldsymbol{a}) > 0$, assuming that they exist for the case $\Delta(\boldsymbol{a})=0$. 
 For the case $\Delta(\boldsymbol{a})=0$ we present some partial positive results. 
-Our proofs establish Hamilton-connectedness or Hamilton-laceability of the underlying flip graphs, and they answer several cases of a recent conjecture of Shen and Williams.}
-},
+Our proofs establish Hamilton-connectedness or Hamilton-laceability of the underlying flip graphs, and they answer several cases of a recent conjecture of Shen and Williams.}},
 }
 
 
@@ -112,7 +110,14 @@ Our proofs establish Hamilton-connectedness or Hamilton-laceability of the under
 	arxiv    = {2103.09333},
 	doi		 = {10.1007/s00454-022-00393-w},
 	combos   = {rect},
-	abstract = {{A generic rectangulation is a partition of a rectangle into finitely many interior-disjoint rectangles, such that no four rectangles meet in a point. In this work we present a versatile algorithmic framework for exhaustively generating a large variety of different classes of generic rectangulations. Our algorithms work under very mild assumptions, and apply to a large number of rectangulation classes known from the literature, such as generic rectangulations, diagonal rectangulations, 1-sided/area-universal, block-aligned rectangulations, and their guillotine variants. They also apply to classes of rectangulations that are characterized by avoiding certain patterns, and in this work we initiate a systematic investigation of pattern avoidance in rectangulations. Our generation algorithms are efficient, in some cases even loopless or constant amortized time, i.e., each new rectangulation is generated in constant time in the worst case or on average, respectively. Moreover, the Gray codes we obtain are cyclic, and sometimes provably optimal, in the sense that they correspond to a Hamilton cycle on the skeleton of an underlying polytope. These results are obtained by encoding rectangulations as permutations, and by applying our recently developed permutation language framework.}}
+	abstract = {
+{A generic rectangulation is a partition of a rectangle into finitely many interior-disjoint rectangles, such that no four rectangles meet in a point. 
+In this work we present a versatile algorithmic framework for exhaustively generating a large variety of different classes of generic rectangulations. 
+Our algorithms work under very mild assumptions, and apply to a large number of rectangulation classes known from the literature, such as generic rectangulations, diagonal rectangulations, 1-sided/area-universal, block-aligned rectangulations, and their guillotine variants. 
+They also apply to classes of rectangulations that are characterized by avoiding certain patterns, and in this work we initiate a systematic investigation of pattern avoidance in rectangulations.
+Our generation algorithms are efficient, in some cases even loopless or constant amortized time, i.e., each new rectangulation is generated in constant time in the worst case or on average, respectively. 
+Moreover, the Gray codes we obtain are cyclic, and sometimes provably optimal, in the sense that they correspond to a Hamilton cycle on the skeleton of an underlying polytope. 
+These results are obtained by encoding rectangulations as permutations, and by applying our recently developed permutation language framework.}},
 }
 
 @article{GregorMerinoMuetze2022a,
@@ -135,11 +140,21 @@ Our proofs establish Hamilton-connectedness or Hamilton-laceability of the under
     abbr     = {{FUN}},
 	journal  = FUN2022,
 	doi		 = {10.4230/LIPIcs.FUN.2022.22},
-	abstract = {{You provide us with a matroid and an initial base. We say that a subset of the bases “belongs to us” if we can visit each one via a sequence of base exchanges starting from the initial base. It is well-known that “All your base are belong to us”. We refine this classic result by showing that it can be done by a simple greedy algorithm. For example, the spanning trees of a graph can be generated by edge exchanges using the following greedy rule: Minimize the larger label of an edge that enters or exits the current spanning tree and which creates a spanning tree that is new (i.e., hasn’t been visited already). Amazingly, this works for any graph, for any labeling of its edges, for any initial spanning tree, and regardless of how you choose the edge with the smaller label in each exchange. Furthermore, by maintaining a small amount of information, we can generate each successive spanning tree without storing the previous trees.
+	abstract = {
+{You provide us with a matroid and an initial base. 
+We say that a subset of the bases “belongs to us” if we can visit each one via a sequence of base exchanges starting from the initial base. 
+It is well-known that “All your base are belong to us”. We refine this classic result by showing that it can be done by a simple greedy algorithm. 
+For example, the spanning trees of a graph can be generated by edge exchanges using the following greedy rule: Minimize the larger label of an edge that enters or exits the current spanning tree and which creates a spanning tree that is new (i.e., hasn’t been visited already). 
+Amazingly, this works for any graph, for any labeling of its edges, for any initial spanning tree, and regardless of how you choose the edge with the smaller label in each exchange. 
+Furthermore, by maintaining a small amount of information, we can generate each successive spanning tree without storing the previous trees.
 
-In general, for any matroid, we can greedily compute a listing of all its bases matroid such that consecutive bases differ by a base exchange. Our base exchange Gray codes apply a prefix-exchange on a prefix-minor of the matroid, and we can generate these orders using “history-free” iterative algorithms. More specifically, we store O(m) bits of data, and use O(m) time per base assuming O(1) time independence and coindependence oracles. 
+In general, for any matroid, we can greedily compute a listing of all its bases matroid such that consecutive bases differ by a base exchange. 
+Our base exchange Gray codes apply a prefix-exchange on a prefix-minor of the matroid, and we can generate these orders using “history-free” iterative algorithms. 
+More specifically, we store O(m) bits of data, and use O(m) time per base assuming O(1) time independence and coindependence oracles. 
 
-Our work generalizes and extends a number of previous results. For example, the bases of the uniform matroid are combinations, and they belong to us using homogeneous transpositions via an Eades-McKay style order. Similarly, the spanning trees of fan graphs belong to us via face pivot Gray codes, which extends recent results of Cameron, Grubb, and Sawada [Pivot Gray Codes for the Spanning Trees of a Graph ft. the Fan, COCOON 2021].}},
+Our work generalizes and extends a number of previous results. 
+For example, the bases of the uniform matroid are combinations, and they belong to us using homogeneous transpositions via an Eades-McKay style order. 
+Similarly, the spanning trees of fan graphs belong to us via face pivot Gray codes, which extends recent results of Cameron, Grubb, and Sawada [Pivot Gray Codes for the Spanning Trees of a Graph ft. the Fan, COCOON 2021].}},
 }
 
 @article{GregorMerinoMuetze2022,
@@ -150,7 +165,17 @@ Our work generalizes and extends a number of previous results. For example, the 
 	journal  = STACS2022,
 	arxiv    = {2108.07465},
 	doi		 = {10.4230/LIPIcs.STACS.2022.34},
-	abstract = {{Given integers $k\geq 2$ and $a_1,\ldots,a_k\geq 1$, let $\boldsymbol{a}:=(a_1,\ldots,a_k)$ and $n:=a_1+\cdots+a_k$. An $\boldsymbol{a}$-multiset permutation is a string of length $n$ that contains exactly $a_i$ symbols $i$ for each $i=1,\ldots,k$. In this work we consider the problem of exhaustively generating all $\boldsymbol{a}$-multiset permutations by star transpositions, i.e., in each step, the first entry of the string is transposed with any other entry distinct from the first one. This is a far-ranging generalization of several known results. For example, it is known that permutations ($a_1=\cdots=a_k=1$) can be generated by star transpositions, while combinations ($k=2$) can be generated by these operations if and only if they are balanced ($a_1=a_2$), with the positive case following from the middle levels theorem. To understand the problem in general, we introduce a parameter $\Delta(\boldsymbol{a}):=n-2\max\{a_1,\ldots,a_k\}$ that allows us to distinguish three different regimes for this problem. We show that if $\Delta(\boldsymbol{a}) < 0$, then a star transpos ition Gray code for $\boldsymbol{a}$-multiset permutations does not exist. We also construct such Gray codes for the case $\Delta(\boldsymbol{a}) > 0$, assuming that they exist for the case $\Delta(\boldsymbol{a})=0$. For the case $\Delta(\boldsymbol{a})=0$ we present some partial positive results. Our proofs establish Hamilton-connectedness or Hamilton-laceability of the underlying flip graphs, and they answer several cases of a recent conjecture of Shen and Williams.}},
+	abstract = {
+{Given integers $k\geq 2$ and $a_1,\ldots,a_k\geq 1$, let $\boldsymbol{a}:=(a_1,\ldots,a_k)$ and $n:=a_1+\cdots+a_k$. 
+An $\boldsymbol{a}$-multiset permutation is a string of length $n$ that contains exactly $a_i$ symbols $i$ for each $i=1,\ldots,k$. 
+In this work we consider the problem of exhaustively generating all $\boldsymbol{a}$-multiset permutations by star transpositions, i.e., in each step, the first entry of the string is transposed with any other entry distinct from the first one. 
+This is a far-ranging generalization of several known results. 
+For example, it is known that permutations ($a_1=\cdots=a_k=1$) can be generated by star transpositions, while combinations ($k=2$) can be generated by these operations if and only if they are balanced ($a_1=a_2$), with the positive case following from the middle levels theorem. 
+To understand the problem in general, we introduce a parameter $\Delta(\boldsymbol{a}):=n-2\max\{a_1,\ldots,a_k\}$ that allows us to distinguish three different regimes for this problem. 
+We show that if $\Delta(\boldsymbol{a}) < 0$, then a star transpos ition Gray code for $\boldsymbol{a}$-multiset permutations does not exist. 
+We also construct such Gray codes for the case $\Delta(\boldsymbol{a}) > 0$, assuming that they exist for the case $\Delta(\boldsymbol{a})=0$. 
+For the case $\Delta(\boldsymbol{a})=0$ we present some partial positive results. 
+Our proofs establish Hamilton-connectedness or Hamilton-laceability of the underlying flip graphs, and they answer several cases of a recent conjecture of Shen and Williams.}},
 }
 
 @article{MerinoMickaMuetze2022,
@@ -164,7 +189,11 @@ Our work generalizes and extends a number of previous results. For example, the 
 	arxiv    = {2007.07164},
 	combos   = {middle},
 	doi		 = {10.1137/20M1377394},
-	abstract = {{The well-known middle levels conjecture asserts that for every integer n≥1, all binary strings of length 2(n+1) with exactly n+1 many 0s and 1s can be ordered cyclically so that any two consecutive strings differ in swapping the first bit with a complementary bit at some later position. In his book `"The Art of Computer Programming Vol. 4A" Knuth raised a stronger form of this conjecture (Problem 56 in Section 7.2.1.3), which requires that the sequence of positions with which the first bit is swapped in each step of such an ordering has 2n+1 blocks of the same length, and each block is obtained by adding s=1 (modulo 2n+1) to the previous block. In this work, we prove Knuth's conjecture in a more general form, allowing for arbitrary shifts s≥1 that are coprime to 2n+1. We also present an algorithm to compute this ordering, generating each new bitstring in O(n) time, using O(n) memory in total.}},
+	abstract = {
+{The well-known middle levels conjecture asserts that for every integer n≥1, all binary strings of length 2(n+1) with exactly n+1 many 0s and 1s can be ordered cyclically so that any two consecutive strings differ in swapping the first bit with a complementary bit at some later position. 
+In his book ``The Art of Computer Programming Vol. 4A'' Knuth raised a stronger form of this conjecture (Problem 56 in Section 7.2.1.3), which requires that the sequence of positions with which the first bit is swapped in each step of such an ordering has 2n+1 blocks of the same length, and each block is obtained by adding s=1 (modulo 2n+1) to the previous block. 
+In this work, we prove Knuth's conjecture in a more general form, allowing for arbitrary shifts s≥1 that are coprime to 2n+1. 
+We also present an algorithm to compute this ordering, generating each new bitstring in O(n) time, using O(n) memory in total.}},
 }
 
 @article{CardinalMerinoMuetze2022,
@@ -177,7 +206,17 @@ Our work generalizes and extends a number of previous results. For example, the 
 	arxiv    = {2106.16204},
 	combos   = {elim},
 	doi		 = {10.1137/1.9781611977073.84},
-	abstract = {{An elimination tree for a connected graph G is a rooted tree on the vertices of G obtained by choosing a root x and recursing on the connected components of G-x to produce the subtrees of x. Elimination trees appear in many guises in computer science and discrete mathematics, and they encode many interesting combinatorial objects, such as bitstrings, permutations and binary trees. We apply the recent Hartung-Hoang-Mütze-Williams combinatorial generation framework to elimination trees, and prove that all elimination trees for a chordal graph G can be generated by tree rotations using a simple greedy algorithm. This yields a short proof for the existence of Hamilton paths on graph associahedra of chordal graphs. Graph associahedra are a general class of high-dimensional polytopes introduced by Carr, Devadoss, and Postnikov, whose vertices correspond to elimination trees and whose edges correspond to tree rotations. As special cases of our results, we recover several classical Gray codes for bitstrings, permutations and binary trees, and we obt ain a new Gray code for partial permutations. Our algorithm for generating all elimination trees for a chordal graph G can be implemented in time O(m+n) per generated elimination tree, where m and n are the number of edges and vertices of G, respectively. If G is a tree, we improve this to a loopless algorithm running in time O(1) per generated elimination tree. We also prove that our algorithm produces a Hamilton cycle on the graph associahedron of G, rather than just Hamilton path, if the graph G is chordal and 2-connected. Moreover, our algorithm characterizes chordality, i.e., it computes a Hamilton path on the graph associahedron of G if and only if G is chordal.}},
+	abstract = {
+{An elimination tree for a connected graph G is a rooted tree on the vertices of G obtained by choosing a root x and recursing on the connected components of G-x to produce the subtrees of x.
+Elimination trees appear in many guises in computer science and discrete mathematics, and they encode many interesting combinatorial objects, such as bitstrings, permutations and binary trees. 
+We apply the recent Hartung-Hoang-Mütze-Williams combinatorial generation framework to elimination trees, and prove that all elimination trees for a chordal graph G can be generated by tree rotations using a simple greedy algorithm. 
+This yields a short proof for the existence of Hamilton paths on graph associahedra of chordal graphs. 
+Graph associahedra are a general class of high-dimensional polytopes introduced by Carr, Devadoss, and Postnikov, whose vertices correspond to elimination trees and whose edges correspond to tree rotations. 
+As special cases of our results, we recover several classical Gray codes for bitstrings, permutations and binary trees, and we obt ain a new Gray code for partial permutations. 
+Our algorithm for generating all elimination trees for a chordal graph G can be implemented in time O(m+n) per generated elimination tree, where m and n are the number of edges and vertices of G, respectively. 
+If G is a tree, we improve this to a loopless algorithm running in time O(1) per generated elimination tree. 
+We also prove that our algorithm produces a Hamilton cycle on the graph associahedron of G, rather than just Hamilton path, if the graph G is chordal and 2-connected. 
+Moreover, our algorithm characterizes chordality, i.e., it computes a Hamilton path on the graph associahedron of G if and only if G is chordal.}},
 }
 
 @article{MerinoMuetze2021,
@@ -189,7 +228,14 @@ Our work generalizes and extends a number of previous results. For example, the 
 	arxiv    = {2103.09333},
 	combos   = {rect},
 	doi		 = {10.4230/LIPIcs.SoCG.2021.54},
-	abstract = {{A generic rectangulation is a partition of a rectangle into finitely many interior-disjoint rectangles, such that no four rectangles meet in a point. In this work we present a versatile algorithmic framework for exhaustively generating a large variety of different classes of generic rectangulations. Our algorithms work under very mild assumptions, and apply to a large number of rectangulation classes known from the literature, such as generic rectangulations, diagonal rectangulations, 1-sided/area-universal, block-aligned rectangulations, and their guillotine variants. They also apply to classes of rectangulations that are characterized by avoiding certain patterns, and in this work we initiate a systematic investigation of pattern avoidance in rectangulations. Our generation algorithms are efficient, in some cases even loopless or constant amortized time, i.e., each new rectangulation is generated in constant time in the worst case or on average, respectively. Moreover, the Gray codes we obtain are cyclic, and sometimes provably optimal, in the sense that they correspond to a Hamilton cycle on the skeleton of an underlying polytope. These results are obtained by encoding rectangulations as permutations, and by applying our recently developed permutation language framework.}},
+	abstract = {
+{A generic rectangulation is a partition of a rectangle into finitely many interior-disjoint rectangles, such that no four rectangles meet in a point. 
+In this work we present a versatile algorithmic framework for exhaustively generating a large variety of different classes of generic rectangulations. 
+Our algorithms work under very mild assumptions, and apply to a large number of rectangulation classes known from the literature, such as generic rectangulations, diagonal rectangulations, 1-sided/area-universal, block-aligned rectangulations, and their guillotine variants. 
+They also apply to classes of rectangulations that are characterized by avoiding certain patterns, and in this work we initiate a systematic investigation of pattern avoidance in rectangulations.
+Our generation algorithms are efficient, in some cases even loopless or constant amortized time, i.e., each new rectangulation is generated in constant time in the worst case or on average, respectively. 
+Moreover, the Gray codes we obtain are cyclic, and sometimes provably optimal, in the sense that they correspond to a Hamilton cycle on the skeleton of an underlying polytope. 
+These results are obtained by encoding rectangulations as permutations, and by applying our recently developed permutation language framework.}},
 }
 
 @article{MerinoMickaMuetze2021,
@@ -201,7 +247,11 @@ Our work generalizes and extends a number of previous results. For example, the 
 	arxiv    = {2007.07164},
 	combos   = {middle},
 	doi		 = {10.1137/20M1377394},
-	abstract = {{The well-known middle levels conjecture asserts that for every integer n≥1, all binary strings of length 2(n+1) with exactly n+1 many 0s and 1s can be ordered cyclically so that any two consecutive strings differ in swapping the first bit with a complementary bit at some later position. In his book `"The Art of Computer Programming Vol. 4A" Knuth raised a stronger form of this conjecture (Problem 56 in Section 7.2.1.3), which requires that the sequence of positions with which the first bit is swapped in each step of such an ordering has 2n+1 blocks of the same length, and each block is obtained by adding s=1 (modulo 2n+1) to the previous block. In this work, we prove Knuth's conjecture in a more general form, allowing for arbitrary shifts s≥1 that are coprime to 2n+1. We also present an algorithm to compute this ordering, generating each new bitstring in O(n) time, using O(n) memory in total.}},
+	abstract = {
+{The well-known middle levels conjecture asserts that for every integer n≥1, all binary strings of length 2(n+1) with exactly n+1 many 0s and 1s can be ordered cyclically so that any two consecutive strings differ in swapping the first bit with a complementary bit at some later position. 
+In his book `"The Art of Computer Programming Vol. 4A" Knuth raised a stronger form of this conjecture (Problem 56 in Section 7.2.1.3), which requires that the sequence of positions with which the first bit is swapped in each step of such an ordering has 2n+1 blocks of the same length, and each block is obtained by adding s=1 (modulo 2n+1) to the previous block. 
+In this work, we prove Knuth's conjecture in a more general form, allowing for arbitrary shifts s≥1 that are coprime to 2n+1. 
+We also present an algorithm to compute this ordering, generating each new bitstring in O(n) time, using O(n) memory in total.}},
 }
 
 
@@ -213,7 +263,12 @@ Our work generalizes and extends a number of previous results. For example, the 
 	journal  = ICALP2020,
 	arxiv    = {2007.16144},
 	doi		 = {10.4230/LIPIcs.ICALP.2020.84},
-	abstract = {{We study the two-dimensional geometric knapsack problem for convex polygons. Given a set of weighted convex polygons and a square knapsack, the goal is to select the most profitable subset of the given polygons that fits non-overlappingly into the knapsack. We allow to rotate the polygons by arbitrary angles. We present a quasi-polynomial time O(1)-approximation algorithm for the general case and a polynomial time O(1)-approximation algorithm if all input polygons are triangles, both assuming polynomially bounded integral input data. Also, we give a quasi-polynomial time algorithm that computes a solution of optimal weight under resource augmentation, i.e., we allow to increase the size of the knapsack by a factor of 1+δ for some δ > 0 but compare ourselves with the optimal solution for the original knapsack. To the best of our knowledge, these are the first results for two-dimensional geometric knapsack in which the input objects are more general than axis-parallel rectangles or circles and in which the input polygons can be rotated by arbitrary angles.}},
+	abstract = {
+{We study the two-dimensional geometric knapsack problem for convex polygons. 
+Given a set of weighted convex polygons and a square knapsack, the goal is to select the most profitable subset of the given polygons that fits non-overlappingly into the knapsack. 
+We allow to rotate the polygons by arbitrary angles. We present a quasi-polynomial time O(1)-approximation algorithm for the general case and a polynomial time O(1)-approximation algorithm if all input polygons are triangles, both assuming polynomially bounded integral input data. 
+Also, we give a quasi-polynomial time algorithm that computes a solution of optimal weight under resource augmentation, i.e., we allow to increase the size of the knapsack by a factor of 1+δ for some δ > 0 but compare ourselves with the optimal solution for the original knapsack. 
+To the best of our knowledge, these are the first results for two-dimensional geometric knapsack in which the input objects are more general than axis-parallel rectangles or circles and in which the input polygons can be rotated by arbitrary angles.}},
 }
 
 
@@ -225,6 +280,12 @@ Our work generalizes and extends a number of previous results. For example, the 
 	journal  = ICALP2019,
 	arxiv    = {1904.11668},
 	doi		 = {10.4230/LIPIcs.ICALP.2019.83},
-	abstract = {{We study the minimum weight basis problem on matroid when elements' weights are uncertain. For each element we only know a set of possible values (an uncertainty area) that contains its real weight. In some cases there exist bases that are uniformly optimal, that is, they are minimum weight bases for every possible weight function obeying the uncertainty areas. In other cases, computing such a basis is not possible unless we perform some queries for the exact value of some elements.
-Our main result is a polynomial time algorithm for the following problem. Given a matroid with uncertainty areas and a query cost function on its elements, find the set of elements of minimum total cost that we need to simultaneously query such that, no matter their revelation, the resulting instance admits a uniformly optimal base. We also provide combinatorial characterizations of all uniformly optimal bases, when one exists; and of all sets of queries that can be performed so that after revealing the corresponding weights the resulting instance admits a uniformly optimal base.}},
+	abstract = {
+{We study the minimum weight basis problem on matroid when elements' weights are uncertain. 
+For each element we only know a set of possible values (an uncertainty area) that contains its real weight. 
+In some cases there exist bases that are uniformly optimal, that is, they are minimum weight bases for every possible weight function obeying the uncertainty areas. 
+In other cases, computing such a basis is not possible unless we perform some queries for the exact value of some elements.
+Our main result is a polynomial time algorithm for the following problem. 
+Given a matroid with uncertainty areas and a query cost function on its elements, find the set of elements of minimum total cost that we need to simultaneously query such that, no matter their revelation, the resulting instance admits a uniformly optimal base. 
+We also provide combinatorial characterizations of all uniformly optimal bases, when one exists; and of all sets of queries that can be performed so that after revealing the corresponding weights the resulting instance admits a uniformly optimal base.}},
 }
