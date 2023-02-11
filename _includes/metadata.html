@@ -21,7 +21,11 @@
     {% if page.url == '/blog/index.html' %}
         {{ site.blog_nav_title }} | {{ title }}
     {%- elsif page.title != "blank" and page.url != "/" -%}
-        {{ page.title }} | {{ title }}
+        {%- if page.title == nil or page.title == "" -%}
+            {{ page.date | date: "%Y" }} | {{ title }}
+        {%- else -%}
+            {{ page.title }} | {{ title }}
+        {%- endif -%}
     {%- else -%}
         {{ title }}
     {%- endif -%}
@@ -85,6 +89,10 @@
     {%- endif -%}
     {%- if site.github_username -%}
         {%- capture link -%}https://github.com/{{ site.github_username }}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
+    {%- if site.telegram_username -%}
+        {%- capture link -%}https://telegram.me/{{ site.telegram_username }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
     {%- if site.linkedin_username -%}

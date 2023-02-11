@@ -4,12 +4,6 @@
 
 // Typography
 
-<<<<<<< HEAD
-p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
-  color: var(--global-text-color);
-}
-
-=======
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
@@ -27,24 +21,17 @@ table {
   }
 }
 
->>>>>>> bdba72f (Initial commit)
 a, table.table a {
   color: var(--global-theme-color);
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
   }
-<<<<<<< HEAD
-  &:hover:after {
-=======
   &:hover:after :not(.nav-item.dropdown) {
->>>>>>> bdba72f (Initial commit)
     width: 100%;
   }
 }
 
-<<<<<<< HEAD
-=======
 figure, img {
   max-width: 90vw;
 }
@@ -57,7 +44,6 @@ blockquote {
   font-size: 1.2rem;
 }
 
->>>>>>> bdba72f (Initial commit)
 // Math
 
 .equation {
@@ -74,8 +60,6 @@ blockquote {
   text-align: center;
 }
 
-<<<<<<< HEAD
-=======
 // Card
 
 .card {
@@ -105,27 +89,27 @@ blockquote {
 .citation, .citation-number {
   color: var(--global-theme-color);
 }
->>>>>>> bdba72f (Initial commit)
 
 // Profile
 
 .profile {
-  margin-left: 1rem;
   width: 100%;
 
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
-<<<<<<< HEAD
-    font-size: 1.2rem;
-=======
->>>>>>> bdba72f (Initial commit)
     p {
       display: inline-block;
       margin: 0;
     }
   }
+}
+.profile.float-right{
+  margin-left: 1rem;
+}
+.profile.float-left{
+  margin-right: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -154,14 +138,6 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-<<<<<<< HEAD
-  border-bottom: 1px solid $grey-color-light;
-  opacity: 0.95;
-  background-color: var(--global-bg-color);
-}
-.navbar.navbar-light {
-  // Remove link decoration
-=======
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
@@ -187,7 +163,6 @@ blockquote {
     }
 }
 .navbar.navbar-light {
->>>>>>> bdba72f (Initial commit)
   a {
     &:hover {
       text-decoration: none;
@@ -210,13 +185,6 @@ blockquote {
         color: var(--global-hover-color);
       }
   }
-<<<<<<< HEAD
-  .contact-icon {
-    font-size: 2rem;
-    a {
-      &:hover {
-        color: var(--global-hover-color);
-=======
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
@@ -230,7 +198,6 @@ blockquote {
         i::before {
           color: var(--global-theme-color);
         }
->>>>>>> bdba72f (Initial commit)
       }
     }
   }
@@ -241,11 +208,7 @@ blockquote {
     display: block;
     width: 22px;
     height: 2px;
-<<<<<<< HEAD
-    background-color: var(--global-icon-color);
-=======
     background-color: var(--global-text-color);
->>>>>>> bdba72f (Initial commit)
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -275,18 +238,6 @@ blockquote {
   }
 }
 
-<<<<<<< HEAD
-
-// News
-
-.news table td {
-  font-size: 1rem;
-  color: var(--global-text-color);
-}
-
-.news table th {
-  color: var(--global-text-color);
-=======
 #light-toggle {
   padding: 0;
   border: 0;
@@ -295,21 +246,12 @@ blockquote {
   &:hover {
     color: var(--global-hover-color);
   }
->>>>>>> bdba72f (Initial commit)
 }
 
 // Social (bottom)
 
 .social {
   text-align: center;
-<<<<<<< HEAD
-  .contact-icon {
-    font-size: 4rem;
-    a {
-      color: var(--global-icon-color);
-      &:hover {
-        color: var(--global-theme-color);
-=======
   .contact-icons {
     font-size: 4rem;
     a {
@@ -321,7 +263,6 @@ blockquote {
         i::before {
           color: var(--global-theme-color);
         }
->>>>>>> bdba72f (Initial commit)
       }
     }
   }
@@ -343,29 +284,19 @@ footer.fixed-bottom {
   a {
     color: var(--global-footer-link-color);
     &:hover {
-<<<<<<< HEAD
-      color: pink;
-=======
       color: var(--global-theme-color);
->>>>>>> bdba72f (Initial commit)
       text-decoration: none;
     }
   }
 }
 
 footer.sticky-bottom {
-<<<<<<< HEAD
-  border-top: 1px solid $grey-color-light;
-=======
   border-top: 1px solid var(--global-divider-color);
->>>>>>> bdba72f (Initial commit)
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
 }
 
-<<<<<<< HEAD
-=======
 // CV
 
 .cv {
@@ -377,6 +308,7 @@ footer.sticky-bottom {
     
     .list-group-item {
       background-color: inherit;
+      border-color: var(--global-divider-color);
 
       .badge {
         color: var(--global-card-bg-color) !important;
@@ -393,30 +325,20 @@ footer.sticky-bottom {
     max-width: 50%;
   }
 }
->>>>>>> bdba72f (Initial commit)
 
 // Blog
 
 .header-bar {
-<<<<<<< HEAD
-  border-bottom: 1px solid $grey-color-light;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
-=======
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
->>>>>>> bdba72f (Initial commit)
   h1 {
     color: var(--global-theme-color);
     font-size: 5rem;
   }
 }
 
-<<<<<<< HEAD
-=======
 .tag-list {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
@@ -435,27 +357,16 @@ footer.sticky-bottom {
   }
 }
 
->>>>>>> bdba72f (Initial commit)
 .post-list {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
   li {
-<<<<<<< HEAD
-    border-bottom: 1px solid $grey-color-light;
-=======
     border-bottom: 1px solid var(--global-divider-color);
->>>>>>> bdba72f (Initial commit)
     list-style: none;
     padding-top: 2rem;
     padding-bottom: 2rem;
     .post-meta {
-<<<<<<< HEAD
-      color: $grey-color;
-      font-size: 0.875rem;
-      margin-bottom: 0;
-    }
-=======
       color: var(--global-text-color-light);
       font-size: 0.875rem;
       margin-bottom: 0;
@@ -466,7 +377,6 @@ footer.sticky-bottom {
       padding-top: 0.25rem;
       padding-bottom: 0;
     }
->>>>>>> bdba72f (Initial commit)
     a {
       color: var(--global-text-color);
       text-decoration: none;
@@ -486,10 +396,7 @@ footer.sticky-bottom {
       }
     }
     &.active .page-link {
-<<<<<<< HEAD
-=======
       color: $white-color;
->>>>>>> bdba72f (Initial commit)
       background-color: var(--global-theme-color);
       &:hover {
         background-color: var(--global-theme-color);
@@ -512,29 +419,15 @@ footer.sticky-bottom {
 // Projects
 
 .projects {
-<<<<<<< HEAD
-  .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
-    a {
-      color: black;
-      text-decoration: none;
-      &:hover {
-=======
   a {
     text-decoration: none;
 
     &:hover {
       .card-title {
->>>>>>> bdba72f (Initial commit)
         color: var(--global-theme-color);
       }
     }
   }
-<<<<<<< HEAD
-  .card img {
-    width: 100%;
-=======
 
   .card {
     img {
@@ -564,7 +457,6 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
->>>>>>> bdba72f (Initial commit)
   }
 }
 
@@ -587,13 +479,8 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-<<<<<<< HEAD
-    color: $grey-color-light;
-    border-top: 1px solid $grey-color-light;
-=======
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
->>>>>>> bdba72f (Initial commit)
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
@@ -606,14 +493,11 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
-<<<<<<< HEAD
-=======
       .preview {
         width: 100%;
         min-width: 80px;
         max-width: 200px;
       }
->>>>>>> bdba72f (Initial commit)
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
@@ -649,8 +533,6 @@ footer.sticky-bottom {
           border-bottom: 1px solid;
           font-style: normal;
         }
-<<<<<<< HEAD
-=======
         > span.more-authors {
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);
@@ -660,7 +542,6 @@ footer.sticky-bottom {
               border-bottom: 1px dashed var(--global-text-color);
           }
         }
->>>>>>> bdba72f (Initial commit)
       }
       .links {
         a.btn {
@@ -676,16 +557,24 @@ footer.sticky-bottom {
           }
         }
       }
+      .badges {
+        span {
+          display: inline-block;
+          color: $black-color;
+          height: 100%;
+          padding-left: 0.5rem;
+          vertical-align: middle;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
       .hidden {
         font-size: 0.875rem;
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
-<<<<<<< HEAD
-        -webkit-transition: 0.15s ease;
-=======
         transition-property: 0.15s ease;
->>>>>>> bdba72f (Initial commit)
         -moz-transition: 0.15s ease;
         -ms-transition: 0.15s ease;
         -o-transition: 0.15s ease;
@@ -703,11 +592,7 @@ footer.sticky-bottom {
       }
       .hidden.open {
         max-height: 100em;
-<<<<<<< HEAD
-        -webkit-transition: 0.15s ease;
-=======
         transition-property: 0.15s ease;
->>>>>>> bdba72f (Initial commit)
         -moz-transition: 0.15s ease;
         -ms-transition: 0.15s ease;
         -o-transition: 0.15s ease;
@@ -724,11 +609,6 @@ footer.sticky-bottom {
 }
 
 // Rouge Color Customization
-<<<<<<< HEAD
-code {
-  color: var(--global-theme-color);
-}
-=======
 figure.highlight {
   margin: 0 0 1rem;
 }
@@ -753,7 +633,6 @@ code {
 }
 
 
->>>>>>> bdba72f (Initial commit)
 // Transitioning Themes
 html.transition,
 html.transition *,
@@ -762,8 +641,6 @@ html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
 }
-<<<<<<< HEAD
-=======
 
 // Extra Markdown style (post Customization)
 .post{
@@ -792,4 +669,58 @@ html.transition *:after {
     }
   }
 }
->>>>>>> bdba72f (Initial commit)
+
+progress {
+     /* Positioning */
+     position: fixed;
+     left: 0;
+     top: 56px;
+     z-index: 10;
+   
+     /* Dimensions */
+     width: 100%;
+     height: 1px;
+   
+     /* Reset the appearance */
+     -webkit-appearance: none;
+        -moz-appearance: none;
+             appearance: none;
+   
+     /* Get rid of the default border in Firefox/Opera. */
+     border: none;
+   
+     /* Progress bar container for Firefox/IE10  */
+     background-color: transparent;
+   
+     /* Progress bar value for IE10  */
+     color: var(--global-theme-color);
+ }
+ 
+ progress::-webkit-progress-bar {
+     background-color: transparent;
+ }
+   
+ progress::-webkit-progress-value {
+     background-color: var(--global-theme-color);
+ }
+   
+ progress::-moz-progress-bar {
+     background-color: var(--global-theme-color);
+ }
+ 
+ .progress-container {
+     width: 100%;
+     background-color: transparent;
+     position: fixed;
+     top: 56px;
+     left: 0;
+     height: 5px;
+     display: block;
+ }
+ 
+ .progress-bar {
+     background-color: var(--global-theme-color);
+     width: 0%;
+     display: block;
+     height: inherit;
+ }

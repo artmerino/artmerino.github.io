@@ -4,15 +4,6 @@
  
 :root {
   --global-bg-color: #{$white-color};
-<<<<<<< HEAD
-  --global-text-color: #{$black-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$light-purple-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-icon-color: #{$grey-color-dark};
-=======
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
@@ -24,7 +15,6 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
->>>>>>> bdba72f (Initial commit)
 
   .fa-sun {
     display : none;
@@ -34,8 +24,6 @@
     padding-top: 12px;
     display : block;
   }
-<<<<<<< HEAD
-=======
 
   .repo-img-light {
     display: block;
@@ -43,20 +31,10 @@
   .repo-img-dark {
     display: none;
   }
->>>>>>> bdba72f (Initial commit)
 }
 
 html[data-theme='dark'] {
   --global-bg-color: #{$grey-color-dark};
-<<<<<<< HEAD
-  --global-text-color: #{$grey-color-light};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$light-cyan-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-icon-color: navajowhite;
-=======
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color-light};
@@ -68,7 +46,6 @@ html[data-theme='dark'] {
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
->>>>>>> bdba72f (Initial commit)
 
   .fa-sun {
     padding-left: 10px;
@@ -78,8 +55,6 @@ html[data-theme='dark'] {
   .fa-moon {
     display : none;
   }
-<<<<<<< HEAD
-=======
 
   .repo-img-light {
     display: none;
@@ -87,5 +62,4 @@ html[data-theme='dark'] {
   .repo-img-dark {
     display: block;
   }
->>>>>>> bdba72f (Initial commit)
 }
