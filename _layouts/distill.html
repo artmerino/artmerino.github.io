@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+<html>
+  <head>
+    {% include head.html %}
+    {% include scripts/mathjax.html %}
+    <script src="{{ '/assets/js/distillpub/template.v2.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/distillpub/transforms.v2.js' | relative_url }}"></script>
+    {% if page._styles %}
+    <style type="text/css">
+      {{ page._styles }}
+    </style>
+    {% endif %}
+=======
 <!-- _layouts/distill.html -->
 <html>
   <head>
@@ -16,15 +29,22 @@
       {{ page._styles }}
     </style>
     {%- endif %}
+>>>>>>> bdba72f (Initial commit)
   </head>
 
   <d-front-matter>
     <script async type="text/json">{
       "title": "{{ page.title }}",
       "description": "{{ page.description }}",
+<<<<<<< HEAD
+      "published": "{{ page.date }}",
+      "authors": [
+        {% for author in page.authors %}
+=======
       "published": "{{ page.date | date: '%B %-d, %Y' }}",
       "authors": [
         {% for author in page.authors -%}
+>>>>>>> bdba72f (Initial commit)
         {
           "author": "{{ author.name }}",
           "authorURL": "{{ author.url }}",
@@ -54,12 +74,23 @@
     }</script>
   </d-front-matter>
 
+<<<<<<< HEAD
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+
+    <!-- Header -->
+
+    {% include header.html %}
+
+    <!-- Content -->
+
+=======
   <body class="{%- if site.navbar_fixed -%}fixed-top-nav{%- endif -%} {%- unless site.footer_fixed -%}sticky-bottom-footer{%- endunless -%}">
 
     <!-- Header -->
     {%- include header.html %}
 
     <!-- Content -->
+>>>>>>> bdba72f (Initial commit)
     <div class="post distill">
 
       <d-title>
@@ -70,6 +101,8 @@
       <d-byline></d-byline>
 
       <d-article>
+<<<<<<< HEAD
+=======
         {% if page.toc -%}
         <d-contents>
           <nav class="l-text figcaption">
@@ -88,6 +121,7 @@
         </d-contents>
         {%- endif %}
 
+>>>>>>> bdba72f (Initial commit)
         {{ content }}
       </d-article>
 
@@ -96,22 +130,25 @@
         <d-citation-list></d-citation-list>
       </d-appendix>
 
-      <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
-
-      {%- if site.disqus_shortname and page.disqus_comments -%}
-        {% include disqus.html %}
-      {%- endif %}
-      {%- if site.giscus.repo and page.giscus_comments -%}
-        {% include giscus.html %}
-      {%- endif -%}
-
     </div>
 
     <!-- Footer -->
+<<<<<<< HEAD
+
+    {% include footer.html %}
+
+  </body>
+
+  <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}">
+  </d-bibliography>
+
+=======
     {%- include footer.html %}
 
+    <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
+    
     {% include scripts/bootstrap.html %}
     {% include scripts/analytics.html %}
-    {% include scripts/progressBar.html %}
   </body>
+>>>>>>> bdba72f (Initial commit)
 </html>

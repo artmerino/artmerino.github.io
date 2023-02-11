@@ -1,4 +1,21 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+<html>
+
+  <head>
+    {% include head.html %}
+    {% include scripts/mathjax.html %}
+  </head>
+
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+
+    <!-- Header -->
+
+    {% include header.html %}
+
+    <!-- Content -->
+
+=======
 <html lang="{{ site.lang }}">
 
   <!-- Head -->
@@ -16,11 +33,23 @@
     {%- include header.html %}
 
     <!-- Content -->
+>>>>>>> bdba72f (Initial commit)
     <div class="container mt-5">
       {{ content }}
     </div>
 
     <!-- Footer -->
+<<<<<<< HEAD
+
+    {% include footer.html %}
+
+  </body>
+
+  {% include scripts/bootstrap.html %}
+  {% include scripts/mansory.html %}
+  {% include scripts/misc.html %}
+
+=======
     {%- include footer.html %}
 
     <!-- JavaScripts -->
@@ -28,9 +57,8 @@
     {% include scripts/bootstrap.html %}
     {% include scripts/masonry.html %}
     {% include scripts/misc.html %}
-    {% include scripts/badges.html %}
     {% include scripts/mathjax.html %}
     {% include scripts/analytics.html %}
-    {% include scripts/progressBar.html %}
   </body>
+>>>>>>> bdba72f (Initial commit)
 </html>

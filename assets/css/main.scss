@@ -4,12 +4,20 @@
 @charset "utf-8";
 
 // Dimensions
+<<<<<<< HEAD
+$max-content-width: {{site.max_width}};
+=======
 $max-content-width: {{ site.max_width }};
+>>>>>>> bdba72f (Initial commit)
 
 @import
   "variables",
   "themes",
   "layout",
+<<<<<<< HEAD
+  "base"
+=======
   "base",
   "distill"
+>>>>>>> bdba72f (Initial commit)
 ;

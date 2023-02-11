@@ -2,6 +2,23 @@
  * Content
  ******************************************************************************/
 
+<<<<<<< HEAD
+ body {
+   padding-bottom: 70px;
+   color: var(--global-text-color);
+   background-color: var(--global-bg-color);
+ }
+
+ body.fixed-top-nav {
+   // Add some padding for the nav-bar.
+   padding-top: 56px;
+ }
+
+ body.sticky-bottom-footer {
+   // Remove padding below footer.
+   padding-bottom: 0;
+ }
+=======
 body {
   padding-bottom: 70px;
   color: var(--global-text-color);
@@ -21,6 +38,7 @@ body.sticky-bottom-footer {
   // Remove padding below footer.
   padding-bottom: 0;
 }
+>>>>>>> bdba72f (Initial commit)
 
 .container {
   max-width: $max-content-width;
