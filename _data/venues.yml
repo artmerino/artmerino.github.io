@@ -1,6 +1,43 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Preprints
 
-"PhysRev":
-  url: https://journals.aps.org/
+"Preprint":
+  url: https://arxiv.org/
+  color: "#41424C"
+
+
+# Journals
+
+"SICOMP":
+  url: https://www.siam.org/publications/journals/siam-journal-on-computing-sicomp
+  color: "#c32b72"
+
+"DCG":
+  url: https://www.springer.com/journal/454
+  color: "#c32b72"
+
+"JGT":
+  url: https://onlinelibrary.wiley.com/journal/10970118
+  color: "#c32b72"
+
+# Conferences
+
+"FOCS":
+  color: "#196ca3"
+
+"SODA":
+  color: "#196ca3"
+
+"ICALP":
+  color: "#196ca3"
+
+"STACS":
+  color: "#196ca3"
+
+"MFCS":
+  color: "#196ca3"
+
+"FUN":
+  color: "#196ca3"
+
+"SoCG":
+  color: "#196ca3"
