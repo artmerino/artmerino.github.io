@@ -1,35 +1,34 @@
-"Mütze":
-  - firstname: ["Torsten"]
-    url: http://www.tmuetze.de
+"Adams":
+  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
+    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
 
-"Cardinal":
-  - firstname: ["Jean"]
-    url: https://jean.cardinal.web.ulb.be/
+"Podolsky":
+  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+    url: https://en.wikipedia.org/wiki/Boris_Podolsky
 
-"Williams":
-  - firstname: ["Aaron"]
-    url: https://sites.google.com/williams.edu/aaron
+"Rosen":
+  - firstname: ["Nathan", "N."]
+    url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
-"Gregor":
-  - firstname: ["Petr"]
-    url: http://ktiml.mff.cuni.cz/~gregor/
+"Bach": 
+  - firstname: ["Johann Sebastian", "J. S."]
+    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
-"Wiese":
-  - firstname: ["Andreas"]
-    url: https://discrete.ma.tum.de/people/professors/andreas-wiese.html
+  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 
-"Soto":
-  - firstname: ["José A.", "José"]
-    url: http://www.dim.uchile.cl/~jsoto/
+"Przibram":
+  - firstname: ["Karl"]
+    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
 
-"Mička":
-  - firstname: ["Ondřej"]
-    url: https://ktiml.mff.cuni.cz/~micka/
+"Schrödinger":
+  - firstname: ["Erwin"]
+    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
 
-"Hoang":
-  - firstname: ["Hung", "Hung P."]
-    url: https://people.inf.ethz.ch/hoangp/
+"Lorentz":
+  - firstname: ["Hendrik Antoon"]
+    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
 
-"Namrata":
-  - firstname: ["Namrata", ""]
-    url: https://warwick.ac.uk/fac/sci/dcs/people/u2057108/
+"Planck":
+  - firstname: ["Max"]
+    url: https://en.wikipedia.org/wiki/Max_Planck

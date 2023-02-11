@@ -2,25 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: merino.jpg
-  image_circular: true # crops the image to make it circular
+  image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
   address: >
-    <p>Office 520</p>
-    <p>Straße des 17. Juni 136</p>
-    <p>10623 Berlin, Germany</p>
+    <p>555 your office number</p>
+    <p>123 your address street</p>
+    <p>Your City, State 12345</p>
 
-news: false  # includes a list of news items
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a fourth year math PhD student at [TU Berlin](https://www.tu-berlin.de/), where I am advised by [Torsten Mütze](http://www.tmuetze.de) and take part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group. 
-Before that, I did a masters degree on applied math at [Universidad de Chile](https://www.uchile.cl/english) under the guidance of [José Soto](http://www.dim.uchile.cl/~jsoto/).
+Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-**Research Interests:**  I am interested in algorithmic design and, broadly speaking, in discrete mathematics.
-Lately, I've been focused on the design of [*generation/enumeration algorithms*](https://en.wikipedia.org/wiki/Enumeration_algorithm); that is, algorithms which ouput all solutions to a computational problem, instead of only one. 
-More specifically, I've been interested in generation algorithms that perform *local* operations (aka [*combinatorial Gray codes*](https://arxiv.org/abs/2202.01280)) and their interplay with combinatorics, discrete geometry, symmetry, and algebra.
+Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
