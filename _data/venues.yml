@@ -7,6 +7,10 @@
 
 # Journals
 
+"SIDMA":
+  url: https://www.siam.org/publications/journals/siam-journal-on-discrete-mathematics-sidma
+  color: "#c32b72"
+
 "SICOMP":
   url: https://www.siam.org/publications/journals/siam-journal-on-computing-sicomp
   color: "#c32b72"
