@@ -9,3 +9,11 @@ titles:
   teaching: Teaching
   submenus: Submenus
   unk: Page not found
+projects:
+  titles:
+    project1: Project 1
+    project2: Project 2
+    project3: Project 3
+    project4: Project 4
+    project5: Project 5
+    project6: Project 6
