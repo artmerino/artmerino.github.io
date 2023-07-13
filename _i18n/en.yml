@@ -20,3 +20,5 @@ projects:
 news:
   titles:
     news2: A long announcement with details
+descriptions:
+  publications: Publications in reverse chronological order.
