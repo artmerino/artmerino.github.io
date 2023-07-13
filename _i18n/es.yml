@@ -3,9 +3,17 @@ titles:
   blog: Blog
   cv: CV
   news: Noticias
-  projects: Projectos
+  projects: Proyectos
   publications: Publicaciones
   repositories: Repositorios
   teaching: Cursos
   submenus: Submenús
   unk: Página no encontrada
+projects:
+  titles:
+    project2: Proyecto 2
+    project1: Proyecto 1
+    project3: Proyecto 3
+    project4: Proyecto 4
+    project5: Proyecto 5
+    project6: Proyecto 6
