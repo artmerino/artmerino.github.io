@@ -17,3 +17,6 @@ projects:
     project4: Proyecto 4
     project5: Proyecto 5
     project6: Proyecto 6
+news:
+  titles:
+    news2: Um anuncio largo com detalles

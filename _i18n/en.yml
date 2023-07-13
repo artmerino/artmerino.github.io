@@ -17,3 +17,6 @@ projects:
     project4: Project 4
     project5: Project 5
     project6: Project 6
+news:
+  titles:
+    news2: A long announcement with details

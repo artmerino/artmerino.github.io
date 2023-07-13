@@ -20,12 +20,12 @@
     {%- endif -%}
     {% if page.url == '/blog/index.html' %}
         {{ site.blog_nav_title }} | {{ title }}
+    {% elsif page.url contains '/blog/' %}
+        {{ page.title }} | {{ title }}
+    {%- elsif page.title contains 'Announcement' -%}
+        {{ title }}
     {%- elsif page.title != "blank" and page.url != "/" -%}
-        {%- if page.title == nil or page.title == "" -%}
-            {{ page.date | date: "%Y" }} | {{ title }}
-        {%- else -%}
-            {{ page.title }} | {{ title }}
-        {%- endif -%}
+        {% t page.title %} | {{ title }}
     {%- else -%}
         {{ title }}
     {%- endif -%}
