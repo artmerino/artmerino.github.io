@@ -1,6 +1,6 @@
 # Preprints
 
-"Preprint":
+"arXiv":
   url: https://arxiv.org/
   color: "#41424C"
 
@@ -24,6 +24,9 @@
   color: "#c32b72"
 
 # Conferences
+
+"FOCS":
+  color: "#196ca3"
 
 "STOC":
   color: "#196ca3"
