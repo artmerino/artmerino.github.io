@@ -11,8 +11,7 @@ titles:
   unk: Página no encontrada
 descriptions:
   publications: Publicaciones en orden cronológico reverso.
-  teaching: Materiales de los cursos enseñados.
-  Reemplaza esto con la descripción.
+  teaching: Materiales de los cursos enseñados. Reemplaza esto con la descripción.
   unk: Parece que ha habido un error. No hay nada aquí.
 projects:
   titles:
