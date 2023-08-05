@@ -9,6 +9,10 @@ titles:
   teaching: Teaching
   submenus: Submenus
   unk: Page not found
+descriptions:
+  publications: Publications in reverse chronological order.
+  teaching: Materials for courses you taught. Replace this text with your description.
+  projects:
 projects:
   titles:
     project1: Project 1
@@ -17,16 +21,13 @@ projects:
     project4: Project 4
     project5: Project 5
     project6: Project 6
-news:
-  titles:
-    news2: A long announcement with details
-descriptions:
-  publications: Publications in reverse chronological order.
-  teaching: Materials for courses you taught. Replace this text with your description.
-  projects:
+  descriptions:
     project1: Description 1
     project2: Description 2
     project3: Description 3
     project4: Description 4
     project5: Description 5
     project6: Description 6
+news:
+  titles:
+    news2: A long announcement with details
