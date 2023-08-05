@@ -2,7 +2,6 @@
 layout: page
 title: titles.projects
 permalink: /projects/
-description: A growing collection of your cool projects.
 nav: false #Switch to true to appear
 nav_order: 2
 display_categories: [work, fun]
