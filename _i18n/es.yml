@@ -22,3 +22,11 @@ news:
     news2: Um anuncio largo con detalles
 descriptions:
   publications: Publicaciones en orden cronológico reverso.
+  teaching: Materiales de los cursos enseñados.
+  projects:
+    project1: Descripción 1
+    project2: Descripción 2
+    project3: Descripción 3
+    project4: Descripción 4
+    project5: Descripción 5
+    project6: Descripción 6
