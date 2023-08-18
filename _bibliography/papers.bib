@@ -19,32 +19,32 @@
 # Conference names
 
 @string{FUN = {International Conference on Fun with Algorithms}}
-@string{FUN2022 = {In Proc. 11th } #FUN}
+@string{FUN2022 = {11th } #FUN}
 
 @string{ICALP = {International Colloquium on Automata, Languages and Programming}}
-@string{ICALP2019 = {In Proc. 46th } #ICALP}
-@string{ICALP2020 = {In Proc. 47th } #ICALP}
+@string{ICALP2019 = {46th } #ICALP}
+@string{ICALP2020 = {47th } #ICALP}
 
 @string{MFCS = {International Symposium on Mathematical Foundations of Computer Science}}
-@string{MFCS2022 = {In Proc. 47th } #MFCS}
+@string{MFCS2022 = {47th } #MFCS}
 
 @string{SoCG = {International Symposium on Computational Geometry}}
-@string{SoCG2021 = {In Proc. 37th } #SoCG}
+@string{SoCG2021 = {37th } #SoCG}
 
 @string{SODA = {ACM-SIAM Symposium on Discrete Algorithms}}
-@string{SODA2021 = {In Proc. 32nd } # SODA}
-@string{SODA2022 = {In Proc. 33rd } # SODA}
-@string{SODA2023 = {In Proc. 34th } # SODA}
+@string{SODA2021 = {32nd } # SODA}
+@string{SODA2022 = {33rd } # SODA}
+@string{SODA2023 = {34th } # SODA}
 
 @string{STOC = {ACM Symposium on Theory of Computing}}
-@string{STOC2023 = {In Proc. 55th } #STOC}
+@string{STOC2023 = {55th } #STOC}
 
 @string{FOCS = {IEEE Symposium on the Foundations of Computer Science}}
-@string{FOCS2023 = {In Proc. 64th } #FOCS}
+@string{FOCS2023 = {64th } #FOCS}
 
 
 @string{STACS = {International Symposium on Theoretical Aspects of Computer Science}}
-@string{STACS2022 = {In Proc. 39th } # STACS}
+@string{STACS2022 = {39th } # STACS}
 
 
 # These are the fields to fill in
@@ -56,6 +56,7 @@ article{NamesXXXX,
 	extended = {},
     abbr     = {},
 	journal  = ,
+	booktitle= ,
 	preview  = {},
 	arxiv    = {},
 	blog	 = {},
@@ -74,13 +75,13 @@ article{NamesXXXX,
 # Remember to add new journals, conferences and coauthors to the data/venues.
 
 
-@article{MerinoMuetze2023,
+@inproceedings{MerinoMuetze2023,
   selected = {true},
   author   = {Merino, Arturo and Mütze, Torsten},
   title    = {{Traversing Combinatorial 0/1-Polytopes via Optimization}},
   year     = {2023},
   abbr     = {{FOCS}},
-  journal  = FOCS2023,
+  booktitle= FOCS2023,
   arxiv    = {2304.08567},
 }
 
@@ -96,24 +97,24 @@ article{NamesXXXX,
   combos   = {orient}
 }
 
-@article{MerinoMuetzeNamrata2023,
+@inproceedings{MerinoMuetzeNamrata2023,
 	selected = {true},
   	author   = {Merino, Arturo and Mütze, Torsten and Namrata},
 	title    = {{Kneser Graphs are Hamiltonian}},
 	year     = {2023},
     abbr     = {{STOC}},
-	journal  = STOC2023,
+	booktitle= STOC2023,
 	arxiv    = {2212.03918},
 	doi      = {10.1145/3564246.3585137},
 }
 
-@article{CardinalHoangMerinoMuetze2023,
+@inproceedings{CardinalHoangMerinoMuetze2023,
 	selected = {true},
   	author   = {Cardinal, Jean and Hoang, Hung P. and Merino, Arturo and Mütze, Torsten},
 	title    = {{Zigzagging Through Acyclic Orientations of Graphs and Hypergraphs}},
 	year     = {2023},
     abbr     = {{SODA}},
-	journal  = SODA2023,
+	booktitle= SODA2023,
 	arxiv    = {2212.03915},
 	doi 	 = {10.1137/1.9781611977554.ch117},
 	combos   = {orient},
@@ -143,14 +144,14 @@ article{NamesXXXX,
 	combos   = {rect},
 }
 
-@article{GregorMerinoMuetze2022a,
+@inproceedings{GregorMerinoMuetze2022a,
 	selected = {true},
 	award	 = {Best paper award},
   	author   = {Gregor, Petr and Merino, Arturo and Mütze, Torsten},
 	title    = {{The Hamilton Compression of Highly Symmetric Graphs}},
 	year     = {2022},
     abbr     = {{MFCS}},
-	journal  = MFCS2022,
+	booktitle= MFCS2022,
 	arxiv    = {2205.08126},
 	doi		 = {10.4230/LIPIcs.MFCS.2022.54},
 }
@@ -164,12 +165,12 @@ article{NamesXXXX,
 	doi		 = {10.4230/LIPIcs.FUN.2022.22},
 }
 
-@article{GregorMerinoMuetze2022,
+@inproceedings{GregorMerinoMuetze2022,
   	author   = {Gregor, Petr and Merino, Arturo and Mütze, Torsten},
 	title    = {{Star Transposition Gray Codes for Multiset Permutations}},
 	year     = {2022},
     abbr     = {{STACS}},
-	journal  = STACS2022,
+	booktitle= STACS2022,
 	arxiv    = {2108.07465},
 	doi		 = {10.4230/LIPIcs.STACS.2022.34},
 }
@@ -187,58 +188,58 @@ article{NamesXXXX,
 	doi		 = {10.1137/20M1377394},
 }
 
-@article{CardinalMerinoMuetze2022,
+@inproceedings{CardinalMerinoMuetze2022,
 	selected = {false},
   	author   = {Cardinal, Jean and Merino, Arturo and Mütze, Torsten},
 	title    = {Efficient Generation of Elimination Trees and Graph Aassociahedra},
 	year     = {2022},
     abbr     = {{SODA}},
-	journal  = SODA2022,
+	booktitle= SODA2022,
 	arxiv    = {2106.16204},
 	combos   = {elim},
 	doi		 = {10.1137/1.9781611977073.84},
 }
 
-@article{MerinoMuetze2021,
+@inproceedings{MerinoMuetze2021,
   	author   = {Merino, Arturo and Mütze, Torsten},
 	title    = {{Efficient Generation of Rectangulations via Permutation Languages}},
 	year     = {2021},
     abbr     = {{SoCG}},
-	journal  = SoCG2021,
+	booktitle= SoCG2021,
 	arxiv    = {2103.09333},
 	combos   = {rect},
 	doi		 = {10.4230/LIPIcs.SoCG.2021.54},
 }
 
-@article{MerinoMickaMuetze2021,
+@inproceedings{MerinoMickaMuetze2021,
   	author   = {Merino, Arturo and Mička, Ondřej and Mütze, Torsten},
 	title    = {{On a Combinatorial Generation Problem of Knuth}},
 	year     = {2021},
     abbr     = {{SODA}},
-	journal  = SODA2021,
+	booktitle= SODA2021,
 	arxiv    = {2007.07164},
 	combos   = {middle},
 	doi		 = {10.5555/3458064.3458110},
 }
 
 
-@article{MerinoWiese2020,
+@inproceedings{MerinoWiese2020,
   	author   = {Arturo Merino and Andreas Wiese},
 	title    = {{On the Two-Dimensional Knapsack Problem for Convex Polygons}},
 	year     = {2020},
     abbr     = {{ICALP}},
-	journal  = ICALP2020,
+	booktitle= ICALP2020,
 	arxiv    = {2007.16144},
 	doi		 = {10.4230/LIPIcs.ICALP.2020.84},
 }
 
 
-@article{MerinoSoto2019,
+@inproceedings{MerinoSoto2019,
     author   = {Arturo Merino and José A. Soto},
 	title    = {{The Minimum Cost Query Problem on Matroids with Uncertainty Areas}},
 	year     = {2019},
     abbr     = {{ICALP}},
-	journal  = ICALP2019,
+	booktitle= ICALP2019,
 	arxiv    = {1904.11668},
 	doi		 = {10.4230/LIPIcs.ICALP.2019.83},
 }
