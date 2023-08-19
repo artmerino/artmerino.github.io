@@ -126,7 +126,7 @@
           {%- elsif entry.type == "inproceedings" -%}
             {%- capture entrytype -%}<em>In Proc. {{entry.booktitle}}</em> {%- endcapture -%}
           {%- else -%}
-            {%- capture entrytype -%}<em>In Proc. {{entry.booktitle}}</em> {%- endcapture -%}
+            {%- capture entrytype -%}<em></em> {%- endcapture -%}
           {%- endif -%}
           {%- if entry.month -%}
             {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
