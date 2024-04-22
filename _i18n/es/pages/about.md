@@ -1,5 +1,5 @@
 Actualmente soy un postdoc en el grupo de [Karl Bringmann](https://people.mpi-inf.mpg.de/~kbringma/) en la [Universidad de Saarland](https://www.uni-saarland.de/start.html).
-Realizé mi doctorado en la [Universidad Técnica de Berlín](https://www.tu-berlin.de/), donde mi profesor guía fue [Torsten Mütze](http://www.tmuetze.de) y fui parte del [grupo de optimización combinatorial y algorítmos en grafos](https://www3.math.tu-berlin.de/coga/). 
+Realicé mi doctorado en la [Universidad Técnica de Berlín](https://www.tu-berlin.de/), donde mi profesor guía fue [Torsten Mütze](http://www.tmuetze.de) y fui parte del [grupo de optimización combinatorial y algorítmos en grafos](https://www3.math.tu-berlin.de/coga/). 
 Antes de eso, hice un magíster en matemáticas aplicadas en la [Universidad de Chile](https://www.uchile.cl/english) bajo la supervisión de [José Soto](http://www.dim.uchile.cl/~jsoto/).
 
 **Intereses de investigación:**  Estoy interesado en el diseño de algoritmos y, en términos más generales, las matemáticas discretas.
