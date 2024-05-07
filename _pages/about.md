@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: merino.jpg
+  image: arturo.jpeg
   image_circular: true # crops the image to make it circular
   address: >
     <p>Office 425</p>
