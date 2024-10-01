@@ -1,0 +1,67 @@
+{
+    "journals" : {
+        "SICOMP": {
+            "name": "SIAM Journal on Computing",
+            "url": "https://epubs.siam.org/journal/sicomp"
+        },
+        "DCG": {
+            "name": "Discrete & Computational Geometry",
+            "url": "https://www.springer.com/journal/454"
+        },
+        "JGT": {
+            "name": "Journal of Graph Theory",
+            "url": "https://onlinelibrary.wiley.com/journal/10970118"
+        },
+        "SIDMA": {
+            "name": "SIAM Journal on Discrete Mathematics",
+            "url": "https://epubs.siam.org/journal/sidma"
+        },
+        "AOCO": {
+            "name": "Annals of Combinatorics",
+            "url": "https://www.springer.com/journal/26"
+        },
+        "TALG": {
+            "name": "ACM Transactions on Algorithms",
+            "url": "https://dl.acm.org/journal/talg"
+        },
+        "Adv" : {
+            "name" : "Advances in Mathematics",
+            "url" : "https://www.journals.elsevier.com/advances-in-mathematics"
+        }
+    },
+    "conferences" : {
+        "ICALP" : {
+            "name" : "International Colloquium on Automata, Languages, and Programming"
+        },
+        "SODA" : {
+            "name" : "SIAM Symposium on Discrete Algorithms"
+        },
+        "SoCG" : {
+            "name" : "Symposium on Computational Geometry"
+        },
+        "STACS" : {
+            "name" : "Symposium on Theoretical Aspects of Computer Science"
+        },
+        "FUN" : {
+            "name" : "International Conference on Fun with Algorithms"
+        },
+        "MFCS" : {
+            "name" : "Mathematical Foundations of Computer Science"
+        },
+        "STOC" : {
+            "name" : "ACM Symposium on Theory of Computing"
+        },
+        "FOCS" : {
+            "name" : "IEEE Symposium on Foundations of Computer Science"
+        },
+        "WALCOM" : {
+            "name" : "Workshop on Algorithms and Computation"
+        },
+        "ISAAC" : {
+            "name" : "International Symposium on Algorithms and Computation"
+        },
+        "WINE" : {
+            "name" : "Workshop on Internet and Network Economics"
+        }
+    }
+}
