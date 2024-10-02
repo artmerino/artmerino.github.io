@@ -159,7 +159,9 @@ def buildBibFile():
         venues = json.load(f)
     venuesConferenceDic = venues['conferences']
     journalConferenceDic = venues['journals']
-    outputString = ""
+    conferenceString = ""
+    journalString = ""
+    preprintString = ""
     for i,paper in enumerate(papers):
         paperDic = papers[paper]
         title = paperDic['title']
@@ -183,7 +185,7 @@ def buildBibFile():
                 proceedingsName = f"In Proc. {ordinal(currentVer)} {venuesConferenceDic[confDic['venue']]['name']}"
             if 'preprint' in paperDic:
                 extras['arxiv'] = paperDic['preprint']['arxiv']
-            outputString=(conferenceBibString(f"conf-{i+1}", authorsListToBibString(authors), title, year, venue, proceedingsName, extras = extras))+outputString
+            conferenceString=(conferenceBibString(f"conf-{i+1}", authorsListToBibString(authors), title, year, venue, proceedingsName, extras = extras))+conferenceString
         if 'journal' in paperDic:
             journalDic = paperDic['journal']
             if not ('preparation' in paperDic['journal'] and journalDic['preparation'] == True) and not 'submitted' in paperDic['journal']:
@@ -203,7 +205,7 @@ def buildBibFile():
                     extras['arxiv'] = paperDic['preprint']['arxiv']
                 if 'conference' in paperDic:
                     extras['extended'] = f"An extended abstract was presented at {paperDic['conference']['venue']} {paperDic['conference']['year']}"
-                outputString=(journalBibString(f"journal-{i+1}", authorsListToBibString(authors), title, year, venue, journalName, extras = extras))+outputString
+                journalString=(journalBibString(f"journal-{i+1}", authorsListToBibString(authors), title, year, venue, journalName, extras = extras))+journalString
         if 'preprint' in paperDic:
             # Preprints
             preprint = paperDic['preprint']
@@ -212,13 +214,13 @@ def buildBibFile():
                     title = journalDic['title']
                 if 'authors' in journalDic:
                     authors = journalDic['authors']
-                outputString=(preprintBibString(f"preprint-{i+1}", authorsListToBibString(authors), title, preprint['year'], extras = preprint))+outputString
+                preprintString=(preprintBibString(f"preprint-{i+1}", authorsListToBibString(authors), title, preprint['year'], extras = preprint))+preprintString
         if 'conference' not in paperDic and 'journal' not in paperDic and 'preprint' not in paperDic:
             # Papers in preparation for which no preprint is available
             # print(paperDic)
             continue
     with open("_bibliography/papers.bib", "w") as text_file:
-        text_file.write(outputString)
+        text_file.write(preprintString+conferenceString+journalString)
     return 
 
 def buildVenuesFile():
