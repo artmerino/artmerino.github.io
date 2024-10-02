@@ -54,7 +54,10 @@ def conferenceBibString(id,authors, title, year, abbreviation, conference,  extr
     outString += f"  year = {{{year}}},\n"
     outString += f"  booktitle = {{{{{conference}}}}},\n"
     outString += f"  abbr = {{{{{abbreviation}}}}},\n"
-    for extra in ['selected', 'award', 'arxiv', 'blog', 'code', 'combos', 'doi', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
+    if 'doi' in extras:
+        if extras['doi'] and extras['doi'] != "False":
+            outString += f"  doi = {{{extras['doi']}}},\n"
+    for extra in ['selected', 'award', 'arxiv', 'blog', 'code', 'combos', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
         if extra in extras:
             outString += f"  {extra} = {{{extras[extra]}}},\n"
     for extra in ['extended']:
@@ -95,7 +98,10 @@ def journalBibString(id,authors, title, year, abbreviation, jorunal, extras={}):
     outString += f"  year = {{{year}}},\n"
     outString += f"  abbr = {{{{{abbreviation}}}}},\n"
     outString += f"  journal = {{{{{jorunal}}}}},\n"
-    for extra in ['selected', 'award', 'arxiv', 'blog', 'code', 'combos', 'doi', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
+    if 'doi' in extras:
+        if extras['doi'] and extras['doi'] != "False":
+            outString += f"  doi = {{{extras['doi']}}},\n"
+    for extra in ['selected', 'award', 'arxiv', 'blog', 'code', 'combos', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
         if extra in extras:
             outString += f"  {extra} = {{{extras[extra]}}},\n"
     for extra in ['extended']:
@@ -134,9 +140,6 @@ def preprintBibString(id,authors, title, year, extras={}):
     outString += f"  title = {{{{{title}}}}},\n"
     outString += f"  year = {{{year}}},\n"
     outString += f"  abbr = {{arXiv}},\n"
-    if 'doi' in extras:
-        if extras['doi'] and extras['doi'] != "False":
-            outString += f"  doi = {{{extras['doi']}}},\n"
     for extra in ['selected', 'award', 'arxiv', 'blog', 'code', 'combos', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
         if extra in extras:
             outString += f"  {extra} = {{{extras[extra]}}},\n"
