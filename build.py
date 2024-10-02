@@ -230,7 +230,7 @@ def buildVenuesFile():
     for conference in conferencesDic:
         outputString += f"{conference}: \n  color: \"#196ca3\"\n"
     for journal in journalsDic:
-        outputString += f"{journal}: \n  url: {journalsDic[journal]['url']}\n  color: \"#196ca3\"\n"
+        outputString += f"{journal}: \n  url: {journalsDic[journal]['url']}\n  color: \"#c32b72\"\n"
     with open("_data/venues.yml", "w") as text_file:
         text_file.write(outputString)
     return

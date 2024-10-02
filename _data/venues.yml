@@ -25,22 +25,22 @@ WINE:
   color: "#196ca3"
 SICOMP: 
   url: https://epubs.siam.org/journal/sicomp
-  color: "#196ca3"
+  color: "#c32b72"
 DCG: 
   url: https://www.springer.com/journal/454
-  color: "#196ca3"
+  color: "#c32b72"
 JGT: 
   url: https://onlinelibrary.wiley.com/journal/10970118
-  color: "#196ca3"
+  color: "#c32b72"
 SIDMA: 
   url: https://epubs.siam.org/journal/sidma
-  color: "#196ca3"
+  color: "#c32b72"
 AOCO: 
   url: https://www.springer.com/journal/26
-  color: "#196ca3"
+  color: "#c32b72"
 TALG: 
   url: https://dl.acm.org/journal/talg
-  color: "#196ca3"
+  color: "#c32b72"
 Adv: 
   url: https://www.journals.elsevier.com/advances-in-mathematics
-  color: "#196ca3"
+  color: "#c32b72"
