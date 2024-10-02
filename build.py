@@ -133,6 +133,7 @@ def preprintBibString(id,authors, title, year, extras={}):
     outString += f"  author = {{{authors}}},\n"
     outString += f"  title = {{{{{title}}}}},\n"
     outString += f"  year = {{{year}}},\n"
+    outString += f"  abbr = {{arXiv}},\n"
     if 'doi' in extras:
         if extras['doi']:
             outString += f"  doi = {{{extras['doi']}}},\n"
