@@ -221,4 +221,20 @@ def buildBibFile():
         text_file.write(outputString)
     return 
 
+def buildVenuesFile():
+    with open('venues.json') as f:
+        venues = json.load(f)
+    outputString = "arXiv:\n  url: https://arxiv.org/\n  color: \"#41424C\"\n"
+    conferencesDic = venues['conferences']
+    journalsDic = venues['journals']
+    for conference in conferencesDic:
+        outputString += f"{conference}: \n  color: \"#196ca3\"\n"
+    for journal in journalsDic:
+        outputString += f"{journal}: \n  url: {journalsDic[journal]['url']}\n  color: \"#196ca3\"\n"
+    with open("_data/venues.yml", "w") as text_file:
+        text_file.write(outputString)
+    return
+
 buildBibFile()
+
+buildVenuesFile()
