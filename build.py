@@ -176,7 +176,7 @@ def buildBibFile():
             year = confDic['year']
             currentVer = int(year)-2020+int(venuesConferenceDic[confDic['venue']]['2020ed'])
             venue = confDic['venue']
-            extras = confDic
+            extras = paperDic | confDic
             if "doi" not in extras or not confDic['doi']:
                 proceedingsName = f"To appear in Proc. {ordinal(currentVer)} {venuesConferenceDic[confDic['venue']]['name']}"
             else:
@@ -194,7 +194,7 @@ def buildBibFile():
                     authors = journalDic['authors']
                 year = journalDic['year']
                 venue = journalDic['venue']
-                extras = journalDic
+                extras = paperDic | journalDic
                 if 'doi' not in extras or not journalDic['doi']:
                     journalName = f"To appear in {journalConferenceDic[journalDic['venue']]['name']}"
                 else:
