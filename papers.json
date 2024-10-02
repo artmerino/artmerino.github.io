@@ -184,7 +184,9 @@
             "selected" : true
         },
         "journal" : {
-            "preparation" : true
+            "venue" : "SICOMP",
+            "year" : 2024,
+            "doi" : "10.1137/23M1612019"
         }
     },
     "paper12" : {
