@@ -136,7 +136,7 @@
     },
     "paper9" : {
         "title" : "Zigzagging Through Acyclic Orientations of Graphs and Hypergraphs",
-        "authors" : ["Jean Cardinal","Hoang P. Hung","Arturo Merino","Torsten Mütze"],
+        "authors" : ["Jean Cardinal","Hung P. Hoang","Arturo Merino","Torsten Mütze"],
         "preprint" : {
             "arxiv" : "2212.03915"
         },
@@ -148,7 +148,7 @@
         },
         "journal" : {
             "title" : "Combinatorial Generation via Permutation Languages. V. Acyclic orientations",
-            "authors" : ["Jean Cardinal","Hoang P. Hung","Arturo Merino","Ondřej Mička","Torsten Mütze"],
+            "authors" : ["Jean Cardinal","Hung P. Hoang","Arturo Merino","Ondřej Mička","Torsten Mütze"],
             "venue" : "SIDMA",
             "year" : 2023,
             "doi" : "10.1137/23M1546567"
@@ -204,7 +204,7 @@
     },
     "paper13" : {
         "title" : "Generating All Invertible Matrices by Row Operations",
-        "authors" : ["Petr Gregor","Hoang P. Hung","Arturo Merino","Ondřej Mička"],
+        "authors" : ["Petr Gregor","Hung P. Hoang","Arturo Merino","Ondřej Mička"],
         "preprint" : {
             "arxiv" : "2405.01863"
         },
