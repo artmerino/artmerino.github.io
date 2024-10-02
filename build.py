@@ -57,7 +57,10 @@ def conferenceBibString(id,authors, title, year, abbreviation, conference,  extr
     if 'doi' in extras:
         if extras['doi'] and extras['doi'] != "False":
             outString += f"  doi = {{{extras['doi']}}},\n"
-    for extra in ['selected', 'award', 'arxiv', 'blog', 'code', 'combos', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
+    if 'selected' in extras:
+        if extras['selected'] and extras['selected'] != "False":
+            outString += f"  selected = {{true}},\n"
+    for extra in ['award', 'arxiv', 'blog', 'code', 'combos', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
         if extra in extras:
             outString += f"  {extra} = {{{extras[extra]}}},\n"
     for extra in ['extended']:
@@ -101,7 +104,10 @@ def journalBibString(id,authors, title, year, abbreviation, jorunal, extras={}):
     if 'doi' in extras:
         if extras['doi'] and extras['doi'] != "False":
             outString += f"  doi = {{{extras['doi']}}},\n"
-    for extra in ['selected', 'award', 'arxiv', 'blog', 'code', 'combos', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
+    if 'selected' in extras:
+        if extras['selected'] and extras['selected'] != "False":
+            outString += f"  selected = {{true}},\n"
+    for extra in ['award', 'arxiv', 'blog', 'code', 'combos', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
         if extra in extras:
             outString += f"  {extra} = {{{extras[extra]}}},\n"
     for extra in ['extended']:
