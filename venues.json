@@ -31,37 +31,48 @@
     },
     "conferences" : {
         "ICALP" : {
-            "name" : "International Colloquium on Automata, Languages, and Programming"
+            "name" : "International Colloquium on Automata, Languages, and Programming",
+            "2020ed" : "47"
         },
         "SODA" : {
-            "name" : "SIAM Symposium on Discrete Algorithms"
+            "name" : "SIAM Symposium on Discrete Algorithms",
+            "2020ed" : "31" 
         },
         "SoCG" : {
-            "name" : "Symposium on Computational Geometry"
+            "name" : "Symposium on Computational Geometry",
+            "2020ed" : "36"
         },
         "STACS" : {
-            "name" : "Symposium on Theoretical Aspects of Computer Science"
+            "name" : "Symposium on Theoretical Aspects of Computer Science",
+            "2020ed" : "37"
         },
         "FUN" : {
-            "name" : "International Conference on Fun with Algorithms"
+            "name" : "International Conference on Fun with Algorithms",
+            "2020ed" : "9"
         },
         "MFCS" : {
-            "name" : "Mathematical Foundations of Computer Science"
+            "name" : "Mathematical Foundations of Computer Science",
+            "2020ed" : "45"
         },
         "STOC" : {
-            "name" : "ACM Symposium on Theory of Computing"
+            "name" : "ACM Symposium on Theory of Computing",
+            "2020ed" : "52"
         },
         "FOCS" : {
-            "name" : "IEEE Symposium on Foundations of Computer Science"
+            "name" : "IEEE Symposium on Foundations of Computer Science",
+            "2020ed" : "61"
         },
         "WALCOM" : {
-            "name" : "Workshop on Algorithms and Computation"
+            "name" : "Workshop on Algorithms and Computation",
+            "2020ed" : "14"
         },
         "ISAAC" : {
-            "name" : "International Symposium on Algorithms and Computation"
+            "name" : "International Symposium on Algorithms and Computation",
+            "2020ed" : "31"
         },
         "WINE" : {
-            "name" : "Workshop on Internet and Network Economics"
+            "name" : "Workshop on Internet and Network Economics",
+            "2020ed" : "16"
         }
     }
 }

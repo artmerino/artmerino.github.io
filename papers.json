@@ -1,7 +1,7 @@
 {
     "paper1" : {
         "title" : "The Minimum Cost Query Problem on Matroids with Uncertainty Areas",
-        "authors" : ["Arturo Merino","José Soto"],
+        "authors" : ["Arturo Merino","José A. Soto"],
         "preprint" : {
             "arxiv" : "1904.11668"
         },
@@ -125,7 +125,7 @@
             "venue" : "MFCS",
             "year" : 2022,
             "doi" : "10.4230/LIPIcs.MFCS.2022.54",
-            "note" : "Best paper award",
+            "award" : "Best paper award!",
             "selected" : true
         },
         "journal" : {
@@ -236,7 +236,8 @@
         "title" : "Graphs that Admit a Hamiltonian Path are Cup-Stackable",
         "authors" : ["Petr Gregor","Arturo Merino","Torsten Mütze","Francesco Verciani"],
         "preprint" : {
-            "arxiv" : "2401.06189"
+            "arxiv" : "2401.06189",
+            "year": 2024
         },
         "journal" : {
             "submitted" : "DM"
@@ -244,9 +245,10 @@
     },
     "paper16" : {
         "title" : "Set Selection with Uncertain Weights: Non-Adaptive Queries and Thresholds",
-        "authors" : ["Christoph Dürr","Arturo Merino","José Soto","José Verschae"],
+        "authors" : ["Christoph Dürr","Arturo Merino","José A. Soto","José Verschae"],
         "preprint" : {
-            "arxiv" : "2404.17214"
+            "arxiv" : "2404.17214",
+            "year" : 2024
         }
     },
     "paper17": {
