@@ -141,11 +141,12 @@ def preprintBibString(id,authors, title, year, extras={}):
     website <str>: URL of the website
     abstract <str>: abstract of the paper
     """
-    outString = f"@preprint{{{id},\n"
+    outString = f"@article{{{id},\n"
     outString += f"  author = {{{authors}}},\n"
     outString += f"  title = {{{{{title}}}}},\n"
     outString += f"  year = {{{year}}},\n"
     outString += f"  abbr = {{arXiv}},\n"
+    outString += f"  journal = {{arXiv preprint}},\n"
     for extra in ['selected', 'award', 'arxiv', 'blog', 'code', 'combos', 'html', 'pdf', 'poster', 'slides', 'supportingMaterial', 'website', 'abstract']:
         if extra in extras:
             outString += f"  {extra} = {{{extras[extra]}}},\n"
