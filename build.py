@@ -113,7 +113,6 @@ def journalBibString(id,authors, title, year, abbreviation, jorunal, extras={}):
     for extra in ['extended']:
         if extra in extras:
             outString += f"  {extra} = {{{{{extras[extra]}}}}},\n"
-    
     outString += "}\n"
     return outString
 
@@ -156,6 +155,87 @@ def preprintBibString(id,authors, title, year, extras={}):
     outString += "}\n"
     return outString
 
+def conferenceTexString(id,conferenceId,authors, title, year, abbreviation, conference,  extras = {}):
+    """
+    id <int>: unique identifier of the paper
+    conferenceId <int>: unique identifier of the conference version
+    authors <str>: authors of the paper
+    title <str>: title of the paper
+    year <int>: year of the paper
+    abbreviation <str>: abbreviation of the conference
+    conference <str>: full name of conference
+    
+    Potential extras are:
+    arxiv <str>: arXiv code
+    award <str>: award received by the paper
+    doi <str>: DOI of the paper
+    """
+    outString = f"""
+\\begin{{cvpublication}}
+\t{{C{id}}}
+\t{{{title}}}
+\t{{{authors}}}
+\t{{{abbreviation}}}
+\t{{{year}}}
+\t\\begin{{cvitem}}
+\t\t\\\\item {conference}
+    """
+    if 'doi' in extras:
+        if extras['doi'] and extras['doi'] != "False":
+            outString += f"\t\t\\item[] DOI: \\href{{https://doi.org/{extras['doi']}}}{{{extras['doi']}}}\n"
+    if 'award' in extras:
+        outString += f"\t\t\\item[] {extras['award']}\n"
+    if 'doi' not in extras or not extras['doi']:
+        if 'arxiv' in extras :
+            outString += f"\t\t\\item[] Available on arXiv:\\href{{https://arxiv.org/abs/{extras['arxiv']}}}{{{extras['arxiv']}}}\n"
+    for extra in ['extended']:
+        if extra in extras:
+            outString += f"\t\t\\item {extras[extra]}\n"
+    if conferenceId>=0:
+        outString += f"\t\t\\item Conference version: \\hyperlink{{paperC{conferenceId}}}{{{conferenceId}}}\n"
+    outString += f"\t\\end{{cvitem}}\n\\end{{cvpublication}}"
+    return outString
+
+def journalTexString(id,journalId,authors, title, year, abbreviation, journal,  extras = {}):
+    """
+    id <int>: unique identifier of the paper
+    journalId <int>: unique identifier of the journal version
+    authors <str>: authors of the paper
+    title <str>: title of the paper
+    year <int>: year of the paper
+    abbreviation <str>: abbreviation of the journal
+    journal <str>: full name of the journal
+    
+    Potential extras are:
+    arxiv <str>: arXiv code
+    award <str>: award received by the paper
+    doi <str>: DOI of the paper
+    """
+    outString = f"""
+\\begin{{cvpublication}}
+\t{{J{id}}}
+\t{{{title}}}
+\t{{{authors}}}
+\t{{{abbreviation}}}
+\t{{{year}}}
+\t\\begin{{cvitem}}
+\t\t\\\\item {journal}
+    """
+    if 'doi' in extras:
+        if extras['doi'] and extras['doi'] != "False":
+            outString += f"\t\t\\item[] DOI: \\href{{https://doi.org/{extras['doi']}}}{{{extras['doi']}}}\n"
+    if 'award' in extras:
+        outString += f"\t\t\\item[] {extras['award']}\n"
+    if 'doi' not in extras or not extras['doi']:
+        if 'arxiv' in extras :
+            outString += f"\t\t\\item[] Available on arXiv:\\href{{https://arxiv.org/abs/{extras['arxiv']}}}{{{extras['arxiv']}}}\n"
+    for extra in ['extended']:
+        if extra in extras:
+            outString += f"\t\t\\item {extras[extra]}\n"
+    if journalId>=0:
+        outString += f"\t\t\\item Conference version: \\hyperlink{{paperC{journalId}}}{{{journalId}}}\n"
+    outString += f"\t\\end{{cvitem}}\n\\end{{cvpublication}}"
+    return outString
 
 
 def buildBibFile():
@@ -230,6 +310,61 @@ def buildBibFile():
         text_file.write(preprintString+conferenceString+journalString)
     return 
 
+def buildTexFile():
+    with open('papers.json') as f:
+        papers = json.load(f)
+    with open('venues.json') as f:
+        venues = json.load(f)
+    venuesConferenceDic = venues['conferences']
+    journalConferenceDic = venues['journals']
+    papersTexList = []
+    for i,paper in enumerate(papers):
+        paperDic = papers[paper]
+        title = paperDic['title']
+        authors = paperDic['authors']
+        nonArxivAvailable = False
+        if 'journal' in paperDic:
+            journalDic = paperDic['journal']
+            if not ('preparation' in paperDic['journal'] and journalDic['preparation'] == True) and not 'submitted' in paperDic['journal']:
+                nonArxivAvailable = True
+                if 'title' in journalDic:
+                    title = journalDic['title']
+                if 'authors' in journalDic:
+                    authors = journalDic['authors']
+                year = journalDic['year']
+                venue = journalDic['venue']
+                extras = paperDic | journalDic
+                if 'doi' not in extras or not journalDic['doi']:
+                    journalName = f"To appear in {journalConferenceDic[journalDic['venue']]['name']}"
+                else:
+                    journalName = f"{journalConferenceDic[journalDic['venue']]['name']}"
+                if 'preprint' in paperDic:
+                    extras['arxiv'] = paperDic['preprint']['arxiv']
+                print(journalTexString(f"{i+1}", 0 ,authorsListToBibString(authors), title, year, venue, journalName, extras = extras))
+    for i,paper in enumerate(papers):
+        paperDic = papers[paper]
+        if 'conference' in paperDic:
+            # Conference papers
+            journalId = 0
+            nonArxivAvailable = True
+            confDic = paperDic['conference']
+            if 'title' in confDic:
+                title = confDic['title']
+            if 'authors' in confDic:
+                authors = confDic['authors']
+            year = confDic['year']
+            currentVer = int(year)-2020+int(venuesConferenceDic[confDic['venue']]['2020ed'])
+            venue = confDic['venue']
+            extras = paperDic | confDic
+            if "doi" not in extras or not confDic['doi']:
+                proceedingsName = f"To appear in Proc. {ordinal(currentVer)} {venuesConferenceDic[confDic['venue']]['name']}"
+            else:
+                proceedingsName = f"In Proc. {ordinal(currentVer)} {venuesConferenceDic[confDic['venue']]['name']}"
+            if 'preprint' in paperDic:
+                extras['arxiv'] = paperDic['preprint']['arxiv']
+            print(conferenceTexString(f"{i+1}", journalId ,authorsListToBibString(authors), title, year, venue, proceedingsName, extras = extras))
+    #### CONTINUAR ACÁ
+
 def buildVenuesFile():
     with open('venues.json') as f:
         venues = json.load(f)
@@ -244,6 +379,7 @@ def buildVenuesFile():
         text_file.write(outputString)
     return
 
-buildBibFile()
 
-buildVenuesFile()
+buildTexFile()
+# buildBibFile()
+# buildVenuesFile()
