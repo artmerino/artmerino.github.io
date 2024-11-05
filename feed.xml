@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://amerino.cl/feed.xml" rel="self" type="application/atom+xml"/><link href="https://amerino.cl/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-11-05T22:00:24+00:00</updated><id>https://amerino.cl/feed.xml</id><title type="html">blank</title><subtitle>My website! </subtitle><entry><title type="html">Programa Matemáticas Discretas SOMACHI 2023</title><link href="https://amerino.cl/somachi/" rel="alternate" type="text/html" title="Programa Matemáticas Discretas SOMACHI 2023"/><published>2023-12-04T15:42:00+00:00</published><updated>2023-12-04T15:42:00+00:00</updated><id>https://amerino.cl/somachi</id><content type="html" xml:base="https://amerino.cl/somachi/"><![CDATA[<h1 id="programa-matemáticas-discretas-somachi-2023">Programa Matemáticas Discretas SOMACHI 2023</h1> <hr/> <h2 id="día-1--lunes-18-de-diciembre">Día 1: Lunes 18 de Diciembre</h2> <table> <thead> <tr> <th style="text-align: center"> </th> <th style="text-align: left"> </th> </tr> </thead> <tbody> <tr> <td style="text-align: center">16:00  </td> <td style="text-align: left"><em>Juan Pablo Peña</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Líneas en espacios cuasimétricos</strong> <a href="https://amerino.cl/assets/pdf/somachi23/pena.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">16:30  </td> <td style="text-align: left"><em>Milene Gutiérrez Santibáñez</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Dimensión métrica en árboles y 2-árboles</strong> <a href="https://amerino.cl/assets/pdf/somachi23/gutierrez.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">17:00  </td> <td style="text-align: left"><em>Mauricio Yépez</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>The twin-width of powers of graphs with bounded tree-width</strong> <a href="https://amerino.cl/assets/pdf/somachi23/yepez.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"> </td> </tr> </tbody> </table> <h2 id="día-2--martes-19-de-diciembre">Día 2: Martes 19 de Diciembre</h2> <table> <thead> <tr> <th style="text-align: center"> </th> <th style="text-align: left"> </th> </tr> </thead> <tbody> <tr> <td style="text-align: center">09:00  </td> <td style="text-align: left"><em>Cristian Palma</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Balanceo de Carga bajo una Función Cóncava</strong> <a href="https://amerino.cl/assets/pdf/somachi23/palma.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">09:30  </td> <td style="text-align: left"><em>Bernardo Subercaseaux</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>En Búsqueda de un Conjunto de Puntos con Discrepancia 3</strong> <a href="https://amerino.cl/assets/pdf/somachi23/subercaseaux.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">10:00  </td> <td style="text-align: left"><em>Juan Pablo Flores</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Mixing Times and Privacy Analysis for the Langevin Algorithm with Expansive Iterations</strong> <a href="https://amerino.cl/assets/pdf/somachi23/flores.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"> </td> </tr> <tr> <td style="text-align: center">16:00  </td> <td style="text-align: left"><em>Fernanda Gabrielli Wodehouse</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Emparejamiento estable bajo incertidumbre</strong> <a href="https://amerino.cl/assets/pdf/somachi23/gabrielli.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">16:30  </td> <td style="text-align: left"><em>José A. Soto</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Problema del prohet-secretary en emparejamientos</strong> <a href="https://amerino.cl/assets/pdf/somachi23/soto.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">17:00  </td> <td style="text-align: left"><em>Mariano Llancamán</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Análisis determinista para dos problemas de emparejamiento en línea donde se permiten aumentaciones</strong> <a href="https://amerino.cl/assets/pdf/somachi23/llancaman.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"> </td> </tr> </tbody> </table> <h2 id="día-3--miércoles-20-de-diciembre">Día 3: Miércoles 20 de Diciembre</h2> <table> <thead> <tr> <th style="text-align: center"> </th> <th style="text-align: left"> </th> </tr> </thead> <tbody> <tr> <td style="text-align: center">09:00  </td> <td style="text-align: left"><em>Marcos Kiwi</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Label propagation on binomial random graphs</strong> <a href="https://amerino.cl/assets/pdf/somachi23/kiwi.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">09:30  </td> <td style="text-align: left"><em>Arnaud Meyroneinc</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Enumeración asintótica de las particiones de un número natural con partes fuera de un conjunto finito</strong> <a href="https://amerino.cl/assets/pdf/somachi23/meyroneinc.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">10:00  </td> <td style="text-align: left"><em>Matias Pavez-Signé</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Counting spanning subgraphs in dense hypergraphs</strong> <a href="https://amerino.cl/assets/pdf/somachi23/pavez.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"> </td> </tr> <tr> <td style="text-align: center">16:00  </td> <td style="text-align: left"><em>Raúl Astete</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>\(k\)-Independencia en Redes Booleanas</strong> <a href="https://amerino.cl/assets/pdf/somachi23/astete.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">16:30  </td> <td style="text-align: left"><em>Katerin de la Hoz</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>El problema de compatibilidad unate</strong> <a href="https://amerino.cl/assets/pdf/somachi23/hoz.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">17:00  </td> <td style="text-align: left"><em>Arturo Zapata Cortés</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Dinámicas Hamiltonianas en redes Booleanas</strong> <a href="https://amerino.cl/assets/pdf/somachi23/zapata.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"> </td> </tr> </tbody> </table> <h2 id="día-4-jueves-21-de-diciembre">Día 4: Jueves 21 de Diciembre</h2> <table> <thead> <tr> <th style="text-align: center"> </th> <th style="text-align: left"> </th> </tr> </thead> <tbody> <tr> <td style="text-align: center">09:00  </td> <td style="text-align: left"><em>Catalina Opazo</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Puntos fijos polarizados y de consenso en Redes Booleanas</strong> <a href="https://amerino.cl/assets/pdf/somachi23/opazo.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">09:30  </td> <td style="text-align: left"><em>Nicolás Sanhueza Matamala</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Familias de caminos separadoras en grafos completos</strong> <a href="https://amerino.cl/assets/pdf/somachi23/sanhueza.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">10:00  </td> <td style="text-align: left"><em>Pedro Araújo</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Counting graph orientations with no directed triangles</strong> <a href="https://amerino.cl/assets/pdf/somachi23/araujo.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"> </td> </tr> <tr> <td style="text-align: center">12:00  </td> <td style="text-align: left"><em>Cristóbal Fuentealba</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Estrategias para afrontar un test: Una mirada desde la secuenciación con incertidumbre</strong> <a href="https://amerino.cl/assets/pdf/somachi23/fuentealba.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center">12:30  </td> <td style="text-align: left"><em>Agustín Caracci</em></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"><strong>Búsqueda en árboles con queries limitadas</strong> <a href="https://amerino.cl/assets/pdf/somachi23/caracci.pdf">[resumen]</a></td> </tr> <tr> <td style="text-align: center"> </td> <td style="text-align: left"> </td> </tr> </tbody> </table>]]></content><author><name></name></author><category term="post"/><category term="SOMACHI"/><summary type="html"><![CDATA[Programa Matemáticas Discretas SOMACHI 2023]]></summary></entry><entry><title type="html">Matroid diameter v/s shortest path</title><link href="https://amerino.cl/matroid-diam/" rel="alternate" type="text/html" title="Matroid diameter v/s shortest path"/><published>2022-10-12T15:12:00+00:00</published><updated>2022-10-12T15:12:00+00:00</updated><id>https://amerino.cl/matroid-diam</id><content type="html" xml:base="https://amerino.cl/matroid-diam/"><![CDATA[\[\gdef\cI{\mathcal{I}}\] <p>Let \(M_1=(E,\cI_1)\) and \(M_2=(E,\cI_2)\) be two matroids over the same groundset \(E\). The <em>matroid union</em> of \(M_1\) and \(M_2\) is a <em>new</em> matroid \(M_1 \lor M_2\) over the ground set \(E\) where the independent sets are the sets which can be partitioned into an independent set of \(M_1\) and an independent set of \(M_2\). More formally,</p> \[I \in \cI \iff I= I_1 \cup I_2 \text{ s.t. }I_1 \cap I_2 =\emptyset \text{, }I_1 \in \cI_1 \text{ and }I_2 \in \cI_2.\] <p>The matroid union theorem guarantees that this is indeed a matroid and that</p> <p><strong>Theorem:</strong></p> <p>**Distance problem on the</p> <p><strong>Diameter problem on the base polytope:</strong></p> <table> <tbody> <tr> <td>Given a matroid \(M=(E,\cI)\) find two bases \(B_1\), \(B_2\) such that $$</td> <td>B_1 \Delta B_2</td> <td>$$.</td> </tr> </tbody> </table>]]></content><author><name></name></author><category term="post"/><category term="matroids"/><category term="diameter"/><category term="shortest-path"/><summary type="html"><![CDATA[\[\gdef\cI{\mathcal{I}}\]]]></summary></entry><entry><title type="html">Hamilton paths on 0/1 polytopes</title><link href="https://amerino.cl/test/" rel="alternate" type="text/html" title="Hamilton paths on 0/1 polytopes"/><published>2022-10-12T15:12:00+00:00</published><updated>2022-10-12T15:12:00+00:00</updated><id>https://amerino.cl/test</id><content type="html" xml:base="https://amerino.cl/test/"><![CDATA[<head> <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script> <script>sagecell.makeSagecell({inputLocation:"#mycell",autoeval:autoeval=!0,hide:["evalButton","editor","fullScreen","language","done","sessionFiles","permalink"]});</script> <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css"/> </head> <div id="mycell"><script type="text/x-sage">
+from sage.geometry.polyhedron.face import PolyhedronFace
+from sage.rings.integer_ring import ZZ
+from sage.geometry.polyhedron.plot import Projection
+from itertools import combinations, product
+from sage.geometry.polyhedron.constructor import Polyhedron
+from sage.geometry.polyhedron.plot import ProjectionFuncSchlegel
+from sage.geometry.polyhedron.plot import ProjectionFuncStereographic
+from sage.plot.plot3d.shapes import Text
+
+def left_minimal(S,n):
+	i = min(S)
+	out = []
+	for j in range(i,n):
+		if j in S:
+			out.append(j)
+		elif j not in S:
+			break
+	return out
+def min_gdi(D,x,I,OPP_solver):
+	L = min(I)
+	R = max(I)
+	m = L
+	if not subproblem(D,x,R,OPP_solver,I):
+		return oo
+	while L<R:
+		m = floor((L+R)/2)
+		if not subproblem(D,x,m,OPP_solver,I):
+			L = m+1
+		else:
+			R = m
+	n = len(x)
+	w = n*[0]
+	I_zero = [i for i in range(n) if x[i]==0] 
+	I_one = [i for i in range(n) if x[i]==1] 
+	for i in I_zero:
+		w[i]=-1
+	for i in I_one:
+		w[i]=1
+	I_P = [i for i in I_one if i>L]
+	I_F = [i for i in I_zero if i>L]
+	if x[L]==0:
+		I_P.append(L)
+	if x[L]==1:
+		I_F.append(L)
+	opt,val = OPP_solver(D,w,I_P,I_F)
+	if val<len(I_one):
+		return L
+	else:
+		return oo
+def update(D,U,Q,x,OPP_solver,mgdi_solver):
+	n=len(x)
+	if not U: 
+		return U,Q
+	I = left_minimal(U,n)
+	i = mgdi_solver(D,x,I,OPP_solver)
+	# print("returned {}, should have been {}".format(i,min_gdi_linear(D,x,I,OPP_solver)))
+	if i<n:
+		Q.append(i)
+	U = [j for j in U if j not in I or j>i]
+	return U,Q
+def generate(D,start,OPP_solver,n,mgdi_solver=min_gdi):
+	# D = implicit description of the objects
+	n=len(start)
+	x=start
+	U=[j for j in range(n)]
+	Q=[]
+	while True:
+		yield(x)
+		U,Q = update(D,U,Q,x,OPP_solver,mgdi_solver)
+		U,Q = update(D,U,Q,x,OPP_solver,mgdi_solver)
+		if not Q:
+			break
+		i = min(Q)
+		Q.remove(i)
+		x = next(D,x,i,OPP_solver)
+		U = [j for j in range(i)]+[j for j in U if j>i]
+def subproblem(D,x,k,OPP_solver,I):
+	n = len(x)
+	w = n*[0]
+	I_zero = [i for i in range(n) if x[i]==0] 
+	I_one = [i for i in range(n) if x[i]==1] 
+	for i in I_zero:
+		if i in I:
+			w[i]=-1
+	for i in I_one:
+		if i in I:
+			w[i]=1
+	I_P = [i for i in I_one if i>k]
+	I_F = [i for i in I_zero if i>k]
+	opt,val = OPP_solver(D,w,I_P,I_F)
+	if val<len([i for i in I_one if i in I]):
+		return opt
+	else:
+		return []
+def next(D,x,k,OPP_solver):
+	n = len(x)
+	I_zero = [i for i in range(n) if x[i]==0] 
+	I_one = [i for i in range(n) if x[i]==1] 
+	w = n*[0]
+	for i in I_zero:
+		w[i]=1
+	for i in I_one:
+		w[i]=-1
+	I_P = [i for i in I_one if i>k]
+	I_F = [i for i in I_zero if i>k]
+	if x[k]==0:
+		I_P.append(k)
+	if x[k]==1:
+		I_F.append(k)
+	opt,val = OPP_solver(D,w,I_P,I_F)
+	return opt
+def generic_weight_mod(n,w,I_P,I_F):
+	w_mod = w.copy()
+	for i in I_P:
+		w_mod[i]=-n
+	for i in I_F:
+		w_mod[i]=n
+	return w_mod
+def OPP_01_vertex(V,w,I_P,I_F):
+	n = len(V)
+	w_mod = generic_weight_mod(n,w,I_P,I_F)
+	c = vector(w_mod)
+	min_weight = oo
+	out = []
+	for v in V:
+		if vector(v).dot_product(c)<min_weight:
+			min_weight=vector(v).dot_product(c)
+			out=v
+	for i in I_P:
+		if out[i]!=1:
+			return [],oo
+	for i in I_F:
+		if out[i]!=0:
+			return [],oo
+	return out,vector(out).dot_product(vector(w))
+def all_01_vertex(V):
+	start = V[randint(0,len(V)-1)]
+	i=0
+	out = []
+	for T in generate(V,start,OPP_01_vertex,len(V)):
+		i+=1
+		out.append(T)
+	return out
+def orthonormal_basis(A):
+	G, M = A.gram_schmidt() 
+	g=G*G.transpose()
+	gsqrt=g.apply_map(sqrt)
+	q=gsqrt.inverse()
+	ortho=q*G
+	return ortho
+def draw_polytope(L,method="schlegel"):
+	n = len(L[0])
+	ineqs = Polyhedron(L).Hrepresentation()
+	vectors=[]
+	min_sum = n
+	for v in L:
+		if sum(v)<min_sum:
+			ref=v
+			min_sum=sum(v)
+	for i in range(len(L)):
+		vectors.append(vector(L[i])-vector(ref))
+	A=Matrix(vectors)
+	basis = orthonormal_basis(A)
+	V = VectorSpace(SR,n)
+	W = V.subspace_with_basis(basis)
+	dim = W.rank()
+	if dim<n:
+		new_L = [vector([float(x) for x in W.coordinates(vector(v)-vector(ref))]) for v in L]
+	else:
+		new_L = L
+	if dim==3:
+		plot = Polyhedron(new_L).plot(alpha=0.1)
+		plot+=line3d(new_L, color='red',radius=0.005, alpha=0.5).plot()
+		plot+=point3d([new_L[0],new_L[-1]], color='red',radius=0.01).plot()
+		for i in range(len(L)):
+			where=(new_L[i][0],new_L[i][1],new_L[i][2]-0.05)
+			plot+=Text("".join([str(x) for x in L[i]])).translate(where)
+		plot.show(frame=false)
+		return True
+	elif dim==4 and method=="schlegel":
+		Cube = Polyhedron([list(v) for v in product([0,1], repeat=dim)])
+		for f in Cube.facets():
+			facet = f
+			if facet.dim()==3:
+				break
+		barycenter = ZZ.one() * sum([v.vector() for v in facet.vertices()]) / len(facet.vertices())
+		locus_polyhedron = facet.stacking_locus()
+		repr_point = locus_polyhedron.representative_point()
+		the_ray = Polyhedron(vertices=[barycenter],
+							 rays=[repr_point - barycenter],
+							 backend=locus_polyhedron.backend()) & locus_polyhedron
+		projection_point = the_ray.representative_point()
+		schlegelProj = ProjectionFuncSchlegel(facet,projection_point)
+		P = Polyhedron(new_L)
+		schlegel_L = [schlegelProj(v) for v in new_L]
+		plot=line3d(schlegel_L, color='red',radius=0.005, alpha=0.5).plot()
+		plot+=Projection(P).__call__(proj=schlegelProj).plot()
+		plot+=point3d([schlegel_L[0],schlegel_L[-1]], color='red',radius=0.01).plot()
+		for i in range(len(L)):
+			where=(schlegel_L[i][0],schlegel_L[i][1],schlegel_L[i][2]-0.05)
+			plot+=Text("".join([str(x) for x in L[i]])).translate(where)
+		plot.show(frame=false)
+		return True
+	elif dim==4 and method=="schlegel":
+		P = Polyhedron(new_L)
+		for f in P.facets():
+			facet = f
+			if facet.dim()==3:
+				break
+		barycenter = ZZ.one() * sum([v.vector() for v in facet.vertices()]) / len(facet.vertices())
+		locus_polyhedron = facet.stacking_locus()
+		repr_point = locus_polyhedron.representative_point()
+		the_ray = Polyhedron(vertices=[barycenter],
+							 rays=[repr_point - barycenter],
+							 backend=locus_polyhedron.backend()) & locus_polyhedron
+		projection_point = the_ray.representative_point()
+		schlegelProj = ProjectionFuncSchlegel(facet,projection_point)
+
+		schlegel_L = [schlegelProj(v) for v in new_L]
+		plot+=line3d(schlegel_L, color='red',radius=0.005, alpha=0.5).plot()
+		plot+=point3d([schlegel_L[0],schlegel_L[-1]], color='red',radius=0.01).plot()
+		for i in range(len(L)):
+			where=(schlegel_L[i][0],schlegel_L[i][1],schlegel_L[i][2]-0.05)
+			plot+=Text("".join([str(x) for x in L[i]])).translate(where)
+		plot.show(frame=false)
+		return True
+	elif dim==4 and method=="stereographic":
+		avg = list(1/len(new_L)*sum(vector(v) for v in new_L))
+		# avg[0]=1*max_coord
+		P = Polyhedron(new_L)
+		proj = ProjectionFuncStereographic(avg)
+		plot  = Projection(P).stereographic(avg).plot()
+		print("here")
+		stereo_L = [proj(vector(v)) for v in new_L]
+		plot+=line3d(stereo_L, color='red',radius=0.005, alpha=0.5).plot()
+		plot+=point3d([stereo_L[0],stereo_L[-1]], color='red',radius=0.01).plot()
+		for i in range(len(L)):
+			where=(stereo_L[i][0],stereo_L[i][1],stereo_L[i][2]-0.05)
+			plot+=Text("".join([str(x) for x in L[i]])).translate(where)
+		plot.show(frame=false)
+		return True
+	elif dim not in [3,4] or method=="circle_skeleton":
+		P = Polyhedron(L) 
+		V = ["".join([str(y) for y in list(x)]) for x in P.vertices()]
+		G = Graph()
+		for face in P.faces(1):
+			G.add_edge("".join([str(y) for y in list(face.vertices()[0])]),"".join([str(y) for y in list(face.vertices()[1])]))
+		pos_dict = {}
+		i=0
+		for v in L:
+			x = float(cos(pi/2 + ((2*pi)/len(L))*i))
+			y = float(sin(pi/2 + ((2*pi)/len(L))*i))
+			i+=1
+			pos_dict["".join([str(y) for y in v])] = [x,y]
+		plot = G.plot(pos=pos_dict,vertex_labels=False,vertex_size=1)
+		i=0
+		for v in L:
+			x = float(1.15*cos(pi/2 + ((2*pi)/len(L))*i))
+			y = float(1.12*sin(pi/2 + ((2*pi)/len(L))*i))
+			plot+=text("".join([str(y) for y in v]), (x,y))
+			i+=1
+		plot+=line([pos_dict["".join([str(y) for y in v])] for v in L],color="red")
+		plot.show(axes=false)
+		return True
+
+def draw_random_polytope(p=0.5,d=3,method="schlegel"):
+	V=[]
+	for bitstring in product([0,1], repeat=d):
+		if random()<=p:
+			V.append(bitstring)
+	if V:
+		L = all_01_vertex(V)
+		draw_polytope(L,method="schlegel")
+	else:
+		draw_random_polytope(p=p,d=d,method=method)
+@interact
+def _(prob=slider(10,100,default=50,step_size=5), n=selector([2,3,4],default=4)):
+    draw_random_polytope(p=prob/100,d=n)
+</script></div>]]></content><author><name></name></author><category term="post"/><category term="test"/><summary type="html"><![CDATA[]]></summary></entry></feed>
