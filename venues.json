@@ -24,9 +24,13 @@
             "name": "ACM Transactions on Algorithms",
             "url": "https://dl.acm.org/journal/talg"
         },
-        "Adv" : {
-            "name" : "Advances in Mathematics",
-            "url" : "https://www.journals.elsevier.com/advances-in-mathematics"
+        "Adv": {
+            "name": "Advances in Mathematics",
+            "url": "https://www.journals.elsevier.com/advances-in-mathematics"
+        },
+        "DM": {
+            "name": "Discrete Mathematics",
+            "url": "https://www.journals.elsevier.com/discrete-mathematics"
         }
     },
     "conferences" : {
