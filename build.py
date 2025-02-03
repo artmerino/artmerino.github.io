@@ -381,5 +381,5 @@ def buildVenuesFile():
 
 
 buildTexFile()
-# buildBibFile()
-# buildVenuesFile()
+buildBibFile()
+buildVenuesFile()

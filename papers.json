@@ -82,7 +82,7 @@
         "journal" : {
             "title" : "Combinatorial Generation via Permutation Languages. IV. Elimination trees",
             "venue" : "TALG",
-            "doi" : false,
+            "doi" : "10.1145/3689633",
             "year" : 2024
         }
     },
