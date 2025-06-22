@@ -230,7 +230,8 @@
         "conference" : {
             "venue" : "WINE",
             "year" : 2024,
-            "doi" : false
+            "doi" : false,
+            "appeared" : true
         },
         "journal" : {
             "preparation" : true

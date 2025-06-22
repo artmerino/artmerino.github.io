@@ -259,10 +259,10 @@ def journalTexString(id,conferenceID,authors, title, year, abbreviation, journal
 
 
 def buildBibFile():
-    with open('papers.json') as f:
+    with open('papers.json', encoding="utf-8") as f:
      papers = json.load(f)
 
-    with open('venues.json') as f:
+    with open('venues.json', encoding="utf-8") as f:
         venues = json.load(f)
     venuesConferenceDic = venues['conferences']
     journalConferenceDic = venues['journals']
@@ -326,7 +326,7 @@ def buildBibFile():
             # Papers in preparation for which no preprint is available
             # print(paperDic)
             continue
-    with open("_bibliography/papers.bib", "w") as text_file:
+    with open("_bibliography/papers.bib", "w", encoding="utf-8") as text_file:
         text_file.write(preprintString+conferenceString+journalString)
     return 
 
@@ -379,9 +379,9 @@ def preprintTexString(id,authors, title, year, arxiv,extras = {}):
 
 
 def buildTexFile():
-    with open('papers.json') as f:
+    with open('papers.json', encoding="utf-8") as f:
         papers = json.load(f)
-    with open('venues.json') as f:
+    with open('venues.json', encoding="utf-8") as f:
         venues = json.load(f)
     venuesConferenceDic = venues['conferences']
     journalConferenceDic = venues['journals']
@@ -390,12 +390,15 @@ def buildTexFile():
     conferenceId = {}
     conferenceIdx = 0
     shouldShowPreprint = {}
-    outString = ""
+    outString = r"\cvsection{Publications}"+"\n\n"
     for i,paper in enumerate(papers):
         paperDic = papers[paper]
         if 'conference' in paperDic:
             conferenceIdx+=1
             conferenceId[i] = conferenceIdx
+        else:
+            conferenceId[i] = -1
+    outString+=r"\cvsubsection{Journal Articles\hfill}\vspace{{1 mm}}"+"\n"        
     for i,paper in enumerate(papers):
         paperDic = papers[paper]
         title = paperDic['title']
@@ -425,6 +428,7 @@ def buildTexFile():
                 journalsId[i] = "preparation"
             elif 'submitted' in paperDic['journal']:
                 journalsId[i] = journalDic['submitted']
+    outString+= "\n\n"+r"\cvsubsection{Conference Articles\hfill}\vspace{{1 mm}}"+"\n"
     for i,paper in enumerate(papers):
         paperDic = papers[paper]
         title = paperDic['title']
@@ -452,6 +456,7 @@ def buildTexFile():
                 if 'submitted' in paperDic['journal']:
                     extras['journalSubmitted'] = journalConferenceDic[paperDic['journal']['submitted']]['name']
             outString+=(conferenceTexString(f"{conferenceId[i]}", journalId ,authorsListToTexString(authors), title, year, venue, proceedingsName, extras = extras))
+    outString+= "\n\n"+r"\cvsubsection{Preprints\hfill}\vspace{{1 mm}}"+"\n"
     preprintIdx=0
     for i,paper in enumerate(papers):
         paperDic = papers[paper]
@@ -481,12 +486,15 @@ def buildTexFile():
             elif shouldShowPreprint[i] and 'arxiv' in preprintDic:
                 preprintIdx+=1
                 outString+=(preprintTexString(f"{preprintIdx}", authorsListToTexString(authors), title, year, preprintDic['arxiv'],extras = extras))
-    with open("CV/data/publications.tex", "w") as text_file:
+    # Replace special characters in the output string
+    outString=outString.replace(r"_", r"\_")
+    outString=outString.replace(r"&", r"\&")
+    with open("CV/data/publications.tex", "w", encoding="utf-8") as text_file:
         text_file.write(outString)
     return 
 
 def buildVenuesFile():
-    with open('venues.json') as f:
+    with open('venues.json', encoding="utf-8") as f:
         venues = json.load(f)
     outputString = "arXiv:\n  url: https://arxiv.org/\n  color: \"#41424C\"\n"
     conferencesDic = venues['conferences']
@@ -495,7 +503,7 @@ def buildVenuesFile():
         outputString += f"{conference}: \n  color: \"#196ca3\"\n"
     for journal in journalsDic:
         outputString += f"{journal}: \n  url: {journalsDic[journal]['url']}\n  color: \"#c32b72\"\n"
-    with open("_data/venues.yml", "w") as text_file:
+    with open("_data/venues.yml", "w", encoding="utf-8") as text_file:
         text_file.write(outputString)
     return
 

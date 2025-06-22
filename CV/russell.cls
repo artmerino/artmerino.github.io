@@ -791,7 +791,6 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
 }
 \newenvironment{cvlist}{%
   \vspace{-4.0mm}

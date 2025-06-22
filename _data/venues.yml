@@ -44,3 +44,6 @@ TALG:
 Adv: 
   url: https://www.journals.elsevier.com/advances-in-mathematics
   color: "#c32b72"
+DM: 
+  url: https://www.journals.elsevier.com/discrete-mathematics
+  color: "#c32b72"
