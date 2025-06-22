@@ -168,7 +168,9 @@
             "selected" : true
         },
         "journal" : {
-            "submitted" : "Adv"
+            "venue" : "Adv",
+            "year" : 2025,
+            "doi" : "10.1016/j.aim.2025.110189"
         }
     },
     "paper11" : {
@@ -213,7 +215,7 @@
         "conference" : {
             "venue" : "ISAAC",
             "year" : 2024,
-            "doi" : false
+            "doi" : "10.4230/LIPIcs.ISAAC.2024.35"
         },
         "journal" : {
             "preparation" : true
@@ -238,11 +240,12 @@
         "title" : "Graphs that Admit a Hamiltonian Path are Cup-Stackable",
         "authors" : ["Petr Gregor","Arturo Merino","Torsten Mütze","Francesco Verciani"],
         "preprint" : {
-            "arxiv" : "2401.06189",
-            "year": 2024
+            "arxiv" : "2401.06189"
         },
         "journal" : {
-            "submitted" : "DM"
+            "venue" : "DM",
+            "year" : 2025,
+            "doi" : "10.1016/j.disc.2024.114375"
         }
     },
     "paper16" : {
@@ -254,12 +257,36 @@
         }
     },
     "paper17": {
-        "title": "Diverse Dynamic Programming",
-        "authors": ["Waldo Gálvez","Mayank Goswami","Arturo Merino","Gi Beom Park","Meng-Tsung Tsai","Victor Verdugo"]
+        "title": "A Dynamic Programming Framework for Generating Approximately Diverse and Optimal Solutions",
+        "authors": ["Waldo Gálvez","Mayank Goswami","Arturo Merino","Gi Beom Park","Meng-Tsung Tsai","Victor Verdugo"],
+        "preprint": {
+            "arxiv": "2501.12261",
+            "year": 2025
+        }
     },
     "paper18": {
         "title": "An Easier to Trust Demi-God Number for the Rubik's Cube",
-        "authors": ["Arturo Merino","Bernardo Subercaseaux"]
+        "authors": ["Arturo Merino","Bernardo Subercaseaux"],
+        "preprint": {
+            "arxiv": "2501.00144",
+            "year": 2025
+        }
+    },
+    "paper19": {
+        "title": "Minimum Maximal Matchings in Permutahedra",
+        "authors": ["Sofia Brenner", "Jiři Fink", "Hung P. Hoang", "Arturo Merino", "Vincent Pilaud"],
+        "preprint": {
+            "arxiv": "2502.09968",
+            "year": 2025
+        }
+    },
+    "paper20": {
+        "title": "Computing Diverse and Nice Triangulations",
+        "authors": ["Waldo Gálvez", "Mayank Goswami", "Arturo Merino", "Gi Beom Park", "Meng-Tsung Tsai"],
+        "preprint": {
+            "arxiv": "2506.01323",
+            "year": 2025
+        }
     }
 }
 
