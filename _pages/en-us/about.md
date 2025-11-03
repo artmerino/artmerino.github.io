@@ -3,11 +3,11 @@ page_id: about
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: arturo.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Oficina 519, Edificio B</p>
