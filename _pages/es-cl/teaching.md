@@ -2,12 +2,16 @@
 page_id: teaching
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Docencia.
+description: Lista de los cursos que he enseñado.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+En la Universidad de O'Higgins, he enseñado los siguientes cursos:
 
-Organize your courses by years, topics, or universities, however you like!
+- 2025-2: Teoría de la Computación (Pregrado)
+- 2025-2: Métodos Avanzados de Optimización (Postgrado)
+- 2025-1: Álgebra Lineal (Pregrado)
+- 2025-1: Teoría de Algoritmos (Pregrado)
+- 2024-2: Álgebra Lineal (Pregrado)
