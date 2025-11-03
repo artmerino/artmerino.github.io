@@ -88,8 +88,8 @@ ninja.data = [{
           description: "",
           section: "",handler: () => {
               window.location.href = "/fr-ca/books/en-us/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-two-of-our-papers-were-accepted-at-soda-2026-two-of-our-papers-were-accepted-at-soda-2026-listing-faces-of-polytopes-with-nastaran-behrooznia-sofia-brenner-arturo-merino-christian-rieck-and-francesco-verciani-traversing-regions-of-supersolvable-hyperplane-arrangements-and-their-lattice-quotients-with-sofia-brenner-jean-cardinal-thomas-mcconville-and-arturo-merino",
+          title: 'Two of our papers were accepted at SODA 2026! 🎉 Two of our...',
           description: "",
           section: "actualités",},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
