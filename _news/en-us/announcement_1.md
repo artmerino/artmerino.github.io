@@ -1,11 +1,11 @@
 ---
 layout: post
 date: 2025-10-10 16:11:00-0400
-inline: true
+inline: false
 related_posts: false
 ---
 
-Two of our papers were accepted at SODA 2026! 🎉 
+Two papers accepted at SODA 2026! 🎉 
 
 ---
 
