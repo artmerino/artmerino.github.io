@@ -46,22 +46,25 @@ ninja.data = [{
           description: "",
           section: "",handler: () => {
               window.location.href = "/fr-ca/books/en-us/the_godfather/";
-            },},{id: "news-announcement-1",
-          title: 'Announcement_1',
+            },},{id: "news-our-paper-computing-diverse-and-nice-triangulations-got-the-best-paper-award-at-fct-2025",
+          title: 'Our paper “Computing Diverse and Nice Triangulations” got the best paper award at...',
           description: "",
-          section: "actualités",handler: () => {
-              window.location.href = "/fr-ca/news/en-us/announcement_1/";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "actualités",},{id: "news-participated-in-the-dagstuhl-seminar-precision-in-geometric-algorithms",
+          title: 'Participated in the Dagstuhl Seminar “Precision in Geometric Algorithms”.',
           description: "",
-          section: "actualités",handler: () => {
-              window.location.href = "/fr-ca/news/en-us/announcement_2/";
-            },},{id: "news-two-papers-accepted-at-soda-2026",
-          title: 'Two papers accepted at SODA 2026! 🎉',
+          section: "actualités",},{id: "news-research-visit-to-university-of-kassel",
+          title: 'Research visit to University of Kassel.',
           description: "",
-          section: "actualités",handler: () => {
-              window.location.href = "/fr-ca/news/en-us/announcement_3/";
-            },},{id: "projects-project-7",
+          section: "actualités",},{id: "news-our-paper-listing-faces-of-polytopes-was-accepted-at-soda-2026",
+          title: 'Our paper “Listing faces of polytopes” was accepted at SODA 2026! 🎉',
+          description: "",
+          section: "actualités",},{id: "news-our-paper-traversing-regions-of-supersolvable-hyperplane-arrangements-and-their-lattice-quotients-was-accepted-at-soda-2026",
+          title: 'Our paper “Traversing regions of supersolvable hyperplane arrangements and their lattice quotients” was...',
+          description: "",
+          section: "actualités",},{id: "news-our-paper-generating-all-invertible-matrices-by-row-operations-was-accepted-in-discrete-mathematics",
+          title: 'Our paper “Generating all invertible matrices by row operations” was accepted in Discrete...',
+          description: "",
+          section: "actualités",},{id: "projects-project-7",
           title: 'project 7',
           description: "with background image",
           section: "projets",handler: () => {
