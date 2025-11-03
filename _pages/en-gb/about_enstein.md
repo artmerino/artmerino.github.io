@@ -1,30 +1,3 @@
----
-page_id: about
-layout: about
-title: About
-permalink: /
-subtitle: 
-
-profile:
-  align: right
-  image: arturo.jpeg
-  image_circular: true # crops the image to make it circular
-  more_info: >
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
-  limit: 3 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
----
-
 I am an assistant professor at the Engineering Institute of [Universidad de O'Higgins](https://www.uoh.cl).
 Before that, I was a postdoc in [Karl Bringmann's](https://people.mpi-inf.mpg.de/~kbringma/) group at [Saarland University](https://www.uni-saarland.de/start.html).
 I did my PhD at [TU Berlin](https://www.tu-berlin.de/), where I was advised by [Torsten Mütze](http://www.tmuetze.de) and took part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group. 
