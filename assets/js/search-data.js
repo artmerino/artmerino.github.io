@@ -15,28 +15,28 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation menu",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-publications",
-          title: "publications",
-          description: "publications in reverse chronological order.",
+          title: "Publications",
+          description: "Publications in reverse chronological order.",
           section: "Navigation menu",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+        },{id: "nav-short-cv",
+          title: "Short CV",
+          description: "",
           section: "Navigation menu",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          title: "Teaching.",
+          description: "List of the courses I have taught.",
           section: "Navigation menu",
           handler: () => {
             window.location.href = "/teaching/";
