@@ -36,4 +36,6 @@ More specifically, I've been interested in generation algorithms that perform *l
 
 Full bibliography can be found on: [DBLP](https://dblp.org/pid/239/8813.html), [Google Scholar](https://scholar.google.com/citations?user=-EnYzW0AAAAJ&hl=en) and [arXiv](https://arxiv.org/search/?query=Arturo+Merino&searchtype=all&source=header).
 
-**Contact:** \[name\].\[surname\]@uoh.cl or office 519, Building B, Universidad de O'Higgins, Rancagua, Chile.
+**Contact:** \[name\].\[surname\]@uoh.cl 
+
+**Address:** office 519, Building B, Universidad de O'Higgins, Rancagua, Chile.

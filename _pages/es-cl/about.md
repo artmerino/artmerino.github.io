@@ -36,4 +36,4 @@ Más específicamente, me he interesado en algoritmos de generación que realiza
 
 Mi bibliografía completa se puede encontrar en: [DBLP](https://dblp.org/pid/239/8813.html), [Google Scholar](https://scholar.google.com/citations?user=-EnYzW0AAAAJ&hl=en) y [arXiv](https://arxiv.org/search/?query=Arturo+Merino&searchtype=all&source=header).
 
-**Contacto:** (nombre).(apellido)@uoh.cl o la oficina 519 del Edificio B en la Universidad de O'Higgins, Rancagua, Chile.
+**Contacto:** \[nombre\].\[apellido\]@uoh.cl o la oficina 519 del Edificio B en la Universidad de O'Higgins, Rancagua, Chile.
