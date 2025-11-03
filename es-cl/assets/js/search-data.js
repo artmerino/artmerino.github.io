@@ -14,8 +14,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-sobre-mí",
+    title: "Sobre mí",
     section: "Menú de navegación",
     handler: () => {
       window.location.href = "/es-cl/";
@@ -35,8 +35,8 @@ ninja.data = [{
             window.location.href = "/es-cl/cv/";
           },
         },{id: "nav-docencia",
-          title: "Docencia.",
-          description: "Lista de los cursos que he enseñado.",
+          title: "Docencia",
+          description: "",
           section: "Menú de navegación",
           handler: () => {
             window.location.href = "/es-cl/teaching/";
