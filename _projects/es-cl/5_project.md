@@ -1,12 +1,11 @@
 ---
-page_id: project_3
+page_id: project_5
 layout: page
-title: projeto 3 com um nome bem longo
-description: um projeto que redireciona pra outro website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: project 5
+description: a project with a background image
+img: assets/img/1.jpg
 importance: 3
-category: work
+category: fun
 ---
 
 Every project has a beautiful feature showcase page.

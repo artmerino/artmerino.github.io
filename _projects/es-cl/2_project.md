@@ -1,19 +1,19 @@
 ---
-page_id: project_1
+page_id: project_2
 layout: page
-title: projeto 1
-description: com imagem de fundo
-img: assets/img/12.jpg
-importance: 1
+title: project 2
+description: a project with a background image and giscus comments
+img: assets/img/3.jpg
+importance: 2
 category: work
-related_publications: true
+giscus_comments: true
 ---
 
-Cada projeto tem uma bela página de apresentação de recursos.
-É fácil incluir imagens em um formato flexível de grade de 3 colunas.
-Faça suas fotos 1/3, 2/3 ou largura total.
+Every project has a beautiful feature showcase page.
+It's easy to include images in a flexible 3-column grid format.
+Make your photos 1/3, 2/3, or full width.
 
-Para dar um plano de fundo ao seu projeto na página do portfólio, basta adicionar a tag img ao front Matter assim:
+To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
     ---
     layout: page
@@ -45,8 +45,8 @@ Para dar um plano de fundo ao seu projeto na página do portfólio, basta adicio
     This image can also have a caption. It's like magic.
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
+You can also put regular text between your rows of images.
+Say you wanted to write a little bit about your project before you posted the rest of the images.
 You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
 <div class="row justify-content-sm-center">

@@ -1,12 +1,11 @@
 ---
-page_id: project_2
+page_id: project_6
 layout: page
-title: projeto 2
-description: um projeto com imagem de fundo e comentários do giscus
-img: assets/img/3.jpg
-importance: 2
-category: work
-giscus_comments: true
+title: project 6
+description: a project with no image
+img:
+importance: 4
+category: fun
 ---
 
 Every project has a beautiful feature showcase page.

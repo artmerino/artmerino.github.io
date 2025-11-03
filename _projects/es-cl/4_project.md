@@ -1,8 +1,8 @@
 ---
 page_id: project_4
 layout: page
-title: projeto 4
-description: outro sem imagem
+title: project 4
+description: another without an image
 img:
 importance: 3
 category: fun
