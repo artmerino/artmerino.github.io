@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://amerino.cl/sitemap.xml

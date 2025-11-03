@@ -90,12 +90,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/pt-br/blog/";
               },
-            },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "",handler: () => {
-              window.location.href = "/pt-br/books/pt-br/the_godfather/";
-            },},{id: "news-um-anúncio-simples-em-uma-linha",
+            },{id: "news-um-anúncio-simples-em-uma-linha",
           title: 'Um anúncio simples em uma linha.',
           description: "",
           section: "Novidades",},{id: "news-um-anúncio-longo-com-detalhes",
@@ -166,13 +161,6 @@ ninja.data = [{
           section: 'Idiomas',
           handler: () => {
             window.location.href = "" + updatedUrl;
-          },
-        },{
-          id: 'lang-fr-ca',
-          title: 'fr-ca',
-          section: 'Idiomas',
-          handler: () => {
-            window.location.href = "/fr-ca" + updatedUrl;
           },
         },{
       id: 'light-theme',

@@ -27,6 +27,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-repositórios",
+          title: "repositórios",
+          description: "Edite o `_data/repositories.yml` e mude as listas `github_users` e `github_repos` para incluir seu próprio perfil do GitHub e repositórios.",
+          section: "Navigation menu",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
         },{id: "nav-cv",
           title: "cv",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
@@ -41,12 +48,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "",handler: () => {
-              window.location.href = "/books/en-us/the_godfather/";
-            },},{id: "news-our-paper-computing-diverse-and-nice-triangulations-got-the-best-paper-award-at-fct-2025",
+        },{id: "news-our-paper-computing-diverse-and-nice-triangulations-got-the-best-paper-award-at-fct-2025",
           title: 'Our paper “Computing Diverse and Nice Triangulations” got the best paper award at...',
           description: "",
           section: "News",},{id: "news-participated-in-the-dagstuhl-seminar-precision-in-geometric-algorithms",
@@ -115,13 +117,6 @@ ninja.data = [{
           section: 'Languages',
           handler: () => {
             window.location.href = "/pt-br" + updatedUrl;
-          },
-        },{
-          id: 'lang-fr-ca',
-          title: 'fr-ca',
-          section: 'Languages',
-          handler: () => {
-            window.location.href = "/fr-ca" + updatedUrl;
           },
         },{
       id: 'light-theme',
