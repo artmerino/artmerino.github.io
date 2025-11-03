@@ -3,16 +3,16 @@ page_id: about
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: arturo.jpeg
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Oficina 519, Edificio B</p>
+    <p>Universidad de O'Higgins</p>
+    <p>Rancagua, Chile</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -28,7 +28,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an assistant professor at the [Universidad de O'Higgins](https://www.uoh.cl).
+I am an assistant professor at the Engineering Institute of [Universidad de O'Higgins](https://www.uoh.cl).
 Before that, I was a postdoc in [Karl Bringmann's](https://people.mpi-inf.mpg.de/~kbringma/) group at [Saarland University](https://www.uni-saarland.de/start.html).
 I did my PhD at [TU Berlin](https://www.tu-berlin.de/), where I was advised by [Torsten Mütze](http://www.tmuetze.de) and took part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group. 
 I also did a masters degree on applied math at [Universidad de Chile](https://www.uchile.cl/english) under the guidance of [José Soto](http://www.dim.uchile.cl/~jsoto/).
