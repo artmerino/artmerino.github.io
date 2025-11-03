@@ -2,8 +2,7 @@
 page_id: teaching
 layout: page
 permalink: /teaching/
-title: Teaching.
-description: List of the courses I have taught.
+title: Teaching
 nav: true
 nav_order: 6
 ---

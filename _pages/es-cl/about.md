@@ -1,7 +1,7 @@
 ---
 page_id: about
 layout: about
-title: about
+title: Sobre mí
 permalink: /
 subtitle: 
 

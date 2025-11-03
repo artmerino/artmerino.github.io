@@ -2,8 +2,7 @@
 page_id: teaching
 layout: page
 permalink: /teaching/
-title: Docencia.
-description: Lista de los cursos que he enseñado.
+title: Docencia
 nav: true
 nav_order: 6
 ---
