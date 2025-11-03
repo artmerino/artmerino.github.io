@@ -10,9 +10,6 @@ profile:
   image: arturo.jpeg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Office 519, Building B,</p>
-    <p>Universidad de O'Higgins,</p>
-    <p>Rancagua, Chile</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -28,13 +25,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an assistant professor at the Engineering Institute of [Universidad de O'Higgins](https://www.uoh.cl).
-Before that, I was a postdoc in [Karl Bringmann's](https://people.mpi-inf.mpg.de/~kbringma/) group at [Saarland University](https://www.uni-saarland.de/start.html).
-I did my PhD at [TU Berlin](https://www.tu-berlin.de/), where I was advised by [Torsten Mütze](http://www.tmuetze.de) and took part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group. 
-I also did a masters degree on applied math at [Universidad de Chile](https://www.uchile.cl/english) under the guidance of [José Soto](http://www.dim.uchile.cl/~jsoto/).
+Soy profesor asistente en el Instituto de Ingeniería de la [Universidad de O'Higgins](https://www.uoh.cl).
+Antes de eso, hice un postdoctorado en el grupo de [Karl Bringmann](https://people.mpi-inf.mpg.de/~kbringma/) en la [Universidad de Saarland](https://www.uni-saarland.de/start.html).
+Realicé mi doctorado en la [TU Berlín](https://www.tu-berlin.de/), bajo la dirección de [Torsten Mütze](http://www.tmuetze.de) y formé parte del grupo de [Optimización Combinatoria y Algoritmos de Grafos](https://www3.math.tu-berlin.de/coga/).
+También hice una magíster en matemáticas aplicadas en la [Universidad de Chile](https://www.uchile.cl/english) bajo la guía de [José Soto](http://www.dim.uchile.cl/~jsoto/).
 
-**Research Interests:**  I am interested in algorithmic design and, broadly speaking, in theoretical computer science and discrete mathematics.
-Lately, I've been focused on the design of [*generation/enumeration algorithms*](https://en.wikipedia.org/wiki/Enumeration_algorithm); that is, algorithms which ouput all solutions to a computational problem, instead of only one. 
-More specifically, I've been interested in generation algorithms that perform *local* operations (aka [*combinatorial Gray codes*](https://arxiv.org/abs/2202.01280)) and their interplay with combinatorics, discrete geometry, symmetry, and algebra.
+**Intereses de Investigación:**  Me interesa el diseño de algoritmos y, en términos generales, los aspectos teorícos de la computación y las matemáticas discretas.
+Últimamente, me he enfocado en el diseño de *algoritmos de enumeración/generación*; es decir, algoritmos que generan todas las soluciones a un problema computacional, en lugar de solo una.
+Más específicamente, me he interesado en algoritmos de generación que realizan operaciones *locales* (también conocidos como *códigos Gray combinatoriales*) y su interacción con la combinatoria, la geometría discreta, la simetría y el álgebra.
 
-Full bibliography can be found on: [DBLP](https://dblp.org/pid/239/8813.html), [Google Scholar](https://scholar.google.com/citations?user=-EnYzW0AAAAJ&hl=en) and [arXiv](https://arxiv.org/search/?query=Arturo+Merino&searchtype=all&source=header).
+Mi bibliografía completa se puede encontrar en: [DBLP](https://dblp.org/pid/239/8813.html), [Google Scholar](https://scholar.google.com/citations?user=-EnYzW0AAAAJ&hl=en) y [arXiv](https://arxiv.org/search/?query=Arturo+Merino&searchtype=all&source=header).
+
+**Contacto:** (nombre).(apellido)@uoh.cl o la oficina 519 del Edificio B en la Universidad de O'Higgins, Rancagua, Chile.

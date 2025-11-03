@@ -35,3 +35,5 @@ Lately, I've been focused on the design of [*generation/enumeration algorithms*]
 More specifically, I've been interested in generation algorithms that perform *local* operations (aka [*combinatorial Gray codes*](https://arxiv.org/abs/2202.01280)) and their interplay with combinatorics, discrete geometry, symmetry, and algebra.
 
 Full bibliography can be found on: [DBLP](https://dblp.org/pid/239/8813.html), [Google Scholar](https://scholar.google.com/citations?user=-EnYzW0AAAAJ&hl=en) and [arXiv](https://arxiv.org/search/?query=Arturo+Merino&searchtype=all&source=header).
+
+**Contact:** \[name\].\[surname\]@uoh.cl or office 519, Building B, Universidad de O'Higgins, Rancagua, Chile.
