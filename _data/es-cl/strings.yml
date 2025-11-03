@@ -114,7 +114,7 @@ months:
     october: Oct
     november: Nov
     december: Dic
-news: noticias
+news: Noticias
 newsletter:
   back: Volver
   error: "¡Vaya! Algo salió mal, por favor intenta de nuevo."
@@ -160,5 +160,5 @@ search:
     description: Cambiar el tema del sitio a predeterminado del sistema
     title: Usar tema predeterminado del sistema
   theme: Tema
-selected_publications: publicaciones seleccionadas
+selected_publications: Publicaciones seleccionadas
 site_description: Un tema simple y minimalista para académicos. Basado en el diseño de [*folio](https://github.com/bogoli/-folio).

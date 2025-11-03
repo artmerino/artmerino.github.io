@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Participated in the Dagstuhl Seminar ["Precision in Geometric Algorithms"](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/25372).
+Attended in the Dagstuhl Seminar ["Precision in Geometric Algorithms"](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/25372).
