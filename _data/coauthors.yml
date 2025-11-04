@@ -53,3 +53,39 @@
 "klimm":
   - firstname: ["Max"]
     url: https://www3.math.tu-berlin.de/disco/team/klimm/
+
+"galvez":
+  - firstname: ["Waldo"]
+    url: https://sites.google.com/view/wgalvez
+
+"goswami":
+  - firstname: ["Mayank"]
+    url: https://www.cs.qc.cuny.edu/goswami/
+
+"park":
+  - firstname: ["GiBeom"]
+    url: https://scholar.google.com/citations?user=gzzBMtAAAAAJ&hl=en
+
+"tsai":
+  - firstname: ["Meng-Tsung"]
+    url: https://homepage.iis.sinica.edu.tw/pages/mttsai/index_en.html
+
+"brenner"
+  - firstname: ["Sofia"]
+    url: https://sofiabrenner.github.io
+
+"fink"
+  - firstname: ["Jirka", "Jiři"]
+    url: https://ktiml.mff.cuni.cz/~fink/
+
+"pilaud"
+  - firstname: ["Vincent"]
+    url: https://www.ub.edu/comb/vincentpilaud/
+
+"subercaseaux"
+  - firstname: ["Bernardo"]
+    url: https://bernardosubercaseaux.github.io/
+
+"verdugo"
+  - firstname: ["Victor"]
+    url: https://sites.google.com/view/vverdugo/home
