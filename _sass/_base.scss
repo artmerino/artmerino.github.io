@@ -744,7 +744,7 @@ footer.sticky-bottom {
           color: var(--global-card-bg-color) !important;
 
           a {
-            color: white;
+            color: white !important;
 
             &:hover {
               text-decoration: none;
