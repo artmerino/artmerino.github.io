@@ -1,9 +1,49 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+arXiv:
+  url: https://arxiv.org/
+  color: "#41424C"
+ICALP: 
+  color: "#196ca3"
+SODA: 
+  color: "#196ca3"
+SoCG: 
+  color: "#196ca3"
+STACS: 
+  color: "#196ca3"
+FUN: 
+  color: "#196ca3"
+MFCS: 
+  color: "#196ca3"
+STOC: 
+  color: "#196ca3"
+FOCS: 
+  color: "#196ca3"
+WALCOM: 
+  color: "#196ca3"
+ISAAC: 
+  color: "#196ca3"
+WINE: 
+  color: "#196ca3"
+SICOMP: 
+  url: https://epubs.siam.org/journal/sicomp
+  color: "#c32b72"
+DCG: 
+  url: https://www.springer.com/journal/454
+  color: "#c32b72"
+JGT: 
+  url: https://onlinelibrary.wiley.com/journal/10970118
+  color: "#c32b72"
+SIDMA: 
+  url: https://epubs.siam.org/journal/sidma
+  color: "#c32b72"
+AOCO: 
+  url: https://www.springer.com/journal/26
+  color: "#c32b72"
+TALG: 
+  url: https://dl.acm.org/journal/talg
+  color: "#c32b72"
+Adv: 
+  url: https://www.journals.elsevier.com/advances-in-mathematics
+  color: "#c32b72"
+DM: 
+  url: https://www.journals.elsevier.com/discrete-mathematics
+  color: "#c32b72"

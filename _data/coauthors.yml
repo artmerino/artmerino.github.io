@@ -1,34 +1,55 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Mütze":
+  - firstname: ["Torsten"]
+    url: http://www.tmuetze.de
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Cardinal":
+  - firstname: ["Jean"]
+    url: https://jean.cardinal.web.ulb.be/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Williams":
+  - firstname: ["Aaron"]
+    url: https://sites.google.com/williams.edu/aaron
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Gregor":
+  - firstname: ["Petr"]
+    url: http://ktiml.mff.cuni.cz/~gregor/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Wiese":
+  - firstname: ["Andreas"]
+    url: https://discrete.ma.tum.de/people/professors/andreas-wiese.html
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Soto":
+  - firstname: ["José A.", "José"]
+    url: http://www.dim.uchile.cl/~jsoto/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Mička":
+  - firstname: ["Ondřej"]
+    url: https://ktiml.mff.cuni.cz/~micka/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Hoang":
+  - firstname: ["Hung", "Hung P."]
+    url: https://people.inf.ethz.ch/hoangp/
 
-"planck":
+"Namrata":
+  - firstname: [""]
+    url: https://warwick.ac.uk/fac/sci/dcs/people/u2057108/
+
+"Dürr":
+  - firstname: ["Christoph"]
+    url: https://webia.lip6.fr/~durrc//
+  
+"Verschae":
+  - firstname: ["José"]
+    url: https://sites.google.com/site/jverschae/home
+
+"Verciani":
+  - firstname: ["Francesco"]
+    url: https://www.uni-kassel.de/fb10/en/institutes/mathematics/persons/details?tx_ukpersons_personfunctiondetail%5BpersonFunction%5D=2242&cHash=66ecb782fa3fad1e5665850d66fc4ac4
+
+"Cembrano":
+  - firstname: ["Javier"]
+    url: https://sites.google.com/view/javier-cembrano/
+
+"Klimm":
   - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+    url: https://www3.math.tu-berlin.de/disco/team/klimm/
