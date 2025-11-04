@@ -1,27 +1,47 @@
 arXiv:
   url: https://arxiv.org/
   color: "#41424C"
-ICALP: 
+ICALP 2019: 
+  url: https://icalp2019.upatras.gr
   color: "#196ca3"
-SODA: 
+ICALP 2020:
+  url: https://icalp2020.saarland-informatics-campus.de
   color: "#196ca3"
-SoCG: 
+SODA 2021:
+  url: https://www.siam.org/conferences-events/past-event-archive/soda21/
   color: "#196ca3"
-STACS: 
+SODA 2022:
+  url: https://www.siam.org/conferences-events/past-event-archive/soda22
   color: "#196ca3"
-FUN: 
+SODA 2023:
+  url: https://www.siam.org/conferences-events/past-event-archive/soda23
   color: "#196ca3"
-MFCS: 
+SoCG 2021: 
+  url: https://cse.buffalo.edu/socg21/
   color: "#196ca3"
-STOC: 
+STACS 2022:
+  url: https://stacs2022.sciencesconf.org
   color: "#196ca3"
-FOCS: 
+FUN 2022:
+  url: https://sites.google.com/view/fun2022/home
   color: "#196ca3"
-WALCOM: 
+MFCS 2022:
+  url: https://www.ac.tuwien.ac.at/mfcs2022/
   color: "#196ca3"
-ISAAC: 
+STOC 2023:
+  url: https://acm-stoc.org/stoc2023/
   color: "#196ca3"
-WINE: 
+FOCS 2023:
+  url: https://focs.computer.org/2023/
+  color: "#196ca3"
+WALCOM 2024:
+  url: https://www.kono.cis.iwate-u.ac.jp/~yamanaka/walcom2024/
+  color: "#196ca3"
+ISAAC 2024: 
+  url: https://sites.google.com/view/isaac2024/home
+  color: "#196ca3"
+WINE 2024: 
+  url: https://wine2024.org
   color: "#196ca3"
 SICOMP: 
   url: https://epubs.siam.org/journal/sicomp
