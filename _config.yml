@@ -7,7 +7,7 @@ first_name: Arturo
 middle_name: 
 last_name: Merino
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🌎 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://amerino.cl # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
