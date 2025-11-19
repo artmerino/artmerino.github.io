@@ -107,6 +107,10 @@ class ConwaysSoldierGame {
     setupEventListeners() {
         const gameBoard = document.getElementById('gameBoard');
         gameBoard.addEventListener('click', (e) => this.handleCellClick(e));
+        gameBoard.addEventListener('touchend', (e) => {
+            e.preventDefault(); // Prevent double-firing of click events on mobile
+            this.handleCellClick(e);
+        });
         
         document.getElementById('setupBtn').addEventListener('click', () => this.enterSetupMode());
         document.getElementById('playBtn').addEventListener('click', () => this.startPlaying());

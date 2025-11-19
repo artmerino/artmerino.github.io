@@ -5,6 +5,12 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     color: #333;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -119,6 +125,8 @@ button:active {
     position: relative;
     transition: all 0.2s ease;
     border-radius: 3px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .cell:hover {
@@ -252,32 +260,133 @@ button:disabled:hover {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
     .container {
-        margin: 10px;
-        padding: 15px;
+        margin: 5px;
+        padding: 10px;
+        max-width: 100%;
     }
     
-    #gameBoard {
-        grid-template-columns: repeat(15, 35px);
-        grid-template-rows: repeat(20, 35px);
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
     }
     
-    .cell {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .soldier {
-        width: 24px;
-        height: 24px;
+    .info-panel, .setup-panel {
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 13px;
     }
     
     .controls {
         justify-content: center;
         text-align: center;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+    
+    button {
+        padding: 8px 12px;
+        font-size: 12px;
+        margin: 2px;
+    }
+    
+    #moveCounter, #bestHeight {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    #gameBoard {
+        grid-template-columns: repeat(15, 22px);
+        grid-template-rows: repeat(14, 22px);
+        gap: 1px;
+        padding: 5px;
+        margin: 10px auto;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .cell {
+        width: 22px;
+        height: 22px;
+        border-width: 1px;
+    }
+    
+    .soldier {
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+    }
+    
+    .instructions {
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .instructions li {
+        margin: 6px 0;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 2px;
+        padding: 8px;
     }
     
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+    .info-panel, .setup-panel {
+        padding: 8px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    #gameBoard {
+        grid-template-columns: repeat(15, 20px);
+        grid-template-rows: repeat(14, 20px);
+        gap: 1px;
+        padding: 3px;
+        margin: 8px auto;
+    }
+    
+    .cell {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .soldier {
+        width: 14px;
+        height: 14px;
+        border-width: 1px;
+    }
+    
+    .instructions {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .height-indicator {
+        display: none; /* Hide on very small screens */
     }
 }
