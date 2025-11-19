@@ -1,0 +1,51 @@
+---
+layout: none
+permalink: /conway/
+title: Conway's Soldier Game
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Soldier Game</title>
+    <link rel="stylesheet" href="{{ '/assets/css/conwaysStyles.css' | relative_url }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Soldados de Conway</h1>
+        <div class="info-panel">
+            <p><strong>Objetivo:</strong> ¡Llevar uno de tus fichas lo más lejos posible sobre la línea roja!</p>
+            <p><strong>Reglas:</strong> Haz clic en un soldado y luego en un espacio vacío a 2 casillas de distancia. El soldado salta sobre la pieza del medio y la elimina.</p>
+        </div>
+        
+        <div class="controls">
+            <button id="setupBtn">Configura tus soldados</button>
+            <button id="playBtn" disabled>Jugar</button>
+            <button id="resetBtn">Intentar de nuevo</button>
+            <span id="bestHeight">Mejor altura: 0</span>
+        </div>
+        
+        <div id="setupInstructions" class="setup-panel" style="display: none;">
+            <p><strong>Modo de Configuración:</strong> Haz clic en las celdas vacías debajo o en la línea de costa (línea roja) para colocar soldados. Haz clic en soldados existentes para eliminarlos.</p>
+            <p><strong>Consejo de estrategia:</strong> ¡Comienza con grupos densos debajo de la línea de costa para obtener el máximo potencial de salto!</p>
+        </div>
+        
+        <div id="gameBoard"></div>
+        
+        <div class="instructions">
+            <h3>Cómo jugar:</h3>
+            <ul>
+                <li><strong>Fase de Configuración:</strong> Haz clic en "Configura tus soldados" para colocar tus propios soldados debajo de la línea de costa roja</li>
+                <li><strong>Fase de Juego:</strong> Haz clic en "Comenzar a jugar" cuando estés listo, luego haz clic en los soldados para seleccionarlos</li>
+                <li>Haz clic en un espacio vacío exactamente a 2 casillas de distancia (horizontal o vertical) para saltar</li>
+                <li>El soldado saltará sobre la pieza del medio, eliminándola</li>
+                <li>¡Intenta llevar un soldado lo más alto posible sobre la línea roja!</li>
+                <li>La línea roja representa la "línea de costa": solo puedes comenzar con soldados debajo o sobre ella</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="{{ '/assets/js/conwaysSoldier.js' | relative_url }}"></script>
+</body>
+</html>
