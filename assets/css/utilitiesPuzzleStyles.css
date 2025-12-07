@@ -134,14 +134,25 @@ svg {
     cursor: pointer;
     fill: none;
     stroke: #3498db;
-    stroke-width: 2;
+    stroke-width: 3;
     stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .connection-line:hover {
     stroke: #e74c3c;
-    stroke-width: 3;
+    stroke-width: 4;
     filter: drop-shadow(0 0 4px rgba(231, 76, 60, 0.6));
+}
+
+.drawing-line {
+    fill: none;
+    stroke: #f39c12;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.7;
+    pointer-events: none;
 }
 
 .instructions {

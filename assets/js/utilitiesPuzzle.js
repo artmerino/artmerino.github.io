@@ -12,8 +12,10 @@ class UtilitiesPuzzle {
             { id: 'u3', label: '🔥', name: 'Gas', x: 450, y: 280 }
         ];
 
-        this.connections = []; // Array of {from, to} connections
-        this.selectedNode = null;
+        this.connections = []; // Array of {from, to, path} connections
+        this.isDrawing = false;
+        this.currentPath = [];
+        this.drawingFrom = null;
         this.lineRadius = 20;
 
         this.initializeSVG();
@@ -81,23 +83,27 @@ class UtilitiesPuzzle {
 
     drawConnection(conn, index) {
         const canvas = document.getElementById('canvas');
-        const fromNode = this.getNode(conn.from);
-        const toNode = this.getNode(conn.to);
 
-        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line.setAttribute('x1', fromNode.x);
-        line.setAttribute('y1', fromNode.y);
-        line.setAttribute('x2', toNode.x);
-        line.setAttribute('y2', toNode.y);
-        line.setAttribute('class', 'connection-line');
-        line.setAttribute('data-index', index);
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', this.pathArrayToString(conn.path));
+        path.setAttribute('class', 'connection-line');
+        path.setAttribute('data-index', index);
 
-        line.addEventListener('click', (e) => {
+        path.addEventListener('click', (e) => {
             e.stopPropagation();
             this.removeConnection(index);
         });
 
-        canvas.appendChild(line);
+        canvas.appendChild(path);
+    }
+
+    pathArrayToString(pathArray) {
+        if (pathArray.length === 0) return '';
+        let d = `M ${pathArray[0].x} ${pathArray[0].y}`;
+        for (let i = 1; i < pathArray.length; i++) {
+            d += ` L ${pathArray[i].x} ${pathArray[i].y}`;
+        }
+        return d;
     }
 
     getNode(id) {
@@ -106,60 +112,183 @@ class UtilitiesPuzzle {
 
     handleNodeClick(node, type, e) {
         e.stopPropagation();
+        e.preventDefault();
 
-        if (this.selectedNode === null) {
-            // Select first node
-            this.selectedNode = node;
-            this.renderBoard();
-        } else if (this.selectedNode.id === node.id) {
-            // Deselect
-            this.selectedNode = null;
-            this.renderBoard();
-        } else {
-            // Try to create connection
-            const fromHouse = this.houses.find(h => h.id === this.selectedNode.id);
-            const toUtility = this.utilities.find(u => u.id === node.id);
-            const fromUtility = this.utilities.find(u => u.id === this.selectedNode.id);
-            const toHouse = this.houses.find(h => h.id === node.id);
+        // Start drawing from this node
+        this.isDrawing = true;
+        this.drawingFrom = node;
+        this.currentPath = [{ x: node.x, y: node.y }];
+        this.renderBoard();
+    }
 
-            // Only allow house -> utility connections
-            if ((fromHouse && toUtility) || (fromUtility && toHouse)) {
-                const from = fromHouse ? this.selectedNode.id : node.id;
-                const to = fromHouse ? node.id : this.selectedNode.id;
+    handleMouseMove(e) {
+        if (!this.isDrawing) return;
 
-                // Check if connection already exists
-                if (!this.connections.some(c => c.from === from && c.to === to)) {
-                    // Check for crossings
-                    if (this.wouldCrossingOccur(from, to)) {
-                        alert('❌ ¡Las líneas se cruzan! No puedes hacer esta conexión.');
-                    } else {
-                        this.connections.push({ from, to });
-                        this.checkWin();
-                    }
-                }
+        const canvas = document.getElementById('canvas');
+        const rect = canvas.getBoundingClientRect();
+        const scaleX = 500 / rect.width;
+        const scaleY = 360 / rect.height;
+        const x = (e.clientX - rect.left) * scaleX;
+        const y = (e.clientY - rect.top) * scaleY;
+
+        this.currentPath.push({ x, y });
+        this.renderDrawingPath();
+    }
+
+    handleTouchMove(e) {
+        if (!this.isDrawing) return;
+        e.preventDefault();
+
+        const canvas = document.getElementById('canvas');
+        const rect = canvas.getBoundingClientRect();
+        const touch = e.touches[0];
+        const scaleX = 500 / rect.width;
+        const scaleY = 360 / rect.height;
+        const x = (touch.clientX - rect.left) * scaleX;
+        const y = (touch.clientY - rect.top) * scaleY;
+
+        this.currentPath.push({ x, y });
+        this.renderDrawingPath();
+    }
+
+    handleMouseUp(e) {
+        if (!this.isDrawing) return;
+
+        const canvas = document.getElementById('canvas');
+        const rect = canvas.getBoundingClientRect();
+        const scaleX = 500 / rect.width;
+        const scaleY = 360 / rect.height;
+        const x = (e.clientX - rect.left) * scaleX;
+        const y = (e.clientY - rect.top) * scaleY;
+
+        // Check if we ended on a node
+        const endNode = this.getNodeAtPosition(x, y);
+
+        if (endNode && endNode.id !== this.drawingFrom.id) {
+            this.tryCreateConnection(this.drawingFrom, endNode);
+        }
+
+        this.isDrawing = false;
+        this.drawingFrom = null;
+        this.currentPath = [];
+        this.renderBoard();
+    }
+
+    handleTouchEnd(e) {
+        if (!this.isDrawing) return;
+        e.preventDefault();
+
+        const canvas = document.getElementById('canvas');
+        const rect = canvas.getBoundingClientRect();
+        const touch = e.changedTouches[0];
+        const scaleX = 500 / rect.width;
+        const scaleY = 360 / rect.height;
+        const x = (touch.clientX - rect.left) * scaleX;
+        const y = (touch.clientY - rect.top) * scaleY;
+
+        // Check if we ended on a node
+        const endNode = this.getNodeAtPosition(x, y);
+
+        if (endNode && endNode.id !== this.drawingFrom.id) {
+            this.tryCreateConnection(this.drawingFrom, endNode);
+        }
+
+        this.isDrawing = false;
+        this.drawingFrom = null;
+        this.currentPath = [];
+        this.renderBoard();
+    }
+
+    getNodeAtPosition(x, y) {
+        const allNodes = [...this.houses, ...this.utilities];
+        for (const node of allNodes) {
+            const dist = Math.sqrt((x - node.x) ** 2 + (y - node.y) ** 2);
+            if (dist <= this.lineRadius * 1.5) {
+                return node;
+            }
+        }
+        return null;
+    }
+
+    tryCreateConnection(fromNode, toNode) {
+        const fromHouse = this.houses.find(h => h.id === fromNode.id);
+        const toUtility = this.utilities.find(u => u.id === toNode.id);
+        const fromUtility = this.utilities.find(u => u.id === fromNode.id);
+        const toHouse = this.houses.find(h => h.id === toNode.id);
+
+        // Only allow house -> utility connections
+        if ((fromHouse && toUtility) || (fromUtility && toHouse)) {
+            const from = fromHouse ? fromNode.id : toNode.id;
+            const to = fromHouse ? toNode.id : fromNode.id;
+
+            // Check if connection already exists
+            if (this.connections.some(c => c.from === from && c.to === to)) {
+                return;
             }
 
-            this.selectedNode = null;
-            this.renderBoard();
+            // Simplify path to avoid too many points
+            const simplifiedPath = this.simplifyPath(this.currentPath, 5);
+
+            // Check for crossings
+            if (this.wouldPathCross(simplifiedPath)) {
+                alert('❌ ¡Las líneas se cruzan! No puedes hacer esta conexión.');
+            } else {
+                this.connections.push({ from, to, path: simplifiedPath });
+                this.checkWin();
+            }
         }
     }
 
-    wouldCrossingOccur(newFrom, newTo) {
-        const newFromNode = this.getNode(newFrom);
-        const newToNode = this.getNode(newTo);
+    simplifyPath(path, tolerance) {
+        if (path.length <= 2) return path;
 
+        // Simple decimation - keep every nth point
+        const simplified = [path[0]];
+        for (let i = tolerance; i < path.length - 1; i += tolerance) {
+            simplified.push(path[i]);
+        }
+        simplified.push(path[path.length - 1]);
+        return simplified;
+    }
+
+    renderDrawingPath() {
+        const canvas = document.getElementById('canvas');
+        let existingPath = canvas.querySelector('.drawing-line');
+        
+        if (existingPath) {
+            existingPath.remove();
+        }
+
+        if (this.currentPath.length > 1) {
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('d', this.pathArrayToString(this.currentPath));
+            path.setAttribute('class', 'drawing-line');
+            canvas.appendChild(path);
+        }
+    }
+
+    wouldPathCross(newPath) {
+        // Check if the new path crosses any existing connection paths
         for (const conn of this.connections) {
-            const existingFrom = this.getNode(conn.from);
-            const existingTo = this.getNode(conn.to);
-
-            if (this.linesCross(
-                newFromNode.x, newFromNode.y, newToNode.x, newToNode.y,
-                existingFrom.x, existingFrom.y, existingTo.x, existingTo.y
-            )) {
+            if (this.pathsCross(newPath, conn.path)) {
                 return true;
             }
         }
+        return false;
+    }
 
+    pathsCross(path1, path2) {
+        // Check if any segment in path1 crosses any segment in path2
+        for (let i = 0; i < path1.length - 1; i++) {
+            for (let j = 0; j < path2.length - 1; j++) {
+                if (this.linesCross(
+                    path1[i].x, path1[i].y, path1[i + 1].x, path1[i + 1].y,
+                    path2[j].x, path2[j].y, path2[j + 1].x, path2[j + 1].y
+                )) {
+                    return true;
+                }
+            }
+        }
         return false;
     }
 
@@ -198,6 +327,13 @@ class UtilitiesPuzzle {
 
     setupEventListeners() {
         document.getElementById('resetBtn').addEventListener('click', () => this.reset());
+
+        const canvas = document.getElementById('canvas');
+        canvas.addEventListener('mousemove', (e) => this.handleMouseMove(e));
+        canvas.addEventListener('mouseup', (e) => this.handleMouseUp(e));
+        canvas.addEventListener('mouseleave', (e) => this.handleMouseUp(e));
+        canvas.addEventListener('touchmove', (e) => this.handleTouchMove(e), { passive: false });
+        canvas.addEventListener('touchend', (e) => this.handleTouchEnd(e), { passive: false });
     }
 
     reset() {
