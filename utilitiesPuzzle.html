@@ -1,0 +1,45 @@
+---
+layout: none
+permalink: /utilities/
+title: Puzzle de Servicios
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>Puzzle de Servicios</title>
+    <link rel="stylesheet" href="{{ '/assets/css/utilitiesPuzzleStyles.css' | relative_url }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Puzzle de Servicios</h1>
+        <div class="info-panel">
+            <p><strong>Objetivo:</strong> ¡Conecta cada casa con los tres servicios sin que las líneas se crucen!</p>
+            <p><strong>Reglas:</strong> Haz clic en una casa y luego en un servicio para conectarlos. Las líneas no pueden cruzarse.</p>
+        </div>
+        
+        <div class="controls">
+            <button id="resetBtn">Limpiar</button>
+            <span id="connectionCounter">Conexiones: 0/9</span>
+        </div>
+        
+        <div id="gameBoard">
+            <svg id="canvas"></svg>
+        </div>
+        
+        <div class="instructions">
+            <h3>Cómo jugar:</h3>
+            <ul>
+                <li>Hay 3 casas (izquierda) y 3 servicios (derecha): agua, gas, electricidad</li>
+                <li>Cada casa debe conectarse con los 3 servicios</li>
+                <li>Las líneas de conexión no pueden cruzarse entre sí</li>
+                <li>Haz clic en una casa y luego en un servicio para crear una conexión</li>
+                <li>Haz clic en una línea existente para eliminarla</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="{{ '/assets/js/utilitiesPuzzle.js' | relative_url }}"></script>
+</body>
+</html>
