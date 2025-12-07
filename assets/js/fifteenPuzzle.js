@@ -71,7 +71,7 @@ class FifteenPuzzle {
         });
 
         document.getElementById('shuffleBtn').addEventListener('click', () => this.shuffle());
-        document.getElementById('solveBtn').addEventListener('click', () => this.showSolution());
+        document.getElementById('impossibleBtn').addEventListener('click', () => this.setImpossible());
     }
 
     handleTileClick(event) {
@@ -204,13 +204,33 @@ class FifteenPuzzle {
         document.getElementById('timer').textContent = `Tiempo: ${minutes}:${seconds.toString().padStart(2, '0')}`;
     }
 
-    showSolution() {
-        alert('💡 Consejos para resolver el puzzle:\n\n' +
-              '1. Resuelve las primeras dos filas primero\n' +
-              '2. Luego trabaja en las dos primeras columnas\n' +
-              '3. Finalmente, resuelve el cuadrado 2x2 restante\n' +
-              '4. Practica moviendo grupos de fichas en lugar de una a la vez\n\n' +
-              '¡La práctica hace al maestro!');
+    setImpossible() {
+        // Set up the classic impossible configuration with 14 and 15 swapped
+        this.initializeBoard();
+        this.moves = 0;
+        this.isShuffled = false;
+        this.stopTimer();
+
+        // Create the impossible configuration: all tiles in order except 14 and 15 are swapped
+        let num = 1;
+        for (let row = 0; row < this.size; row++) {
+            for (let col = 0; col < this.size; col++) {
+                if (row === this.size - 1 && col === this.size - 1) {
+                    this.tiles[row][col] = 0; // Empty space
+                } else if (row === this.size - 1 && col === this.size - 3) {
+                    this.tiles[row][col] = 15; // Swap: put 15 here
+                } else if (row === this.size - 1 && col === this.size - 2) {
+                    this.tiles[row][col] = 14; // Swap: put 14 here
+                } else {
+                    this.tiles[row][col] = num++;
+                }
+            }
+        }
+
+        this.emptyPos = { row: this.size - 1, col: this.size - 1 };
+        this.moves = 0;
+        this.isShuffled = true;
+        this.renderBoard();
     }
 }
 
