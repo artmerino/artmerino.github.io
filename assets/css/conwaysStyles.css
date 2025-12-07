@@ -300,8 +300,8 @@ button:disabled:hover {
     }
     
     #gameBoard {
-        grid-template-columns: repeat(15, 22px);
-        grid-template-rows: repeat(14, 22px);
+        grid-template-columns: repeat(11, 22px);
+        grid-template-rows: repeat(10, 22px);
         gap: 1px;
         padding: 5px;
         margin: 10px auto;
@@ -363,8 +363,8 @@ button:disabled:hover {
     }
     
     #gameBoard {
-        grid-template-columns: repeat(15, 20px);
-        grid-template-rows: repeat(14, 20px);
+        grid-template-columns: repeat(11, 20px);
+        grid-template-rows: repeat(10, 20px);
         gap: 1px;
         padding: 3px;
         margin: 8px auto;

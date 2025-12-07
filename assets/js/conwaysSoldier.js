@@ -1,8 +1,18 @@
 class ConwaysSoldierGame {
     constructor() {
-        this.boardWidth = 15;
-        this.boardHeight = 14; // Reduced from 20 to 14
-        this.shorelineRow = 6; // Row 6 is the shoreline (0-indexed) - 6 rows above
+        // Detect mobile device
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile) {
+            this.boardWidth = 11;
+            this.boardHeight = 10; // 5 above + 1 shoreline + 4 below
+            this.shorelineRow = 5; // Row 5 is the shoreline (0-indexed) - 5 rows above
+        } else {
+            this.boardWidth = 15;
+            this.boardHeight = 14; // Reduced from 20 to 14
+            this.shorelineRow = 6; // Row 6 is the shoreline (0-indexed) - 6 rows above
+        }
+        
         this.board = [];
         this.initialSetup = []; // Store the initial setup for reset
         this.selectedCell = null;
