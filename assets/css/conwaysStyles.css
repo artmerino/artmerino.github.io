@@ -135,9 +135,9 @@ button:active {
 }
 
 .cell.shoreline {
-    background: linear-gradient(90deg, #e74c3c, #c0392b);
-    border-color: #a93226;
-    box-shadow: 0 2px 4px rgba(231, 76, 60, 0.4);
+    background: #ecf0f1;
+    border-color: #34495e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cell.water {
