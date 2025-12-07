@@ -5,8 +5,6 @@ class FifteenPuzzle {
         this.emptyPos = { row: 3, col: 3 };
         this.moves = 0;
         this.isShuffled = false;
-        this.timer = 0;
-        this.timerInterval = null;
 
         this.initializeBoard();
         this.renderBoard();
@@ -97,11 +95,6 @@ class FifteenPuzzle {
     moveTile(row, col) {
         if (!this.canMove(row, col)) return;
 
-        // Start timer on first move
-        if (this.moves === 0 && this.isShuffled) {
-            this.startTimer();
-        }
-
         // Swap tile with empty space
         this.tiles[this.emptyPos.row][this.emptyPos.col] = this.tiles[row][col];
         this.tiles[row][col] = 0;
@@ -115,7 +108,6 @@ class FifteenPuzzle {
         this.initializeBoard();
         this.moves = 0;
         this.isShuffled = false;
-        this.stopTimer();
 
         // Perform random valid moves to ensure solvability
         const numShuffles = 100 + Math.floor(Math.random() * 100);
@@ -169,11 +161,8 @@ class FifteenPuzzle {
 
     checkWin() {
         if (this.isSolved() && this.isShuffled) {
-            this.stopTimer();
             setTimeout(() => {
-                const minutes = Math.floor(this.timer / 60);
-                const seconds = this.timer % 60;
-                alert(`🎉 ¡Felicidades! 🎉\n\n¡Has resuelto el puzzle!\n\nMovimientos: ${this.moves}\nTiempo: ${minutes}:${seconds.toString().padStart(2, '0')}`);
+                alert(`🎉 ¡Felicidades! 🎉\n\n¡Has resuelto el puzzle!\n\nMovimientos: ${this.moves}`);
             }, 300);
         }
     }
@@ -182,34 +171,11 @@ class FifteenPuzzle {
         document.getElementById('moveCounter').textContent = `Movimientos: ${this.moves}`;
     }
 
-    startTimer() {
-        this.timer = 0;
-        this.updateTimer();
-        this.timerInterval = setInterval(() => {
-            this.timer++;
-            this.updateTimer();
-        }, 1000);
-    }
-
-    stopTimer() {
-        if (this.timerInterval) {
-            clearInterval(this.timerInterval);
-            this.timerInterval = null;
-        }
-    }
-
-    updateTimer() {
-        const minutes = Math.floor(this.timer / 60);
-        const seconds = this.timer % 60;
-        document.getElementById('timer').textContent = `Tiempo: ${minutes}:${seconds.toString().padStart(2, '0')}`;
-    }
-
     setImpossible() {
         // Set up the classic impossible configuration with 14 and 15 swapped
         this.initializeBoard();
         this.moves = 0;
         this.isShuffled = false;
-        this.stopTimer();
 
         // Create the impossible configuration: all tiles in order except 14 and 15 are swapped
         let num = 1;
