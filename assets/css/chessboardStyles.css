@@ -164,6 +164,11 @@ button:active {
     transform: scale(1.05);
 }
 
+.square.selected {
+    box-shadow: 0 0 0 3px #f39c12 inset;
+    opacity: 0.9;
+}
+
 .square.covered {
     cursor: pointer;
 }

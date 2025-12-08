@@ -2,15 +2,14 @@ class ChessboardPuzzle {
     constructor() {
         this.boardSize = 8;
         this.currentBoard = 1;
-        this.orientation = 'horizontal'; // 'horizontal' or 'vertical'
-        this.dominoes = []; // Array of placed dominoes
+        this.selectedSquare = null;
+        this.dominoes = [];
         
-        // Board configurations - 1-indexed for display, will convert to 0-indexed internally
         this.boards = {
-            1: { blocked: [[1, 1], [8, 8]], maxDominoes: 31 }, // Opposite corners - SOLVABLE
-            2: { blocked: [[1, 1], [1, 2]], maxDominoes: 31 }, // Adjacent corners - SOLVABLE
-            3: { blocked: [[4, 4], [5, 5]], maxDominoes: 31 }, // Center diagonal - SOLVABLE
-            4: { blocked: [[1, 1], [2, 1]], maxDominoes: 31 }  // Same color corners - IMPOSSIBLE
+            1: { blocked: [[1, 1], [8, 8]], maxDominoes: 31 },
+            2: { blocked: [[1, 1], [1, 2]], maxDominoes: 31 },
+            3: { blocked: [[4, 4], [5, 5]], maxDominoes: 31 },
+            4: { blocked: [[1, 1], [2, 1]], maxDominoes: 31 }
         };
 
         this.initializeBoard();
@@ -35,14 +34,12 @@ class ChessboardPuzzle {
                 square.dataset.row = row;
                 square.dataset.col = col;
 
-                // Chess coloring
                 if ((row + col) % 2 === 0) {
                     square.classList.add('white');
                 } else {
                     square.classList.add('black');
                 }
 
-                // Check if blocked (convert from 1-indexed to 0-indexed)
                 const isBlocked = blocked.some(([r, c]) => r - 1 === row && c - 1 === col);
                 if (isBlocked) {
                     square.classList.add('blocked');
@@ -52,7 +49,6 @@ class ChessboardPuzzle {
             }
         }
 
-        // Render existing dominoes
         this.dominoes.forEach((domino, index) => {
             this.renderDomino(domino, index);
         });
@@ -60,25 +56,29 @@ class ChessboardPuzzle {
 
     renderDomino(domino, index) {
         const gameBoard = document.getElementById('gameBoard');
+        const wrapper = document.createElement('div');
+        wrapper.style.position = 'relative';
+        wrapper.style.gridColumn = `${domino.col + 1} / span ${domino.orientation === 'horizontal' ? 2 : 1}`;
+        wrapper.style.gridRow = `${domino.row + 1} / span ${domino.orientation === 'vertical' ? 2 : 1}`;
+        wrapper.style.zIndex = '10';
+
         const div = document.createElement('div');
         div.className = `domino ${domino.orientation}`;
         div.dataset.index = index;
-
-        const squareSize = gameBoard.querySelector('.square').offsetWidth;
-        const row = domino.row;
-        const col = domino.col;
-
-        div.style.left = `${col * squareSize + 10}px`;
-        div.style.top = `${row * squareSize + 10}px`;
+        div.style.position = 'absolute';
+        div.style.top = '0';
+        div.style.left = '0';
+        div.style.width = '100%';
+        div.style.height = '100%';
 
         div.addEventListener('click', (e) => {
             e.stopPropagation();
             this.removeDomino(index);
         });
 
-        gameBoard.appendChild(div);
+        wrapper.appendChild(div);
+        gameBoard.appendChild(wrapper);
 
-        // Mark squares as covered
         const squares = this.getDominoSquares(domino);
         squares.forEach(([r, c]) => {
             const square = document.querySelector(`[data-row="${r}"][data-col="${c}"]`);
@@ -89,10 +89,7 @@ class ChessboardPuzzle {
     setupEventListeners() {
         const gameBoard = document.getElementById('gameBoard');
         gameBoard.addEventListener('click', (e) => this.handleSquareClick(e));
-
         document.getElementById('resetBtn').addEventListener('click', () => this.reset());
-        document.getElementById('orientationBtn').addEventListener('click', () => this.toggleOrientation());
-
         document.querySelectorAll('.board-btn').forEach(btn => {
             btn.addEventListener('click', (e) => this.switchBoard(parseInt(e.target.dataset.board)));
         });
@@ -107,9 +104,29 @@ class ChessboardPuzzle {
         const row = parseInt(square.dataset.row);
         const col = parseInt(square.dataset.col);
 
-        if (this.canPlaceDomino(row, col, this.orientation)) {
-            this.placeDomino(row, col, this.orientation);
+        if (this.selectedSquare === null) {
+            this.selectedSquare = { row, col };
+            square.classList.add('selected');
+        } else {
+            const firstRow = this.selectedSquare.row;
+            const firstCol = this.selectedSquare.col;
+
+            if (this.areAdjacent(firstRow, firstCol, row, col)) {
+                const orientation = (firstRow === row) ? 'horizontal' : 'vertical';
+                const startRow = Math.min(firstRow, row);
+                const startCol = Math.min(firstCol, col);
+                this.placeDomino(startRow, startCol, orientation);
+            }
+
+            document.querySelectorAll('.square.selected').forEach(s => s.classList.remove('selected'));
+            this.selectedSquare = null;
         }
+    }
+
+    areAdjacent(row1, col1, row2, col2) {
+        const rowDiff = Math.abs(row1 - row2);
+        const colDiff = Math.abs(col1 - col2);
+        return (rowDiff === 1 && colDiff === 0) || (rowDiff === 0 && colDiff === 1);
     }
 
     canPlaceDomino(row, col, orientation) {
@@ -150,12 +167,6 @@ class ChessboardPuzzle {
         this.updateTileCounter();
     }
 
-    toggleOrientation() {
-        this.orientation = this.orientation === 'horizontal' ? 'vertical' : 'horizontal';
-        const btn = document.getElementById('orientationBtn');
-        btn.textContent = `Rotar: ${this.orientation === 'horizontal' ? '⬌' : '⬍'}`;
-    }
-
     updateTileCounter() {
         const max = this.boards[this.currentBoard].maxDominoes;
         document.getElementById('tileCounter').textContent = `Fichas: ${this.dominoes.length}/${max}`;
@@ -173,8 +184,8 @@ class ChessboardPuzzle {
     switchBoard(boardNum) {
         this.currentBoard = boardNum;
         this.dominoes = [];
+        this.selectedSquare = null;
         
-        // Update button states
         document.querySelectorAll('.board-btn').forEach(btn => {
             btn.classList.remove('active');
             if (parseInt(btn.dataset.board) === boardNum) {
@@ -188,12 +199,13 @@ class ChessboardPuzzle {
 
     reset() {
         this.dominoes = [];
+        this.selectedSquare = null;
+        document.querySelectorAll('.square.selected').forEach(s => s.classList.remove('selected'));
         this.renderBoard();
         this.updateTileCounter();
     }
 }
 
-// Initialize the game when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     window.puzzle = new ChessboardPuzzle();
     console.log('¡Mutilated Chessboard Puzzle cargado!');
