@@ -41,8 +41,8 @@ class FifteenPuzzle {
         const windowWidth = window.innerWidth;
         
         if (windowWidth <= 480) {
-            // Mobile: fit within available width with padding
-            const availableWidth = Math.min(windowWidth - 32, 280); // Account for padding and max width
+            // Mobile: maximize tile size for the available space
+            const availableWidth = windowWidth - 14; // Minimal margins (5px padding + 4px on each side)
             tileSize = Math.floor((availableWidth - (this.size - 1) * 2) / this.size); // Account for gaps
             tileSize = Math.max(tileSize, 40); // Minimum tile size
         } else if (windowWidth <= 768) {
