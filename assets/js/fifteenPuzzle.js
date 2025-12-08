@@ -1,9 +1,9 @@
 class FifteenPuzzle {
     constructor() {
-        this.mode = 15; // 15 or 8
-        this.size = 4;
+        this.mode = 8; // 15 or 8 - default to 8
+        this.size = 3;
         this.tiles = [];
-        this.emptyPos = { row: 3, col: 3 };
+        this.emptyPos = { row: 2, col: 2 };
         this.moves = 0;
         this.isShuffled = false;
 
