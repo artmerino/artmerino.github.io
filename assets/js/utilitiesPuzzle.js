@@ -131,6 +131,19 @@ class UtilitiesPuzzle {
         const x = (e.clientX - rect.left) * scaleX;
         const y = (e.clientY - rect.top) * scaleY;
 
+        // Check if we've made contact with a target node
+        const nodeAtPosition = this.getNodeAtPosition(x, y);
+        if (nodeAtPosition && nodeAtPosition.id !== this.drawingFrom.id) {
+            // Made contact! End the drawing
+            this.currentPath.push({ x: nodeAtPosition.x, y: nodeAtPosition.y });
+            this.isDrawing = false;
+            this.tryCreateConnection(this.drawingFrom, nodeAtPosition);
+            this.drawingFrom = null;
+            this.currentPath = [];
+            this.renderBoard();
+            return;
+        }
+
         this.currentPath.push({ x, y });
         this.renderDrawingPath();
     }
@@ -146,6 +159,19 @@ class UtilitiesPuzzle {
         const scaleY = 360 / rect.height;
         const x = (touch.clientX - rect.left) * scaleX;
         const y = (touch.clientY - rect.top) * scaleY;
+
+        // Check if we've made contact with a target node
+        const nodeAtPosition = this.getNodeAtPosition(x, y);
+        if (nodeAtPosition && nodeAtPosition.id !== this.drawingFrom.id) {
+            // Made contact! End the drawing
+            this.currentPath.push({ x: nodeAtPosition.x, y: nodeAtPosition.y });
+            this.isDrawing = false;
+            this.tryCreateConnection(this.drawingFrom, nodeAtPosition);
+            this.drawingFrom = null;
+            this.currentPath = [];
+            this.renderBoard();
+            return;
+        }
 
         this.currentPath.push({ x, y });
         this.renderDrawingPath();
