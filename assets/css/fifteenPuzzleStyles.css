@@ -108,8 +108,8 @@ button:disabled:hover {
 }
 
 .tile {
-    width: 100px;
-    height: 100px;
+    width: var(--tile-size, 100px);
+    height: var(--tile-size, 100px);
     background: linear-gradient(135deg, #3498db, #2980b9);
     border: 2px solid #2471a3;
     border-radius: 8px;
@@ -230,13 +230,6 @@ button:disabled:hover {
         margin: 10px auto;
     }
 
-    .tile {
-        width: 70px;
-        height: 70px;
-        font-size: 1.5em;
-        border-radius: 6px;
-    }
-
     .instructions {
         padding: 15px;
         font-size: 13px;
@@ -281,13 +274,7 @@ button:disabled:hover {
     #gameBoard {
         gap: 2px;
         padding: 6px;
-    }
-
-    .tile {
-        width: 60px;
-        height: 60px;
-        font-size: 1.3em;
-        border-radius: 5px;
+        margin: 10px auto;
     }
 
     .instructions {

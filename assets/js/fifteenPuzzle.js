@@ -36,9 +36,26 @@ class FifteenPuzzle {
         const gameBoard = document.getElementById('gameBoard');
         gameBoard.innerHTML = '';
         
+        // Calculate tile size based on screen width and board size
+        let tileSize = 100; // Desktop default
+        const windowWidth = window.innerWidth;
+        
+        if (windowWidth <= 480) {
+            // Mobile: fit within available width with padding
+            const availableWidth = Math.min(windowWidth - 32, 280); // Account for padding and max width
+            tileSize = Math.floor((availableWidth - (this.size - 1) * 2) / this.size); // Account for gaps
+            tileSize = Math.max(tileSize, 40); // Minimum tile size
+        } else if (windowWidth <= 768) {
+            // Tablet
+            const availableWidth = Math.min(windowWidth - 24, 360);
+            tileSize = Math.floor((availableWidth - (this.size - 1) * 3) / this.size);
+            tileSize = Math.max(tileSize, 55);
+        }
+        
         // Set grid size based on mode
-        gameBoard.style.gridTemplateColumns = `repeat(${this.size}, 100px)`;
-        gameBoard.style.gridTemplateRows = `repeat(${this.size}, 100px)`;
+        gameBoard.style.gridTemplateColumns = `repeat(${this.size}, ${tileSize}px)`;
+        gameBoard.style.gridTemplateRows = `repeat(${this.size}, ${tileSize}px)`;
+        gameBoard.style.setProperty('--tile-size', `${tileSize}px`);
 
         for (let row = 0; row < this.size; row++) {
             for (let col = 0; col < this.size; col++) {
