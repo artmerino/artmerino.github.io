@@ -1,0 +1,110 @@
+---
+layout: page
+permalink: /puzzles/
+title: Mathematical Puzzles
+description: A collection of interactive mathematical puzzles and impossible problems
+nav: true
+nav_order: 6
+---
+
+<style>
+    .puzzle-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .puzzle-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: block;
+        color: white;
+    }
+
+    .puzzle-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+        color: white;
+    }
+
+    .puzzle-card h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: white;
+    }
+
+    .puzzle-card p {
+        margin: 0;
+        opacity: 0.9;
+        line-height: 1.6;
+    }
+
+    .puzzle-card .difficulty {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 5px 12px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        font-size: 0.85em;
+        font-weight: bold;
+    }
+
+    .intro {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 40px;
+        color: var(--global-text-color);
+    }
+</style>
+
+<div class="intro">
+    <p>
+        Explore a collection of classic mathematical puzzles and impossible problems. 
+        Each puzzle demonstrates fundamental concepts in mathematics, graph theory, and combinatorics.
+    </p>
+</div>
+
+<div class="puzzle-grid">
+    <a href="{{ '/conwaysSoldiers.html' | relative_url }}" class="puzzle-card">
+        <h3>🎯 Conway's Soldiers</h3>
+        <p>
+            A peg solitaire variant where you try to advance a soldier as far as possible across a shoreline. 
+            Surprisingly, getting beyond the fifth row is mathematically impossible!
+        </p>
+        <span class="difficulty">Difficulty: Medium</span>
+    </a>
+
+    <a href="{{ '/fifteenPuzzle.html' | relative_url }}" class="puzzle-card">
+        <h3>🔢 15-Puzzle</h3>
+        <p>
+            The classic sliding tile puzzle. Most configurations are solvable, but the famous "14-15" puzzle 
+            is impossible due to the mathematics of permutation parity.
+        </p>
+        <span class="difficulty">Difficulty: Easy</span>
+    </a>
+
+    <a href="{{ '/utilitiesPuzzle.html' | relative_url }}" class="puzzle-card">
+        <h3>🏠 Three Utilities Problem</h3>
+        <p>
+            Connect three houses to three utilities (water, gas, electricity) without crossing lines. 
+            This puzzle proves that K₃,₃ is non-planar in graph theory.
+        </p>
+        <span class="difficulty">Difficulty: Impossible!</span>
+    </a>
+
+    <a href="{{ '/chessboard.html' | relative_url }}" class="puzzle-card">
+        <h3>♟️ Mutilated Chessboard</h3>
+        <p>
+            Can you tile a chessboard with dominoes after removing two opposite corners? 
+            Try different configurations and discover which ones are impossible.
+        </p>
+        <span class="difficulty">Difficulty: Hard</span>
+    </a>
+</div>

@@ -59,14 +59,16 @@ class ChessboardPuzzle {
 
         const firstSquare = gameBoard.querySelector('.square');
         if (!firstSquare) return;
-        const squareSize = firstSquare.offsetWidth;
+        const squareSize = firstSquare.offsetWidth; // This is 52px (50px + 2px borders)
 
         const styles = getComputedStyle(gameBoard);
         const padLeft = parseFloat(styles.paddingLeft) || 0;
         const padTop = parseFloat(styles.paddingTop) || 0;
 
-        const top = padTop + domino.row * squareSize;
-        const left = padLeft + domino.col * squareSize;
+        // Adjust positioning - grid has overlapping borders between squares
+        const effectiveSize = squareSize - 2; // 50px effective spacing
+        const top = padTop + domino.row * effectiveSize;
+        const left = padLeft + domino.col * effectiveSize;
 
         const div = document.createElement('div');
         div.className = `domino ${domino.orientation}`;
@@ -74,8 +76,9 @@ class ChessboardPuzzle {
         div.style.position = 'absolute';
         div.style.top = `${top}px`;
         div.style.left = `${left}px`;
-        div.style.width = domino.orientation === 'horizontal' ? `${squareSize * 2}px` : `${squareSize}px`;
-        div.style.height = domino.orientation === 'vertical' ? `${squareSize * 2}px` : `${squareSize}px`;
+        // Dominoes sized to fit exactly within squares
+        div.style.width = domino.orientation === 'horizontal' ? `${effectiveSize * 2}px` : `${effectiveSize}px`;
+        div.style.height = domino.orientation === 'vertical' ? `${effectiveSize * 2}px` : `${effectiveSize}px`;
         div.style.zIndex = '10';
 
         div.addEventListener('click', (e) => {
