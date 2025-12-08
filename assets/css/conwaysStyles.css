@@ -300,8 +300,8 @@ button:disabled:hover {
     }
     
     #gameBoard {
-        grid-template-columns: repeat(11, 22px);
-        grid-template-rows: repeat(10, 22px);
+        grid-template-columns: repeat(11, 30px);
+        grid-template-rows: repeat(10, 30px);
         gap: 1px;
         padding: 5px;
         margin: 10px auto;
@@ -310,14 +310,14 @@ button:disabled:hover {
     }
     
     .cell {
-        width: 22px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
         border-width: 1px;
     }
     
     .soldier {
-        width: 16px;
-        height: 16px;
+        width: 22px;
+        height: 22px;
         border-width: 2px;
     }
     
@@ -363,22 +363,22 @@ button:disabled:hover {
     }
     
     #gameBoard {
-        grid-template-columns: repeat(11, 20px);
-        grid-template-rows: repeat(10, 20px);
+        grid-template-columns: repeat(11, 28px);
+        grid-template-rows: repeat(10, 28px);
         gap: 1px;
         padding: 3px;
         margin: 8px auto;
     }
     
     .cell {
-        width: 20px;
-        height: 20px;
+        width: 28px;
+        height: 28px;
     }
     
     .soldier {
-        width: 14px;
-        height: 14px;
-        border-width: 1px;
+        width: 20px;
+        height: 20px;
+        border-width: 2px;
     }
     
     .instructions {
