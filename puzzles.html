@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /puzzles/
-title: Mathematical Puzzles
-description: A collection of interactive mathematical puzzles and impossible problems
+title: Rompecabezas Matemáticos
+description: Una colección de rompecabezas matemáticos interactivos
 nav: false
 ---
 
@@ -45,16 +45,6 @@ nav: false
         line-height: 1.6;
     }
 
-    .puzzle-card .difficulty {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 5px 12px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 20px;
-        font-size: 0.85em;
-        font-weight: bold;
-    }
-
     .intro {
         text-align: center;
         max-width: 700px;
@@ -65,45 +55,36 @@ nav: false
 
 <div class="intro">
     <p>
-        Explore a collection of classic mathematical puzzles and impossible problems. 
-        Each puzzle demonstrates fundamental concepts in mathematics, graph theory, and combinatorics.
+        Una colección de rompecabezas matemáticos clásicos que demuestran conceptos fundamentales en matemáticas, teoría de grafos y combinatoria.
     </p>
 </div>
 
 <div class="puzzle-grid">
     <a href="{{ '/conwaysSoldiers.html' | relative_url }}" class="puzzle-card">
-        <h3>🎯 Conway's Soldiers</h3>
+        <h3>🎯 Soldados de Conway</h3>
         <p>
-            A peg solitaire variant where you try to advance a soldier as far as possible across a shoreline. 
-            Surprisingly, getting beyond the fifth row is mathematically impossible!
+            Variante del solitario donde intentas avanzar soldados lo más lejos posible cruzando una línea divisoria usando saltos.
         </p>
-        <span class="difficulty">Difficulty: Medium</span>
     </a>
 
     <a href="{{ '/fifteenPuzzle.html' | relative_url }}" class="puzzle-card">
-        <h3>🔢 15-Puzzle</h3>
+        <h3>🔢 Puzzle del 15</h3>
         <p>
-            The classic sliding tile puzzle. Most configurations are solvable, but the famous "14-15" puzzle 
-            is impossible due to the mathematics of permutation parity.
+            El clásico rompecabezas de fichas deslizantes. Ordena los números del 1 al 15 moviendo las fichas en el espacio vacío.
         </p>
-        <span class="difficulty">Difficulty: Easy</span>
     </a>
 
     <a href="{{ '/utilitiesPuzzle.html' | relative_url }}" class="puzzle-card">
-        <h3>🏠 Three Utilities Problem</h3>
+        <h3>🏠 Problema de las Tres Utilidades</h3>
         <p>
-            Connect three houses to three utilities (water, gas, electricity) without crossing lines. 
-            This puzzle proves that K₃,₃ is non-planar in graph theory.
+            Conecta tres casas a tres servicios (agua, gas, electricidad) sin que las líneas se crucen entre sí.
         </p>
-        <span class="difficulty">Difficulty: Impossible!</span>
     </a>
 
     <a href="{{ '/chessboard.html' | relative_url }}" class="puzzle-card">
-        <h3>♟️ Mutilated Chessboard</h3>
+        <h3>♟️ Tablero de Ajedrez Mutilado</h3>
         <p>
-            Can you tile a chessboard with dominoes after removing two opposite corners? 
-            Try different configurations and discover which ones are impossible.
+            Cubre un tablero de ajedrez con fichas de dominó después de quitar dos esquinas. Prueba diferentes configuraciones.
         </p>
-        <span class="difficulty">Difficulty: Hard</span>
     </a>
 </div>

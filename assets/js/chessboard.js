@@ -6,10 +6,11 @@ class ChessboardPuzzle {
         this.dominoes = [];
         
         this.boards = {
-            1: { blocked: [[1, 1], [8, 8]], maxDominoes: 31 },
-            2: { blocked: [[1, 1], [1, 2]], maxDominoes: 31 },
-            3: { blocked: [[4, 4], [5, 5]], maxDominoes: 31 },
-            4: { blocked: [[1, 1], [2, 1]], maxDominoes: 31 }
+            1: { blocked: [[1, 1], [2, 1]], maxDominoes: 31 },
+            2: { blocked: [[4, 4], [6, 6]], maxDominoes: 31 },
+            3: { blocked: [[1, 1], [2, 2], [4,5], [5,4]], maxDominoes: 30 },
+            4: { blocked: [[1, 1], [8, 8]], maxDominoes: 31 },
+            5: { blocked: [[4, 4], [5, 5]], maxDominoes: 31 }
         };
 
         this.initializeBoard();
