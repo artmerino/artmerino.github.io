@@ -1,5 +1,6 @@
 class FifteenPuzzle {
     constructor() {
+        this.mode = 15; // 15 or 8
         this.size = 4;
         this.tiles = [];
         this.emptyPos = { row: 3, col: 3 };
@@ -12,9 +13,12 @@ class FifteenPuzzle {
     }
 
     initializeBoard() {
-        // Create solved board: 1-15 with empty space at bottom right
+        // Create solved board based on mode
+        this.size = this.mode === 8 ? 3 : 4;
         this.tiles = [];
         let num = 1;
+        const maxNum = this.mode === 8 ? 8 : 15;
+        
         for (let row = 0; row < this.size; row++) {
             this.tiles[row] = [];
             for (let col = 0; col < this.size; col++) {
@@ -31,6 +35,10 @@ class FifteenPuzzle {
     renderBoard() {
         const gameBoard = document.getElementById('gameBoard');
         gameBoard.innerHTML = '';
+        
+        // Set grid size based on mode
+        gameBoard.style.gridTemplateColumns = `repeat(${this.size}, 100px)`;
+        gameBoard.style.gridTemplateRows = `repeat(${this.size}, 100px)`;
 
         for (let row = 0; row < this.size; row++) {
             for (let col = 0; col < this.size; col++) {
@@ -70,6 +78,17 @@ class FifteenPuzzle {
 
         document.getElementById('shuffleBtn').addEventListener('click', () => this.shuffle());
         document.getElementById('impossibleBtn').addEventListener('click', () => this.setImpossible());
+        document.getElementById('modeToggle').addEventListener('click', () => this.toggleMode());
+    }
+
+    toggleMode() {
+        this.mode = this.mode === 15 ? 8 : 15;
+        document.getElementById('modeToggle').textContent = `Modo: ${this.mode}`;
+        document.getElementById('impossibleBtn').textContent = this.mode === 8 ? '7-8' : '14-15';
+        this.moves = 0;
+        this.isShuffled = false;
+        this.initializeBoard();
+        this.renderBoard();
     }
 
     handleTileClick(event) {
@@ -172,21 +191,24 @@ class FifteenPuzzle {
     }
 
     setImpossible() {
-        // Set up the classic impossible configuration with 14 and 15 swapped
+        // Set up the classic impossible configuration with last two tiles swapped
         this.initializeBoard();
         this.moves = 0;
         this.isShuffled = false;
 
-        // Create the impossible configuration: all tiles in order except 14 and 15 are swapped
+        const maxNum = this.mode === 8 ? 8 : 15;
+        const secondLast = maxNum - 1;
+
+        // Create the impossible configuration: all tiles in order except last two are swapped
         let num = 1;
         for (let row = 0; row < this.size; row++) {
             for (let col = 0; col < this.size; col++) {
                 if (row === this.size - 1 && col === this.size - 1) {
                     this.tiles[row][col] = 0; // Empty space
                 } else if (row === this.size - 1 && col === this.size - 3) {
-                    this.tiles[row][col] = 15; // Swap: put 15 here
+                    this.tiles[row][col] = maxNum; // Swap: put last number here
                 } else if (row === this.size - 1 && col === this.size - 2) {
-                    this.tiles[row][col] = 14; // Swap: put 14 here
+                    this.tiles[row][col] = secondLast; // Swap: put second-to-last number here
                 } else {
                     this.tiles[row][col] = num++;
                 }

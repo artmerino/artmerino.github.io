@@ -114,6 +114,11 @@ class UtilitiesPuzzle {
         e.stopPropagation();
         e.preventDefault();
 
+        // Only allow drawing from houses
+        if (type !== 'house') {
+            return;
+        }
+
         // Start drawing from this node
         this.isDrawing = true;
         this.drawingFrom = node;
