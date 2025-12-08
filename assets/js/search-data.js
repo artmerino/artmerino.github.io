@@ -34,6 +34,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-mathematical-puzzles",
+          title: "Mathematical Puzzles",
+          description: "A collection of interactive mathematical puzzles and impossible problems",
+          section: "Navigation menu",
+          handler: () => {
+            window.location.href = "/puzzles/";
+          },
         },{id: "nav-teaching",
           title: "Teaching",
           description: "",
