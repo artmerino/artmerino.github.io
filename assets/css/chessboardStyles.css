@@ -124,6 +124,7 @@ button:active {
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: fit-content;
+    position: relative; /* allow absolute-positioned domino overlay */
 }
 
 .square {

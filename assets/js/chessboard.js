@@ -56,28 +56,34 @@ class ChessboardPuzzle {
 
     renderDomino(domino, index) {
         const gameBoard = document.getElementById('gameBoard');
-        const wrapper = document.createElement('div');
-        wrapper.style.position = 'relative';
-        wrapper.style.gridColumn = `${domino.col + 1} / span ${domino.orientation === 'horizontal' ? 2 : 1}`;
-        wrapper.style.gridRow = `${domino.row + 1} / span ${domino.orientation === 'vertical' ? 2 : 1}`;
-        wrapper.style.zIndex = '10';
+
+        const firstSquare = gameBoard.querySelector('.square');
+        if (!firstSquare) return;
+        const squareSize = firstSquare.offsetWidth;
+
+        const styles = getComputedStyle(gameBoard);
+        const padLeft = parseFloat(styles.paddingLeft) || 0;
+        const padTop = parseFloat(styles.paddingTop) || 0;
+
+        const top = padTop + domino.row * squareSize;
+        const left = padLeft + domino.col * squareSize;
 
         const div = document.createElement('div');
         div.className = `domino ${domino.orientation}`;
         div.dataset.index = index;
         div.style.position = 'absolute';
-        div.style.top = '0';
-        div.style.left = '0';
-        div.style.width = '100%';
-        div.style.height = '100%';
+        div.style.top = `${top}px`;
+        div.style.left = `${left}px`;
+        div.style.width = domino.orientation === 'horizontal' ? `${squareSize * 2}px` : `${squareSize}px`;
+        div.style.height = domino.orientation === 'vertical' ? `${squareSize * 2}px` : `${squareSize}px`;
+        div.style.zIndex = '10';
 
         div.addEventListener('click', (e) => {
             e.stopPropagation();
             this.removeDomino(index);
         });
 
-        wrapper.appendChild(div);
-        gameBoard.appendChild(wrapper);
+        gameBoard.appendChild(div);
 
         const squares = this.getDominoSquares(domino);
         squares.forEach(([r, c]) => {
