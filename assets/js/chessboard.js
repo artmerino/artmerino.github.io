@@ -7,7 +7,7 @@ class ChessboardPuzzle {
         
         this.boards = {
             1: { blocked: [[1, 1], [2, 1]], maxDominoes: 31 },
-            2: { blocked: [[4, 4], [6, 6]], maxDominoes: 31 },
+            2: { blocked: [[4, 4], [6, 6], [1,8], [8,1]], maxDominoes: 30 },
             3: { blocked: [[1, 1], [2, 2], [4,5], [5,4]], maxDominoes: 30 },
             4: { blocked: [[1, 1], [8, 8]], maxDominoes: 31 },
             5: { blocked: [[4, 4], [5, 5]], maxDominoes: 31 }
