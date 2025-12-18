@@ -12,7 +12,7 @@ profile:
   more_info: >
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -33,8 +33,6 @@ También hice una magíster en matemáticas aplicadas en la [Universidad de Chil
 **Intereses de Investigación:**  Me interesa el diseño de algoritmos y, en términos generales, los aspectos teorícos de la computación y las matemáticas discretas.
 Últimamente, me he enfocado en el diseño de *algoritmos de enumeración/generación*; es decir, algoritmos que generan todas las soluciones a un problema computacional, en lugar de solo una.
 Más específicamente, me he interesado en algoritmos de generación que realizan operaciones *locales* (también conocidos como *códigos Gray combinatoriales*) y su interacción con la combinatoria, la geometría discreta, la simetría y el álgebra.
-
-Mi bibliografía completa se puede encontrar en: [DBLP](https://dblp.org/pid/239/8813.html), [Google Scholar](https://scholar.google.com/citations?user=-EnYzW0AAAAJ&hl=en) y [arXiv](https://arxiv.org/search/?query=Arturo+Merino&searchtype=all&source=header).
 
 **Contacto:** \[nombre\].\[apellido\]@uoh.cl 
 

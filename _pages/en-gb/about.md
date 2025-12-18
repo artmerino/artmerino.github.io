@@ -12,7 +12,7 @@ profile:
   more_info: >
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -33,8 +33,6 @@ I also did a masters degree on applied math at [Universidad de Chile](https://ww
 **Research Interests:**  I am interested in algorithmic design and, broadly speaking, in theoretical computer science and discrete mathematics.
 Lately, I've been focused on the design of [*generation/enumeration algorithms*](https://en.wikipedia.org/wiki/Enumeration_algorithm); that is, algorithms which ouput all solutions to a computational problem, instead of only one. 
 More specifically, I've been interested in generation algorithms that perform *local* operations (aka [*combinatorial Gray codes*](https://arxiv.org/abs/2202.01280)) and their interplay with combinatorics, discrete geometry, symmetry, and algebra.
-
-Full bibliography can be found on: [DBLP](https://dblp.org/pid/239/8813.html), [Google Scholar](https://scholar.google.com/citations?user=-EnYzW0AAAAJ&hl=en) and [arXiv](https://arxiv.org/search/?query=Arturo+Merino&searchtype=all&source=header).
 
 **Contact:** \[name\].\[surname\]@uoh.cl 
 

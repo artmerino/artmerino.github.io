@@ -344,7 +344,7 @@ external_links:
 # Jekyll Polyglot
 # -----------------------------------------------------------------------------
 
-languages: ["en-gb", "es-cl"]
+languages: ["en-gb", "es"]
 default_lang: "en-gb"
 exclude_from_localization: ["assets"]
 lang_from_path: true

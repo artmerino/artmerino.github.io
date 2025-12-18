@@ -3,9 +3,10 @@
 # the socials will be displayed in the order they are defined here
 
 # acm_id: # your dl.acm.org/profile/id
+arxiv_id: Arturo+Merino # your arXiv author search query
 # blogger_url: # your blogger URL
 # bluesky_url: # your bluesky URL
-# dblp_url: # your DBLP profile url
+dblp_url: https://dblp.org/pid/239/8813.html # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
 email: you@example.com # your email address
 # facebook_id: # your facebook id
@@ -30,7 +31,7 @@ inspirehep_id: 1010907 # Inspire HEP author ID
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 rss_icon: true # set to true to show the RSS icon
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: -EnYzW0AAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
