@@ -105,8 +105,8 @@ ninja.data = [{
           section: "Proyectos",handler: () => {
               window.location.href = "/es/projects/es/6_project%20copy/";
             },},{
-          id: 'lang-en-gb',
-          title: 'en-gb',
+          id: 'lang-en',
+          title: 'en',
           section: 'Idiomas',
           handler: () => {
             window.location.href = "" + updatedUrl;
