@@ -34,6 +34,22 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        <div class="social">
+          <div class="contact-icons">
+            {% for social in site.data.socials %}
+              {% if social[0] == 'arxiv_id' or social[0] == 'dblp_url' or social[0] == 'scholar_userid' %}
+                {% case social[0] %}
+                  {% when 'arxiv_id' %}
+                    <a href="https://arxiv.org/search/?query={{ social[1] }}&searchtype=all&source=header" title="arXiv"><i class="ai ai-arxiv"></i></a>
+                  {% when 'dblp_url' %}
+                    <a href="{{ social[1] }}" title="DBLP"><i class="ai ai-dblp"></i></a>
+                  {% when 'scholar_userid' %}
+                    <a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                {% endcase %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
       </div>
     {% endif %}
 
