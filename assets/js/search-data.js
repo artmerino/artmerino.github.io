@@ -81,38 +81,38 @@ ninja.data = [{
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/en/1_project/";
+              window.location.href = "/projects/en-gb/1_project/";
             },},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/en/2_project/";
+              window.location.href = "/projects/en-gb/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/en/3_project/";
+              window.location.href = "/projects/en-gb/3_project/";
             },},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/en/4_project/";
+              window.location.href = "/projects/en-gb/4_project/";
             },},{id: "projects-project-5",
           title: 'project 5',
           description: "a project with a background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/en/5_project/";
+              window.location.href = "/projects/en-gb/5_project/";
             },},{id: "projects-project-6",
           title: 'project 6',
           description: "a project with no image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/en/6_project/";
+              window.location.href = "/projects/en-gb/6_project/";
             },},{
-          id: 'lang-es',
-          title: 'es',
+          id: 'lang-es-cl',
+          title: 'es-cl',
           section: 'Languages',
           handler: () => {
-            window.location.href = "/es" + updatedUrl;
+            window.location.href = "/es-cl" + updatedUrl;
           },
         },{
       id: 'light-theme',
