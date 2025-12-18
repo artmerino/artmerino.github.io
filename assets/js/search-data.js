@@ -105,11 +105,11 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-gb/6_project/";
             },},{
-          id: 'lang-es-cl',
-          title: 'es-cl',
+          id: 'lang-es',
+          title: 'es',
           section: 'Languages',
           handler: () => {
-            window.location.href = "/es-cl" + updatedUrl;
+            window.location.href = "/es" + updatedUrl;
           },
         },{
       id: 'light-theme',
