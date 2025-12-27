@@ -1,0 +1,583 @@
+[
+    {
+      "title": "Combinatorial generation via permutation languages. VII. Supersolvable hyperplane arrangements",
+      "authors": [
+        "Brenner, Sofia",
+        "Cardinal, Jean",
+        "Merino, Arturo",
+        "McConville, Thomas",
+        "Mütze, Torsten"
+      ],
+      "arxiv": "2507.14327",
+      "versions": [
+        {
+          "type": "conference",
+          "year": "2026",
+          "abbr": "SODA 2026",
+          "venue": "Proc. 37th SIAM Symposium on Discrete Algorithms",
+          "title": "Traversing Regions of Supersolvable Hyperplane Arrangements and Their Lattice Quotients",
+          "doi": false,
+          "selected": true,
+          "award": null,
+          "combos": null
+        }
+      ]
+    },
+  {
+    "title": "Listing Faces of Polytopes",
+    "authors": [
+      "Behrooznia, Nastaran",
+      "Brenner, Sofia",
+      "Merino, Arturo",
+      "Mütze, Torsten",
+      "Rieck, Christian",
+      "Verciani, Francesco"
+    ],
+    "arxiv": "2412.02584",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2026",
+        "abbr": "SODA 2026",
+        "venue": "Proc. 37th SIAM Symposium on Discrete Algorithms",
+        "doi": false,
+        "selected": true,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Computing Diverse and Nice Triangulations",
+    "authors": [
+      "Gálvez, Waldo",
+      "Goswami, Mayank",
+      "Merino, Arturo",
+      "Park, Gi Beom",
+      "Tsai, Meng-Tsung"
+    ],
+    "arxiv": "2506.01323",
+    "versions": [
+      {
+        "type": "preprint",
+        "year": "2025",
+        "abbr": "FCT 2025",
+        "venue": "Proc. 25th Intenational Symposium on Fundamentals of Computation Theory",
+        "doi": "10.1007/978-3-032-04700-7_14",
+        "selected": true,
+        "award": "FCT 2025 best paper award",
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Minimum Maximal Matchings in Permutahedra",
+    "authors": [
+      "Brenner, Sofia",
+      "Fink, Jiři",
+      "Hoang, Hung P.",
+      "Merino, Arturo",
+      "Pilaud, Vincent"
+    ],
+    "arxiv": "2502.09968",
+    "versions": [
+      {
+        "type": "preprint",
+        "year": "2025",
+        "abbr": "arXiv",
+        "venue": "arXiv preprint",
+        "doi": null,
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "An Easier to Trust Demi-God Number for the Rubik's Cube",
+    "authors": [
+      "Merino, Arturo",
+      "Subercaseaux, Bernardo"
+    ],
+    "arxiv": "2501.00144",
+    "versions": [
+      {
+        "type": "preprint",
+        "year": "2025",
+        "abbr": "arXiv",
+        "venue": "arXiv preprint",
+        "doi": null,
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "A Dynamic Programming Framework for Generating Approximately Diverse and Optimal Solutions",
+    "authors": [
+      "Gálvez, Waldo",
+      "Goswami, Mayank",
+      "Merino, Arturo",
+      "Park, Gi Beom",
+      "Tsai, Meng-Tsung",
+      "Verdugo, Victor"
+    ],
+    "arxiv": "2501.12261",
+    "versions": [
+      {
+        "type": "preprint",
+        "year": "2025",
+        "abbr": "arXiv",
+        "venue": "arXiv preprint",
+        "doi": null,
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Set Selection with Uncertain Weights: Non-Adaptive Queries and Thresholds",
+    "authors": [
+      "Dürr, Christoph",
+      "Merino, Arturo",
+      "Soto, José A.",
+      "Verschae, José"
+    ],
+    "arxiv": "2404.17214",
+    "versions": [
+      {
+        "type": "preprint",
+        "year": "2024",
+        "abbr": "arXiv",
+        "venue": "arXiv preprint",
+        "doi": null,
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Impartial Selection under Combinatorial Constraints",
+    "authors": [
+      "Cembrano, Javier",
+      "Klimm, Max",
+      "Merino, Arturo"
+    ],
+    "arxiv": "2409.20477",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2024",
+        "abbr": "WINE 2024",
+        "venue": "Proc. 20th Workshop on Internet and Network Economics",
+        "doi": null,
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Generating All Invertible Matrices by Row Operations",
+    "authors": [
+      "Gregor, Petr",
+      "Hoang, Hung P.",
+      "Merino, Arturo",
+      "Mička, Ondřej"
+    ],
+    "arxiv": "2405.01863",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2024",
+        "abbr": "ISAAC 2024",
+        "venue": "Proc. 35th International Symposium on Algorithms and Computation",
+        "doi": "10.4230/LIPIcs.ISAAC.2024.35",
+        "selected": false,
+        "award": null,
+        "combos": null
+      },
+      {
+        "type": "journal",
+        "year": "2026",
+        "abbr": "DM",
+        "venue": "Discrete Mathematics",
+        "doi": "10.1016/j.disc.2025.114851",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "On the Hardness of Gray Code Problems for Combinatorial Objects",
+    "authors": [
+      "Merino, Arturo",
+      "Namrata",
+      "Williams, Aaron"
+    ],
+    "arxiv": "2401.14963",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2024",
+        "abbr": "WALCOM 2024",
+        "venue": "Proc. 18th Workshop on Algorithms and Computation",
+        "doi": "10.1007/978-981-97-0566-5_9",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Traversing Combinatorial 0/1-Polytopes via Optimization",
+    "authors": [
+      "Merino, Arturo",
+      "Mütze, Torsten"
+    ],
+    "arxiv": "2304.08567",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2023",
+        "abbr": "FOCS 2023",
+        "venue": "Proc. 64th IEEE Symposium on Foundations of Computer Science",
+        "doi": "10.1109/FOCS57990.2023.00076",
+        "selected": true,
+        "award": null,
+        "combos": null
+      },
+      {
+        "type": "journal",
+        "year": "2024",
+        "abbr": "SICOMP",
+        "venue": "SIAM Journal on Computing",
+        "doi": "10.1137/23M1612019",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Kneser Graphs are Hamiltonian",
+    "authors": [
+      "Merino, Arturo",
+      "Mütze, Torsten",
+      "Namrata"
+    ],
+    "arxiv": "2212.03918",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2023",
+        "abbr": "STOC 2023",
+        "venue": "Proc. 55th ACM Symposium on Theory of Computing",
+        "doi": "10.1145/3564246.3585137",
+        "selected": true,
+        "award": null,
+        "combos": null
+      },
+      {
+        "type": "journal",
+        "year": "2025",
+        "abbr": "Adv",
+        "venue": "Advances in Mathematics",
+        "doi": "10.1016/j.aim.2025.110189",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Combinatorial Generation via Permutation Languages. V. Acyclic orientations",
+    "authors": [
+      "Cardinal, Jean",
+      "Hoang, Hung P.",
+      "Merino, Arturo",
+      "Mütze, Torsten"
+    ],
+    "arxiv": "2212.03915",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2023",
+        "abbr": "SODA 2023",
+        "title": "Zigzagging Through Acyclic Orientations of Graphs and Hypergraphs",
+        "venue": "Proc. 34th SIAM Symposium on Discrete Algorithms",
+        "doi": "10.1137/1.9781611977554.ch117",
+        "selected": false,
+        "award": null
+      },
+      {
+        "type": "journal",
+        "year": "2023",
+        "abbr": "SIDMA",
+        "authors": [
+          "Cardinal, Jean",
+          "Hoang, Hung P.",
+          "Merino, Arturo",
+          "Mička, Ondřej",
+          "Mütze, Torsten"
+        ],
+        "venue": "SIAM Journal on Discrete Mathematics",
+        "doi": "10.1137/23M1546567",
+        "selected": false,
+        "award": null
+      }
+    ],
+    "combos": "orient"
+  },
+  {
+    "title": "The Hamilton Compression of Highly Symmetric Graphs",
+    "authors": [
+      "Gregor, Petr",
+      "Merino, Arturo",
+      "Mütze, Torsten"
+    ],
+    "arxiv": "2205.08126",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2022",
+        "abbr": "MFCS 2022",
+        "venue": "Proc. 47th Mathematical Foundations of Computer Science",
+        "doi": "10.4230/LIPIcs.MFCS.2022.54",
+        "selected": true,
+        "award": "MFCS 2022 best paper award",
+        "combos": null
+      },
+      {
+        "type": "journal",
+        "year": "2023",
+        "abbr": "AOCO",
+        "venue": "Annals of Combinatorics",
+        "doi": "10.1007/s00026-023-00674-y",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "All Your Base(s) Are Belong to Us: Listing All Bases of a Matroid by Greedy Exchanges",
+    "authors": [
+      "Merino, Arturo",
+      "Mütze, Torsten",
+      "Williams, Aaron"
+    ],
+    "arxiv": null,
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2022",
+        "abbr": "FUN 2022",
+        "venue": "Proc. 11th International Conference on Fun with Algorithms",
+        "doi": "10.4230/LIPIcs.FUN.2022.22",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Star Transposition Gray Codes for Multiset Permutations",
+    "authors": [
+      "Gregor, Petr",
+      "Merino, Arturo",
+      "Mütze, Torsten"
+    ],
+    "arxiv": "2108.07465",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2022",
+        "abbr": "STACS 2022",
+        "venue": "Proc. 39th Symposium on Theoretical Aspects of Computer Science",
+        "doi": "10.4230/LIPIcs.STACS.2022.34",
+        "selected": false,
+        "award": null,
+        "combos": null
+      },
+      {
+        "type": "journal",
+        "year": "2023",
+        "abbr": "JGT",
+        "venue": "Journal of Graph Theory",
+        "doi": "10.1002/jgt.22915",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Combinatorial Generation via Permutation Languages. IV. Elimination trees",
+    "authors": [
+      "Cardinal, Jean",
+      "Merino, Arturo",
+      "Mütze, Torsten"
+    ],
+    "arxiv": "2106.16204",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2022",
+        "abbr": "SODA 2022",
+        "title": "Efficient Generation of Elimination Trees and Graph Associahedra",
+        "venue": "Proc. 33rd SIAM Symposium on Discrete Algorithms",
+        "doi": "10.1137/1.9781611977073.84",
+        "selected": false,
+        "award": null,
+        "combos": null
+      },
+      {
+        "type": "journal",
+        "year": "2024",
+        "abbr": "TALG",
+        "venue": "ACM Transactions on Algorithms",
+        "doi": "10.1145/3689633",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Combinatorial Generation via Permutation Languages. III. Rectangulations",
+    "authors": [
+      "Merino, Arturo",
+      "Mütze, Torsten"
+    ],
+    "arxiv": "2103.09333",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2021",
+        "abbr": "SoCG 2021",
+        "title": "Efficient Generation of Rectangulations via Permutation Languages",
+        "venue": "Proc. 37th Symposium on Computational Geometry",
+        "doi": "10.4230/LIPIcs.SoCG.2021.54",
+        "selected": false,
+        "award": null
+      },
+      {
+        "type": "journal",
+        "year": "2022",
+        "abbr": "DCG",
+        "venue": "Discrete & Computational Geometry",
+        "doi": "10.1007/s00454-022-00393-w",
+        "selected": false,
+        "award": null
+      }
+    ],
+    "combos": "rect"
+  },
+  {
+    "title": "On a Combinatorial Generation Problem of Knuth",
+    "authors": [
+      "Merino, Arturo",
+      "Mička, Ondřej",
+      "Mütze, Torsten"
+    ],
+    "arxiv": "2007.07164",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2021",
+        "abbr": "SODA 2021",
+        "venue": "Proc. 32nd SIAM Symposium on Discrete Algorithms",
+        "doi": "10.5555/3458064.3458110",
+        "selected": false,
+        "award": null
+      },
+      {
+        "type": "journal",
+        "year": "2022",
+        "abbr": "SICOMP",
+        "venue": "SIAM Journal on Computing",
+        "doi": "10.1137/20M1377394",
+        "selected": false,
+        "award": null
+      }
+    ],
+    "combos": "middle"
+  },
+  {
+    "title": "On the Two-Dimensional Knapsack Problem for Convex Polygons",
+    "authors": [
+      "Merino, Arturo",
+      "Wiese, Andreas"
+    ],
+    "arxiv": "2007.16144",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2020",
+        "abbr": "ICALP 2020",
+        "venue": "Proc. 47th International Colloquium on Automata, Languages, and Programming",
+        "doi": "10.4230/LIPIcs.ICALP.2020.84",
+        "selected": false,
+        "award": null,
+        "combos": null
+      },
+      {
+        "type": "journal",
+        "year": "2024",
+        "abbr": "TALG",
+        "venue": "ACM Transactions on Algorithms",
+        "doi": "10.1145/3644390",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "The Minimum Cost Query Problem on Matroids with Uncertainty Areas",
+    "authors": [
+      "Merino, Arturo",
+      "Soto, José A."
+    ],
+    "arxiv": "1904.11668",
+    "versions": [
+      {
+        "type": "conference",
+        "year": "2019",
+        "abbr": "ICALP 2019",
+        "venue": "Proc. 46th International Colloquium on Automata, Languages, and Programming",
+        "doi": "10.4230/LIPIcs.ICALP.2019.83",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  },
+  {
+    "title": "Graphs that Admit a Hamiltonian Path are Cup-Stackable",
+    "authors": [
+      "Gregor, Petr",
+      "Merino, Arturo",
+      "Mütze, Torsten",
+      "Verciani, Francesco"
+    ],
+    "arxiv": "2401.06189",
+    "versions": [
+      {
+        "type": "journal",
+        "year": "2025",
+        "abbr": "DM",
+        "venue": "Discrete Mathematics",
+        "doi": "10.1016/j.disc.2024.114375",
+        "selected": false,
+        "award": null,
+        "combos": null
+      }
+    ]
+  }
+]
