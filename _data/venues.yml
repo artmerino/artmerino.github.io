@@ -16,6 +16,9 @@ SODA 2022:
 SODA 2023:
   url: https://www.siam.org/conferences-events/past-event-archive/soda23
   color: "#196ca3"
+SODA 2026:
+  url: https://www.siam.org/conferences-events/siam-conferences/soda26/
+  color: "#196ca3"
 SoCG 2021: 
   url: https://cse.buffalo.edu/socg21/
   color: "#196ca3"
@@ -42,6 +45,9 @@ ISAAC 2024:
   color: "#196ca3"
 WINE 2024: 
   url: https://wine2024.org
+  color: "#196ca3"
+FCT 2025:
+  url: https://fct2025.cs.uni.wroc.pl/
   color: "#196ca3"
 SICOMP: 
   url: https://epubs.siam.org/journal/sicomp
