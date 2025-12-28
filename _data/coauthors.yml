@@ -61,3 +61,39 @@
 "rieck":
   - firstname: ["Christian"]
     url: https://www.uni-kassel.de/fb10/institute/mathematik/personen/details?tx_ukpersons_personfunctiondetail%5BpersonFunction%5D=2351&cHash=a2331df39107a20de69efcf0a3a0fb69
+
+"galvez"
+  - firstname: ["Waldo"]
+    url: https://sites.google.com/view/wgalvez
+
+"goswami"
+  - firstname: ["Mayank"]
+    url: https://www.cs.qc.cuny.edu/goswami/
+
+"tsai"
+  - firstname: ["Meng-Tsung"]
+    url: https://people.cs.nycu.edu.tw/~mtsai/pub.html
+
+"verdugo"
+  - firstname: ["Victor"]
+    url: https://sites.google.com/view/vverdugo/home
+
+"subercaseaux"
+  - firstname: ["Bernardo"]
+    url: https://bsubercaseaux.github.io/
+
+"pilaud"
+  - firstname: ["Vincent"]
+    url: https://www.ub.edu/comb/vincentpilaud/
+
+"fink"
+  - firstname: ["Jiri", "Jiři", "Jirka"]
+    url: https://ktiml.mff.cuni.cz/~fink/
+
+"behrooznia"
+  - firstname: ["Nastaran"]
+    url: https://warwick.ac.uk/fac/sci/dcs/people/u5546140/
+
+"mcconville"
+  - firstname: ["Thomas"]
+    url: https://facultyweb.kennesaw.edu/tmcconvi/index.php
