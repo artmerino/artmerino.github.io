@@ -128,6 +128,8 @@ def main():
                 'fields': fields,
                 'work_idx': len(work_keys),
                 'conf_label_raw': v.get('abbr') or v.get('venue') if v.get('type') == 'conference' else None,
+                'vtype': v.get('type', 'other'),
+                'year': int(v.get('year', 0)) if v.get('year') else 0,
             })
         work_keys.append(vkeys)
     # second pass: if a work has a conference version, add extended note to non-conference versions using conference abbr when available
@@ -148,6 +150,11 @@ def main():
             if e['etype'] != 'inproceedings':
                 label = escape_latex(conf_label)
                 e['fields']['extended'] = brace(f"An extended abstract was presented at {label}")
+    
+    # sort entries: first by year (descending), then by type priority (journal=1, conference=2, preprint=3)
+    type_priority = {'journal': 1, 'conference': 2, 'preprint': 3, 'other': 4}
+    entries.sort(key=lambda e: (-e['year'], type_priority.get(e['vtype'], 4)))
+    
     # render
     out_lines = []
     for e in entries:
