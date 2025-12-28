@@ -30,9 +30,10 @@ Before that, I was a postdoc in [Karl Bringmann's](https://people.mpi-inf.mpg.de
 I did my PhD at [TU Berlin](https://www.tu-berlin.de/), where I was advised by [Torsten Mütze](http://www.tmuetze.de) and took part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group. 
 I also did a masters degree on applied math at [Universidad de Chile](https://www.uchile.cl/english) under the guidance of [José Soto](http://www.dim.uchile.cl/~jsoto/).
 
-**Research Interests:**  I am interested in algorithmic design and, broadly speaking, in theoretical computer science and discrete mathematics.
-Lately, I've been focused on the design of [*generation/enumeration algorithms*](https://en.wikipedia.org/wiki/Enumeration_algorithm); that is, algorithms which ouput all solutions to a computational problem, instead of only one. 
-More specifically, I've been interested in generation algorithms that perform *local* operations (aka [*combinatorial Gray codes*](https://arxiv.org/abs/2202.01280)) and their interplay with combinatorics, discrete geometry, symmetry, and algebra.
+**Research Interests:**  
+Broadly, my interests lie in the theoretical foundations of computer science and discrete mathematics, with a focus on the design and analysis of algorithms. 
+While most of my work centers on enumeration and generation, I am also drawn to problems in approximation, algorithmic game theory, combinatorics, fine-grained algorithms, and computation under uncertainty. 
+I am especially interested in unifying paradigms, often through the lens of discrete geometry.
 
 **Contact:** \[name\].\[surname\]@uoh.cl 
 

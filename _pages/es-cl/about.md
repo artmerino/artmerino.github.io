@@ -30,9 +30,9 @@ Antes de eso, hice un postdoctorado en el grupo de [Karl Bringmann](https://peop
 Realicé mi doctorado en la [TU Berlín](https://www.tu-berlin.de/), bajo la dirección de [Torsten Mütze](http://www.tmuetze.de) y formé parte del grupo de [Optimización Combinatoria y Algoritmos de Grafos](https://www3.math.tu-berlin.de/coga/).
 También hice una magíster en matemáticas aplicadas en la [Universidad de Chile](https://www.uchile.cl/english) bajo la guía de [José Soto](http://www.dim.uchile.cl/~jsoto/).
 
-**Intereses de Investigación:**  Me interesa el diseño de algoritmos y, en términos generales, los aspectos teorícos de la computación y las matemáticas discretas.
-Últimamente, me he enfocado en el diseño de *algoritmos de enumeración/generación*; es decir, algoritmos que generan todas las soluciones a un problema computacional, en lugar de solo una.
-Más específicamente, me he interesado en algoritmos de generación que realizan operaciones *locales* (también conocidos como *códigos Gray combinatoriales*) y su interacción con la combinatoria, la geometría discreta, la simetría y el álgebra.
+**Intereses de Investigación:**  En términos generales, estoy interesado en los fundamentos teóricos de la computación y las matemáticas discretas, con un énfasis en el diseño y análisis de algoritmos.
+Aunque la mayor parte de mi trabajo se centra en la enumeración y generación, también me interesan problemas en aproximación, teoría algorítmica de juegos, combinatoria, algoritmos finos y computación bajo incertidumbre.
+Estoy especialmente interesado en *paradigmas unificadores*, en particular via ideas de la geometría discreta.
 
 **Contacto:** \[nombre\].\[apellido\]@uoh.cl 
 
