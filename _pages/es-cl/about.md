@@ -25,16 +25,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Soy profesor asistente en el Instituto de Ingeniería de la [Universidad de O'Higgins](https://www.uoh.cl).
-Antes de eso, hice un postdoctorado en el grupo de [Karl Bringmann](https://people.mpi-inf.mpg.de/~kbringma/) en la [Universidad de Saarland](https://www.uni-saarland.de/start.html).
-Realicé mi doctorado en la [TU Berlín](https://www.tu-berlin.de/), bajo la dirección de [Torsten Mütze](http://www.tmuetze.de) y formé parte del grupo de [Optimización Combinatoria y Algoritmos de Grafos](https://www3.math.tu-berlin.de/coga/).
-También hice una magíster en matemáticas aplicadas en la [Universidad de Chile](https://www.uchile.cl/english) bajo la guía de [José Soto](http://www.dim.uchile.cl/~jsoto/).
+Soy profesor asistente en el [DCC](https://www.dcc.uchile.cl) de la [Universidad de Chile](https://www.uchile.cl/).
+Antes de eso, fui profesor asistente en la [Universidad de O'Higgins](https://www.uoh.cl) y un postdoc en el grupo de [Karl Bringmann](https://people.mpi-inf.mpg.de/~kbringma/) en la [Universidad de Saarland](https://www.uni-saarland.de/start.html).
+Hice mi doctorado en la [TU Berlín](https://www.tu-berlin.de/), donde fui asesorado por [Torsten Mütze](http://www.tmuetze.de) y formé parte del grupo de [Optimización Combinatorial y Algoritmos en Grafos](https://www3.math.tu-berlin.de/coga/).
 
 **Intereses de Investigación:**  
-En términos generales, estoy interesado en los fundamentos teóricos de la computación y las matemáticas discretas, con un énfasis en el diseño y análisis de algoritmos.
-Aunque la mayor parte de mi trabajo se centra en la enumeración y generación, también me interesan problemas en aproximación, teoría algorítmica de juegos, combinatoria, algoritmos finos y computación bajo incertidumbre.
-Estoy especialmente interesado en *paradigmas unificadores*, en particular via ideas de la geometría discreta.
+En términos generales, mi investigación se centra en los fundamentos teóricos de la computación y las matemáticas discretas, con énfasis en el diseño y análisis de algoritmos. 
+La mayor parte de mi trabajo se enfoca en problemas de enumeración y generación, aunque también me interesan problemas de aproximación, teoría de juegos algorítmica, combinatoria, algoritmos finos y computación bajo incertidumbre. 
+Me interesan especialmente los *paradigmas unificadores*, en especial cuando usan ideas de la geometría discreta.
 
-**Contacto:** \[nombre\].\[apellido\]@uoh.cl 
+**Contacto:** \[inicial nombre\]\[apellido\]@dcc.uchile.cl
 
-**Dirección:** oficina 519 del Edificio B en la Universidad de O'Higgins, Rancagua, Chile.
+**Dirección:** office N313, Beauchef 851, Santiago.

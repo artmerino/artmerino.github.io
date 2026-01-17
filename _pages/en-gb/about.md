@@ -25,16 +25,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an assistant professor at the Engineering Institute of [Universidad de O'Higgins](https://www.uoh.cl).
-Before that, I was a postdoc in [Karl Bringmann's](https://people.mpi-inf.mpg.de/~kbringma/) group at [Saarland University](https://www.uni-saarland.de/start.html).
-I did my PhD at [TU Berlin](https://www.tu-berlin.de/), where I was advised by [Torsten Mütze](http://www.tmuetze.de) and took part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group. 
-I also did a masters degree on applied math at [Universidad de Chile](https://www.uchile.cl/english) under the guidance of [José Soto](http://www.dim.uchile.cl/~jsoto/).
+I am an assistant professor at [University of Chile's](https://www.uchile.cl/) [CS department](https://www.dcc.uchile.cl).
+Before that, I was an assistant professor at [University of O'Higgins](https://www.uoh.cl) and a postdoc in [Karl Bringmann](https://people.mpi-inf.mpg.de/~kbringma/)'s group at [Saarland University](https://www.uni-saarland.de/start.html).
+I did my PhD at [TU Berlin](https://www.tu-berlin.de/), where I was advised by [Torsten Mütze](http://www.tmuetze.de) and was part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group.
 
 **Research Interests:**  
-Broadly, my interests lie in the theoretical foundations of computer science and discrete mathematics, with a focus on the design and analysis of algorithms. 
-While most of my work centers on enumeration and generation, I am also drawn to problems in approximation, algorithmic game theory, combinatorics, fine-grained algorithms, and computation under uncertainty. 
-I am especially interested in unifying paradigms, often through the lens of discrete geometry.
+Broadly, my research lies in the theoretical foundations of computer science and discrete mathematics, with a focus on algorithm design and analysis. 
+While my primary work centers on enumeration and generation, I am also drawn to problems in approximation, algorithmic game theory, combinatorics, fine-grained algorithms, and computation under uncertainty. 
+I am particularly interested in *unifying paradigms*, often through the lens of discrete geometry.
 
-**Contact:** \[name\].\[surname\]@uoh.cl 
+**Contact:** \[firstname initial\]\[surname\]@dcc.uchile.cl 
 
-**Address:** office 519, Building B, Universidad de O'Higgins, Rancagua, Chile.
+**Address:** office N313, Beauchef 851, Santiago.
