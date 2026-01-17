@@ -27,7 +27,7 @@ latest_posts:
 
 I am an Assistant Professor in the [CS department](https://www.dcc.uchile.cl) at the [University of Chile](https://www.uchile.cl/). 
 Before that, I was an Assistant Professor at the [University of O'Higgins](https://www.uoh.cl) and a postdoc in [Karl Bringmann](https://people.mpi-inf.mpg.de/~kbringma/)'s group at [Saarland University](https://www.uni-saarland.de/start.html).
-I receive my PhD from [TU Berlin](https://www.tu-berlin.de/), where I was advised by [Torsten Mütze](http://www.tmuetze.de) as part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group.
+I received my PhD from [TU Berlin](https://www.tu-berlin.de/), where I was advised by [Torsten Mütze](http://www.tmuetze.de) as part of the [Combinatorial Optimization and Graph Algorithms](https://www3.math.tu-berlin.de/coga/) group.
 
 **Research Interests:**  
 Broadly, my research lies in the theoretical foundations of computer science and discrete mathematics, with a focus on algorithm design and analysis. 
