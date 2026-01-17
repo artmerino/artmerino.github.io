@@ -36,4 +36,4 @@ Me interesan especialmente los *paradigmas unificadores*, en especial cuando usa
 
 **Contacto:** \[inicial nombre\]\[apellido\]@dcc.uchile.cl
 
-**Dirección:** office N313, Beauchef 851, Santiago.
+**Dirección:** oficina N313, Beauchef 851, Santiago.
