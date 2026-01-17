@@ -15,10 +15,13 @@
   type: time_table
   contents:
     - title: Assistant Professor
-      institution: Universidad de O'Higgins, Chile
-      year: 2024 - Present
+      institution: CS Department, Universidad de Chile, Chile
+      year: 2026 -
+    - title: Assistant Professor
+      institution: ICI, Universidad de O'Higgins, Chile
+      year: 2024 - 2025
     - title: Postdoctoral Researcher
-      institution: Saarland Universität, Germany
+      institution: CS Department, Saarland Universität, Germany
       year: 2023 - 2024
     - title: Engineer at FONDEF IDeA I+D Project
       institution: Universidad de Chile, Chile

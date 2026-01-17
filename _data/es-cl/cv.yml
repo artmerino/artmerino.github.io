@@ -15,12 +15,15 @@
   type: time_table
   contents:
     - title: Profesor Asistente
+      institution: DCC, Universidad de Chile, Chile
+      year: 2026 - 
+    - title: Profesor Asistente
       institution: Universidad de O'Higgins, Chile
-      year: 2024 - Presente
+      year: 2024 - 2025
     - title: Investigador Postdoctoral
       institution: Saarland Universität, Alemania
       year: 2023 - 2024
-    - title: Ingeniero en un Proyecto FONDEF IDeA I+D
+    - title: Ingeniero Proyecto FONDEF IDeA I+D
       institution: Universidad de Chile, Chile
       year: 2018 - 2019
       description: Gestión robusta para la entrega de bienes desde múltiples depósitos con ventanas de tiempo variables. 
