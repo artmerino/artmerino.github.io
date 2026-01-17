@@ -27,10 +27,10 @@ latest_posts:
 
 Soy profesor asistente en el [DCC](https://www.dcc.uchile.cl) de la [Universidad de Chile](https://www.uchile.cl/).
 Anteriormente, fui profesor asistente en la [Universidad de O'Higgins](https://www.uoh.cl) y postdoc en el grupo de [Karl Bringmann](https://people.mpi-inf.mpg.de/~kbringma/) en la [Universidad de Saarland](https://www.uni-saarland.de/start.html).
-Realicé mi doctorado en la [TU Berlín](https://www.tu-berlin.de/), donde fui asesorado por [Torsten Mütze](http://www.tmuetze.de) y formé parte del grupo de [Optimización Combinatorial y Algoritmos en Grafos](https://www3.math.tu-berlin.de/coga/).
+Realicé mi doctorado en la [TU Berlín](https://www.tu-berlin.de/) bajo la supervisión de [Torsten Mütze](http://www.tmuetze.de), formando parte del grupo de [Optimización Combinatorial y Algoritmos en Grafos](https://www3.math.tu-berlin.de/coga/).
 
 **Intereses de Investigación:**  
-En términos generales, mi investigación se centra en los fundamentos teóricos de la computación y las matemáticas discretas, con énfasis en el diseño y análisis de algoritmos. 
+Mi investigación se centra en los fundamentos teóricos de la computación y las matemáticas discretas, con énfasis en el diseño y análisis de algoritmos. 
 La mayor parte de mi trabajo se enfoca en problemas de enumeración y generación, aunque también me interesan problemas de aproximación, teoría de juegos algorítmica, combinatoria, algoritmos finos y computación bajo incertidumbre. 
 Me interesan especialmente los *paradigmas unificadores*, en especial cuando usan ideas de la geometría discreta.
 
