@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Research visit to University of Kassel.
+A research visit to the University of Kassel.

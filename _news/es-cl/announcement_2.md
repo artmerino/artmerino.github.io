@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Participé en el seminario Dagstuhl ["Precision in Geometric Algorithms"](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/25372).
+Participé en el Seminario Dagstuhl ["Precision in Geometric Algorithms"](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/25372).

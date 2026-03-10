@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visita de investigación a la Universidad de Kassel.
+Realicé una visita de investigación a la Universidad de Kassel.
