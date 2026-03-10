@@ -1,7 +1,8 @@
 {% for social in site.data.socials %}
-  {% case social[0] %}
-    {% when 'acm_id' %}
-      <a href="https://dl.acm.org/profile/{{ social[1] }}/" title="ACM DL"><i class="ai ai-acm"></i></a>
+  {% if social[1] %}
+    {% case social[0] %}
+      {% when 'acm_id' %}
+        <a href="https://dl.acm.org/profile/{{ social[1] }}/" title="ACM DL"><i class="ai ai-acm"></i></a>
     {% when 'arxiv_id' %}
       <a href="https://arxiv.org/search/?query={{ social[1] }}&searchtype=all&source=header" title="arXiv"><i class="ai ai-arxiv"></i></a>
     {% when 'blogger_url' %}
@@ -96,6 +97,7 @@
       <a href="https://www.zotero.org/{{ social[1] }}" title="Zotero"><i class="ai ai-zotero"></i></a>
     {% else %}
       <a href="{{ social[1].url }}" title="{{ social[1].title }}">
+    {% endif %}
         {% assign file_ext = social[1].logo | split: '.' | last %}
         {% if file_ext == 'svg' %}
           <svg>
