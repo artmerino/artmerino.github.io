@@ -7,7 +7,10 @@ nav: true
 nav_order: 6
 ---
 
-At Universidad de O'Higgins, I have taught the following courses:
+At U. Chile:
+- 2026-1: Discrete Mathematics for Computer Science (Undergraduate)
+
+At UOH:
 
 - 2025-2: Theory of Computation (Undergraduate)
 - 2025-2: Advanced Optimization Methods (Graduate)

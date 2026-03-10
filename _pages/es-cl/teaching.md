@@ -7,7 +7,11 @@ nav: true
 nav_order: 6
 ---
 
-En la Universidad de O'Higgins, he enseñado los siguientes cursos:
+En la U. de Chile:
+- 2026-1: Matemáticas Discretas para la Computación  (Pregrado)
+
+
+En la UOH:
 
 - 2025-2: Teoría de la Computación (Pregrado)
 - 2025-2: Métodos Avanzados de Optimización (Postgrado)
