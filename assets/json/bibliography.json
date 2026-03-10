@@ -16,7 +16,7 @@
           "abbr": "SODA 2026",
           "venue": "Proc. 37th SIAM Symposium on Discrete Algorithms",
           "title": "Traversing Regions of Supersolvable Hyperplane Arrangements and Their Lattice Quotients",
-          "doi": false,
+          "doi": "10.1137/1.9781611978971.179",
           "selected": false,
           "award": null,
           "combos": null
@@ -40,7 +40,7 @@
         "year": "2026",
         "abbr": "SODA 2026",
         "venue": "Proc. 37th SIAM Symposium on Discrete Algorithms",
-        "doi": false,
+        "doi": "10.1137/1.9781611978971.222",
         "selected": true,
         "award": null,
         "combos": null
