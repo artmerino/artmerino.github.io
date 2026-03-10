@@ -97,7 +97,6 @@
       <a href="https://www.zotero.org/{{ social[1] }}" title="Zotero"><i class="ai ai-zotero"></i></a>
     {% else %}
       <a href="{{ social[1].url }}" title="{{ social[1].title }}">
-    {% endif %}
         {% assign file_ext = social[1].logo | split: '.' | last %}
         {% if file_ext == 'svg' %}
           <svg>
