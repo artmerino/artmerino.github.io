@@ -27,13 +27,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-short-cv",
-          title: "Short CV",
-          description: "",
-          section: "Navigation menu",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "nav-teaching",
           title: "Teaching",
           description: "",
@@ -44,11 +37,11 @@ ninja.data = [{
         },{id: "news-our-paper-computing-diverse-and-nice-triangulations-got-the-best-paper-award-at-fct-2025",
           title: 'Our paper “Computing Diverse and Nice Triangulations” got the best paper award at...',
           description: "",
-          section: "News",},{id: "news-attended-in-the-dagstuhl-seminar-precision-in-geometric-algorithms",
-          title: 'Attended in the Dagstuhl Seminar “Precision in Geometric Algorithms”.',
+          section: "News",},{id: "news-attended-the-dagstuhl-seminar-precision-in-geometric-algorithms",
+          title: 'Attended the Dagstuhl Seminar “Precision in Geometric Algorithms”.',
           description: "",
-          section: "News",},{id: "news-research-visit-to-university-of-kassel",
-          title: 'Research visit to University of Kassel.',
+          section: "News",},{id: "news-a-research-visit-to-the-university-of-kassel",
+          title: 'A research visit to the University of Kassel.',
           description: "",
           section: "News",},{id: "news-our-paper-listing-faces-of-polytopes-was-accepted-at-soda-2026",
           title: 'Our paper “Listing faces of polytopes” was accepted at SODA 2026! 🎉',
